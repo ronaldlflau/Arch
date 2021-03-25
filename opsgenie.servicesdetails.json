@@ -1,0 +1,3742 @@
+{
+  "totalCount": 250,
+  "data": [
+    {
+      "id": "368e6559-df37-41e9-ba5d-7d9d8c406edb",
+      "name": "Priority Response",
+      "description": "",
+      "teamId": "0d1ee0ad-562e-4824-b021-db9d398b549d",
+      "tags": [],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/368e6559-df37-41e9-ba5d-7d9d8c406edb/status",
+        "api": "https://api.opsgenie.com/v1/services/368e6559-df37-41e9-ba5d-7d9d8c406edb"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "cfd4a46b-43aa-4199-b044-c5051ce3214a",
+      "name": "AMIS Shared Services Incident",
+      "description": "",
+      "teamId": "0d1ee0ad-562e-4824-b021-db9d398b549d",
+      "tags": [
+        "AMIS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/cfd4a46b-43aa-4199-b044-c5051ce3214a/status",
+        "api": "https://api.opsgenie.com/v1/services/cfd4a46b-43aa-4199-b044-c5051ce3214a"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "9f4ce2f2-d593-4eb2-9cee-d6178a537649",
+      "name": "AMIS EU Incident",
+      "description": "",
+      "teamId": "0d1ee0ad-562e-4824-b021-db9d398b549d",
+      "tags": [
+        "AMIS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/9f4ce2f2-d593-4eb2-9cee-d6178a537649/status",
+        "api": "https://api.opsgenie.com/v1/services/9f4ce2f2-d593-4eb2-9cee-d6178a537649"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "135fc8d4-faad-45e7-a5ad-2e6a46d43247",
+      "name": "AMIS Corp Incident",
+      "description": "",
+      "teamId": "0d1ee0ad-562e-4824-b021-db9d398b549d",
+      "tags": [
+        "AMIS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/135fc8d4-faad-45e7-a5ad-2e6a46d43247/status",
+        "api": "https://api.opsgenie.com/v1/services/135fc8d4-faad-45e7-a5ad-2e6a46d43247"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "43776f54-8e74-4716-ab88-91f999f7421a",
+      "name": "AMIS AMI Incident",
+      "description": "",
+      "teamId": "0d1ee0ad-562e-4824-b021-db9d398b549d",
+      "tags": [
+        "AMIS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/43776f54-8e74-4716-ab88-91f999f7421a/status",
+        "api": "https://api.opsgenie.com/v1/services/43776f54-8e74-4716-ab88-91f999f7421a"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "98668ebb-a9c7-45e5-af50-292652d9e689",
+      "name": "AMIS AIGI Incident",
+      "description": "",
+      "teamId": "0d1ee0ad-562e-4824-b021-db9d398b549d",
+      "tags": [
+        "AMIS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/98668ebb-a9c7-45e5-af50-292652d9e689/status",
+        "api": "https://api.opsgenie.com/v1/services/98668ebb-a9c7-45e5-af50-292652d9e689"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "0973d46f-0cdd-4ef7-914f-802d947f7af9",
+      "name": "AMI First Responders",
+      "description": "Default service for all incidents related to AMI",
+      "teamId": "dbb002d1-c0b8-4200-b07b-8dd9232316de",
+      "tags": [
+        "INCIDENT",
+        "AMI"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/0973d46f-0cdd-4ef7-914f-802d947f7af9/status",
+        "api": "https://api.opsgenie.com/v1/services/0973d46f-0cdd-4ef7-914f-802d947f7af9"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "1b17dbde-2e1a-42e8-8e98-ef87677fd73a",
+      "name": "AIGI-Product-TPA-TCRepository",
+      "description": "The TPA Claims Repository system",
+      "teamId": "96f8943d-c40a-42b6-a1dc-eabeb9d36344",
+      "tags": [],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/1b17dbde-2e1a-42e8-8e98-ef87677fd73a/status",
+        "api": "https://api.opsgenie.com/v1/services/1b17dbde-2e1a-42e8-8e98-ef87677fd73a"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "774e4960-66dc-40ea-a6e8-77f629e253b5",
+      "name": "AIGI xPression (PW)",
+      "description": "Forms xPression (PW)",
+      "teamId": "5174a869-ca4c-41c5-9ea1-8c066e76bd62",
+      "tags": [
+        "Forms",
+        "AIGI-Product-FORM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/774e4960-66dc-40ea-a6e8-77f629e253b5/status",
+        "api": "https://api.opsgenie.com/v1/services/774e4960-66dc-40ea-a6e8-77f629e253b5"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "fc739169-68c6-4d6a-adb7-ba7381348eed",
+      "name": "AIGI Workbench (BNY Melon)",
+      "description": "Financial Systems Workbench (BNY Melon)",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/fc739169-68c6-4d6a-adb7-ba7381348eed/status",
+        "api": "https://api.opsgenie.com/v1/services/fc739169-68c6-4d6a-adb7-ba7381348eed"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "26ce6eea-422a-4ba5-a604-708883d6a26b",
+      "name": "AIGI WinSCP",
+      "description": "Lenders\tWinSCP",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-LEN",
+        "Lenders"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/26ce6eea-422a-4ba5-a604-708883d6a26b/status",
+        "api": "https://api.opsgenie.com/v1/services/26ce6eea-422a-4ba5-a604-708883d6a26b"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "4bae5bc8-81dc-428f-b813-da7d6de896d9",
+      "name": "AIGI WinSCP",
+      "description": "Lenders WinSCP",
+      "teamId": "4717bc2a-1905-4df7-8ac1-d532236772fa",
+      "tags": [
+        "AIGI-Product-LEN",
+        "Lenders"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/4bae5bc8-81dc-428f-b813-da7d6de896d9/status",
+        "api": "https://api.opsgenie.com/v1/services/4bae5bc8-81dc-428f-b813-da7d6de896d9"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "90cd0663-8d24-44ca-947c-a859d1f6eada",
+      "name": "AIGI WINS",
+      "description": "Policy Decisions (PD)\tWINS",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-WINS",
+        "Policy Decisions (PD)"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/90cd0663-8d24-44ca-947c-a859d1f6eada/status",
+        "api": "https://api.opsgenie.com/v1/services/90cd0663-8d24-44ca-947c-a859d1f6eada"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "4993cf25-59af-47f1-baac-5695a6aa53f6",
+      "name": "AIGI WINS",
+      "description": "Policy Decisions (PD) WINS",
+      "teamId": "d2cc4261-1f8c-4327-9bc0-1522529a1757",
+      "tags": [
+        "Policy Decisions (PD)",
+        "AIGI-Product-DigitalWINS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/4993cf25-59af-47f1-baac-5695a6aa53f6/status",
+        "api": "https://api.opsgenie.com/v1/services/4993cf25-59af-47f1-baac-5695a6aa53f6"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "0604f1ee-307d-4318-9c6e-dbdcc911f0b2",
+      "name": "AIGI WINGS",
+      "description": "Financial Systems WINGS",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/0604f1ee-307d-4318-9c6e-dbdcc911f0b2/status",
+        "api": "https://api.opsgenie.com/v1/services/0604f1ee-307d-4318-9c6e-dbdcc911f0b2"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "13ca253d-464e-423c-8055-c94bf46ddbdf",
+      "name": "AIGI WES (transition to Satellite)",
+      "description": "Satellite WES (transition to Satellite)",
+      "teamId": "ca3531d5-9e29-453d-8119-33866de94029",
+      "tags": [
+        "AIGI-Product-SAT",
+        "Satellite"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/13ca253d-464e-423c-8055-c94bf46ddbdf/status",
+        "api": "https://api.opsgenie.com/v1/services/13ca253d-464e-423c-8055-c94bf46ddbdf"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "2b582968-9a65-45e1-9a3c-5d8894b18eda",
+      "name": "AIGI VOPS Data Warehouse",
+      "description": "Travel & Accident VOPS Data Warehouse",
+      "teamId": "8cc8ae20-d74b-4c07-8fcd-d32106b06337",
+      "tags": [
+        "Travel & Accident",
+        "AIGI-Product-TAH"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/2b582968-9a65-45e1-9a3c-5d8894b18eda/status",
+        "api": "https://api.opsgenie.com/v1/services/2b582968-9a65-45e1-9a3c-5d8894b18eda"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "d98d6922-2064-42fb-9709-de75fef91e6d",
+      "name": "AIGI VOPS",
+      "description": "Travel & Accident VOPS",
+      "teamId": "8cc8ae20-d74b-4c07-8fcd-d32106b06337",
+      "tags": [
+        "Travel & Accident",
+        "AIGI-Product-TAH"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/d98d6922-2064-42fb-9709-de75fef91e6d/status",
+        "api": "https://api.opsgenie.com/v1/services/d98d6922-2064-42fb-9709-de75fef91e6d"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "fedf2d62-f05f-4c00-a58c-33a741dbaf82",
+      "name": "AIGI VMAC (Clearance)",
+      "description": "Arch UW Workbench\tVMAC (Clearance)",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "Arch UW Workbench"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/fedf2d62-f05f-4c00-a58c-33a741dbaf82/status",
+        "api": "https://api.opsgenie.com/v1/services/fedf2d62-f05f-4c00-a58c-33a741dbaf82"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "5ae6303c-7d1a-4321-85cf-33d3436d52b3",
+      "name": "AIGI VMAC (Clearance)",
+      "description": "Arch UW Workbench VMAC (Clearance)",
+      "teamId": "a420b5f2-690c-40df-ab34-1735e6155836",
+      "tags": [
+        "Arch UW Workbench",
+        "AIGI-Product-VEN"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/5ae6303c-7d1a-4321-85cf-33d3436d52b3/status",
+        "api": "https://api.opsgenie.com/v1/services/5ae6303c-7d1a-4321-85cf-33d3436d52b3"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "1029a027-3b9d-41ec-8489-5635b6c289c8",
+      "name": "AIGI VIKI (Underwriting)",
+      "description": "Arch UW Workbench\tVIKI (Underwriting)",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "Arch UW Workbench"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/1029a027-3b9d-41ec-8489-5635b6c289c8/status",
+        "api": "https://api.opsgenie.com/v1/services/1029a027-3b9d-41ec-8489-5635b6c289c8"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "9c8c2f68-def0-4b48-8ac5-e869b5f9dcea",
+      "name": "AIGI VIKI (Underwriting)",
+      "description": "Arch UW Workbench VIKI (Underwriting)",
+      "teamId": "a420b5f2-690c-40df-ab34-1735e6155836",
+      "tags": [
+        "Arch UW Workbench",
+        "AIGI-Product-VEN"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/9c8c2f68-def0-4b48-8ac5-e869b5f9dcea/status",
+        "api": "https://api.opsgenie.com/v1/services/9c8c2f68-def0-4b48-8ac5-e869b5f9dcea"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "65796d7b-164c-417c-915c-f920e099b5a9",
+      "name": "AIGI Upload Documents from Client",
+      "description": "Lenders Upload Documents from Client",
+      "teamId": "4717bc2a-1905-4df7-8ac1-d532236772fa",
+      "tags": [
+        "AIGI-Product-LEN",
+        "Lenders"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/65796d7b-164c-417c-915c-f920e099b5a9/status",
+        "api": "https://api.opsgenie.com/v1/services/65796d7b-164c-417c-915c-f920e099b5a9"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "1f9c7c96-c18c-4c00-bbc4-6cf1c617daa1",
+      "name": "AIGI Upload Document",
+      "description": "Lenders Upload Document",
+      "teamId": "4717bc2a-1905-4df7-8ac1-d532236772fa",
+      "tags": [
+        "AIGI-Product-LEN",
+        "Lenders"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/1f9c7c96-c18c-4c00-bbc4-6cf1c617daa1/status",
+        "api": "https://api.opsgenie.com/v1/services/1f9c7c96-c18c-4c00-bbc4-6cf1c617daa1"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "c8076d67-5376-4f6c-ac47-88c6315bd3c4",
+      "name": "AIGI Update_CNAX_DM",
+      "description": "Pricing\tUpdate_CNAX_DM",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/c8076d67-5376-4f6c-ac47-88c6315bd3c4/status",
+        "api": "https://api.opsgenie.com/v1/services/c8076d67-5376-4f6c-ac47-88c6315bd3c4"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "b649d113-ffca-4fff-a9b9-8a5f224a51aa",
+      "name": "AIGI Treasura",
+      "description": "Financial Systems Treasura",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/b649d113-ffca-4fff-a9b9-8a5f224a51aa/status",
+        "api": "https://api.opsgenie.com/v1/services/b649d113-ffca-4fff-a9b9-8a5f224a51aa"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "f123aff4-27d0-4b2a-a33d-74b40b8e0b0e",
+      "name": "AIGI TPA Data Loads (Strategic)",
+      "description": "Claims Management (RMA) TPA Data Loads (Strategic)",
+      "teamId": "96f8943d-c40a-42b6-a1dc-eabeb9d36344",
+      "tags": [
+        "Claims Management (RMA)",
+        "AIGI-Product-TPA"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/f123aff4-27d0-4b2a-a33d-74b40b8e0b0e/status",
+        "api": "https://api.opsgenie.com/v1/services/f123aff4-27d0-4b2a-a33d-74b40b8e0b0e"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "f216bad9-fecd-49aa-b4f9-9de29018c4b1",
+      "name": "AIGI TPA Data Loads (Legacy)",
+      "description": "Claims Management (RMA) TPA Data Loads (Legacy)",
+      "teamId": "96f8943d-c40a-42b6-a1dc-eabeb9d36344",
+      "tags": [
+        "Claims Management (RMA)",
+        "AIGI-Product-TPA"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/f216bad9-fecd-49aa-b4f9-9de29018c4b1/status",
+        "api": "https://api.opsgenie.com/v1/services/f216bad9-fecd-49aa-b4f9-9de29018c4b1"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "960d6a5e-770d-4d6e-8f66-353d374682b6",
+      "name": "AIGI TPA Data Corrections (Strategic)",
+      "description": "Claims Management (RMA) TPA Data Corrections (Strategic)",
+      "teamId": "96f8943d-c40a-42b6-a1dc-eabeb9d36344",
+      "tags": [
+        "Claims Management (RMA)",
+        "AIGI-Product-TPA"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/960d6a5e-770d-4d6e-8f66-353d374682b6/status",
+        "api": "https://api.opsgenie.com/v1/services/960d6a5e-770d-4d6e-8f66-353d374682b6"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "fac56104-616e-4090-a1e3-7b09c957b330",
+      "name": "AIGI Template Spreadsheets",
+      "description": "CAT Modeling Template Spreadsheets",
+      "teamId": "00ab34fb-740f-4f6a-853f-d2bd7c627da9",
+      "tags": [
+        "AIGI-Product-CAT",
+        "CAT Modeling"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/fac56104-616e-4090-a1e3-7b09c957b330/status",
+        "api": "https://api.opsgenie.com/v1/services/fac56104-616e-4090-a1e3-7b09c957b330"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "ef0cfefb-bd65-4b7a-8d5a-9fdeb87f2374",
+      "name": "AIGI Tax spreadsheet (\"SMART\")",
+      "description": "Financial Systems Tax spreadsheet (\"SMART\")",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/ef0cfefb-bd65-4b7a-8d5a-9fdeb87f2374/status",
+        "api": "https://api.opsgenie.com/v1/services/ef0cfefb-bd65-4b7a-8d5a-9fdeb87f2374"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "3f1a3c1f-1c81-4a4a-9d41-c7031b8fe93c",
+      "name": "AIGI T-Value",
+      "description": "Lenders T-Value",
+      "teamId": "4717bc2a-1905-4df7-8ac1-d532236772fa",
+      "tags": [
+        "AIGI-Product-LEN",
+        "Lenders"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/3f1a3c1f-1c81-4a4a-9d41-c7031b8fe93c/status",
+        "api": "https://api.opsgenie.com/v1/services/3f1a3c1f-1c81-4a4a-9d41-c7031b8fe93c"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "47f6eb0e-a5b8-47a7-a517-013a1bc164ed",
+      "name": "AIGI T-Synergy",
+      "description": "Financial Systems T-Synergy",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/47f6eb0e-a5b8-47a7-a517-013a1bc164ed/status",
+        "api": "https://api.opsgenie.com/v1/services/47f6eb0e-a5b8-47a7-a517-013a1bc164ed"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "d6c42776-2107-4da1-9335-b99cbb50b871",
+      "name": "AIGI Surety Reporting",
+      "description": "Surety Surety Reporting",
+      "teamId": "e0a124dd-b346-491c-9808-ee2c779f718e",
+      "tags": [
+        "Surety Reporting",
+        "AIGI-Product-SUR"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/d6c42776-2107-4da1-9335-b99cbb50b871/status",
+        "api": "https://api.opsgenie.com/v1/services/d6c42776-2107-4da1-9335-b99cbb50b871"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "607e27db-c428-42ed-bb93-0aebcc335fc4",
+      "name": "AIGI Surety Portal",
+      "description": "Surety Surety Portal",
+      "teamId": "e0a124dd-b346-491c-9808-ee2c779f718e",
+      "tags": [
+        "Surety Portal",
+        "AIGI-Product-SUR"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/607e27db-c428-42ed-bb93-0aebcc335fc4/status",
+        "api": "https://api.opsgenie.com/v1/services/607e27db-c428-42ed-bb93-0aebcc335fc4"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "5c662a1f-e329-4f10-824c-a04b6cf86be3",
+      "name": "AIGI SRD - Enterprise Reporting",
+      "description": "Enterprise Reporting\tSRD - Enterprise Reporting",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-DATA",
+        "Enterprise Reporting"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/5c662a1f-e329-4f10-824c-a04b6cf86be3/status",
+        "api": "https://api.opsgenie.com/v1/services/5c662a1f-e329-4f10-824c-a04b6cf86be3"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "c598032d-2fd7-4c61-b0ae-165362bb0d7f",
+      "name": "AIGI SRD",
+      "description": "Enterprise Data\tSRD",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-DATA",
+        "Enterprise Data"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/c598032d-2fd7-4c61-b0ae-165362bb0d7f/status",
+        "api": "https://api.opsgenie.com/v1/services/c598032d-2fd7-4c61-b0ae-165362bb0d7f"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "a790635f-88a3-4ca3-ad1f-0604d206b66c",
+      "name": "AIGI SRD",
+      "description": "Enterprise Reporting SRD",
+      "teamId": "4f9d5774-97cb-4485-a7e0-3cdaf95e0639",
+      "tags": [
+        "AIGI-Product-REPT",
+        "Enterprise Reporting"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/a790635f-88a3-4ca3-ad1f-0604d206b66c/status",
+        "api": "https://api.opsgenie.com/v1/services/a790635f-88a3-4ca3-ad1f-0604d206b66c"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "d86cbfbc-7b45-4a30-82e1-91c2efde7a06",
+      "name": "AIGI SPLL",
+      "description": "Claims Management (RMA) SPLL",
+      "teamId": "30f338d7-ca2c-449e-b74b-806559bed278",
+      "tags": [
+        "AIGI-Product-CLMMGT",
+        "Claims Management (RMA)"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/d86cbfbc-7b45-4a30-82e1-91c2efde7a06/status",
+        "api": "https://api.opsgenie.com/v1/services/d86cbfbc-7b45-4a30-82e1-91c2efde7a06"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "37c2a241-a489-444d-a67b-3c44e6c01d47",
+      "name": "AIGI SOV BOT (Data from Schedules)",
+      "description": "Arch UW Workbench\tSOV BOT (Data from Schedules)",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "Arch UW Workbench"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/37c2a241-a489-444d-a67b-3c44e6c01d47/status",
+        "api": "https://api.opsgenie.com/v1/services/37c2a241-a489-444d-a67b-3c44e6c01d47"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "8d324cee-470f-43bf-819e-0a6bd17eb6cf",
+      "name": "AIGI SOV BOT (Data from Schedules)",
+      "description": "Arch UW Workbench SOV BOT (Data from Schedules)",
+      "teamId": "a420b5f2-690c-40df-ab34-1735e6155836",
+      "tags": [
+        "Arch UW Workbench",
+        "AIGI-Product-VEN"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/8d324cee-470f-43bf-819e-0a6bd17eb6cf/status",
+        "api": "https://api.opsgenie.com/v1/services/8d324cee-470f-43bf-819e-0a6bd17eb6cf"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "9f52d873-5639-42c2-a132-707e1a067626",
+      "name": "AIGI SharePoint",
+      "description": "Document Mgt. & Workflow SharePoint",
+      "teamId": "609aa8ae-5880-49ae-81bd-801fcdcdf45d",
+      "tags": [
+        "AIGI-Product-DMWF",
+        "Document Mgt. & Workflow"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/9f52d873-5639-42c2-a132-707e1a067626/status",
+        "api": "https://api.opsgenie.com/v1/services/9f52d873-5639-42c2-a132-707e1a067626"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "d3469836-4072-48c5-94bb-c64351008ad7",
+      "name": "AIGI SCHIP",
+      "description": "Claims Automation\tSCHIP",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "Claims Automation"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/d3469836-4072-48c5-94bb-c64351008ad7/status",
+        "api": "https://api.opsgenie.com/v1/services/d3469836-4072-48c5-94bb-c64351008ad7"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "38c28ff7-ea87-4d19-84a1-a3de88bcbe0e",
+      "name": "AIGI Satellite - PDE Integration (WC and GL Rating Worksheet Data)",
+      "description": "Satellite Satellite - PDE Integration (WC and GL Rating Worksheet Data)",
+      "teamId": "ca3531d5-9e29-453d-8119-33866de94029",
+      "tags": [
+        "AIGI-Product-SAT",
+        "Satellite"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/38c28ff7-ea87-4d19-84a1-a3de88bcbe0e/status",
+        "api": "https://api.opsgenie.com/v1/services/38c28ff7-ea87-4d19-84a1-a3de88bcbe0e"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "5d05826b-c163-4b70-9767-40bdece5d648",
+      "name": "AIGI Satellite - LSRO 2.0",
+      "description": "Satellite Satellite - LSRO 2.0",
+      "teamId": "ca3531d5-9e29-453d-8119-33866de94029",
+      "tags": [
+        "AIGI-Product-SAT",
+        "Satellite"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/5d05826b-c163-4b70-9767-40bdece5d648/status",
+        "api": "https://api.opsgenie.com/v1/services/5d05826b-c163-4b70-9767-40bdece5d648"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "ccd024ab-a804-449d-81ba-33fd74b32953",
+      "name": "AIGI Satellite - Ghostdraft Integration",
+      "description": "Satellite Satellite - Ghostdraft Integration",
+      "teamId": "ca3531d5-9e29-453d-8119-33866de94029",
+      "tags": [
+        "AIGI-Product-SAT",
+        "Satellite"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/ccd024ab-a804-449d-81ba-33fd74b32953/status",
+        "api": "https://api.opsgenie.com/v1/services/ccd024ab-a804-449d-81ba-33fd74b32953"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "ddbda684-ad18-4944-8002-2a83802eb96e",
+      "name": "AIGI Satellite - Coding Details",
+      "description": "Satellite Satellite - Coding Details",
+      "teamId": "ca3531d5-9e29-453d-8119-33866de94029",
+      "tags": [
+        "AIGI-Product-SAT",
+        "Satellite"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/ddbda684-ad18-4944-8002-2a83802eb96e/status",
+        "api": "https://api.opsgenie.com/v1/services/ddbda684-ad18-4944-8002-2a83802eb96e"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "25b55faf-731c-402a-bbcb-4932a9816ef0",
+      "name": "AIGI Satellite",
+      "description": "Satellite Satellite",
+      "teamId": "ca3531d5-9e29-453d-8119-33866de94029",
+      "tags": [
+        "AIGI-Product-SAT",
+        "Satellite"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/25b55faf-731c-402a-bbcb-4932a9816ef0/status",
+        "api": "https://api.opsgenie.com/v1/services/25b55faf-731c-402a-bbcb-4932a9816ef0"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "870ac3e1-8655-4dd4-bfa0-bdea80d66914",
+      "name": "AIGI RONTEST",
+      "description": "",
+      "teamId": "8aff7fe5-f2d7-4b53-aed8-e9b48494d397",
+      "tags": [],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/870ac3e1-8655-4dd4-bfa0-bdea80d66914/status",
+        "api": "https://api.opsgenie.com/v1/services/870ac3e1-8655-4dd4-bfa0-bdea80d66914"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "d14b8900-215a-4dc4-8834-e14a67b571d1",
+      "name": "AIGI RoamRight.com",
+      "description": "Travel & Accident RoamRight.com",
+      "teamId": "8cc8ae20-d74b-4c07-8fcd-d32106b06337",
+      "tags": [
+        "Travel & Accident",
+        "AIGI-Product-TAH"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/d14b8900-215a-4dc4-8834-e14a67b571d1/status",
+        "api": "https://api.opsgenie.com/v1/services/d14b8900-215a-4dc4-8834-e14a67b571d1"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "c8a4f66b-d758-4367-94ae-48d43703e0f9",
+      "name": "AIGI RoamRight Partner Portal",
+      "description": "Travel & Accident RoamRight Partner Portal",
+      "teamId": "8cc8ae20-d74b-4c07-8fcd-d32106b06337",
+      "tags": [
+        "Travel & Accident",
+        "AIGI-Product-TAH"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/c8a4f66b-d758-4367-94ae-48d43703e0f9/status",
+        "api": "https://api.opsgenie.com/v1/services/c8a4f66b-d758-4367-94ae-48d43703e0f9"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "4db9e894-c185-4cbe-80fe-fb75058690c6",
+      "name": "AIGI RoamRight Mobile App",
+      "description": "Travel & Accident RoamRight Mobile App",
+      "teamId": "8cc8ae20-d74b-4c07-8fcd-d32106b06337",
+      "tags": [
+        "Travel & Accident",
+        "AIGI-Product-TAH"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/4db9e894-c185-4cbe-80fe-fb75058690c6/status",
+        "api": "https://api.opsgenie.com/v1/services/4db9e894-c185-4cbe-80fe-fb75058690c6"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "cda3ff8f-ce73-4b49-8020-3d8d63cad599",
+      "name": "AIGI RMA - LSS",
+      "description": "Claims Management (RMA) RMA - LSS",
+      "teamId": "30f338d7-ca2c-449e-b74b-806559bed278",
+      "tags": [
+        "AIGI-Product-CLMMGT",
+        "Claims Management (RMA)"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/cda3ff8f-ce73-4b49-8020-3d8d63cad599/status",
+        "api": "https://api.opsgenie.com/v1/services/cda3ff8f-ce73-4b49-8020-3d8d63cad599"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "67bef335-80ec-4f6f-982a-f4fe431e6ba1",
+      "name": "AIGI RMA - ISO/SCHIP",
+      "description": "Claims Management (RMA) RMA - ISO/SCHIP",
+      "teamId": "30f338d7-ca2c-449e-b74b-806559bed278",
+      "tags": [
+        "AIGI-Product-CLMMGT",
+        "Claims Management (RMA)"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/67bef335-80ec-4f6f-982a-f4fe431e6ba1/status",
+        "api": "https://api.opsgenie.com/v1/services/67bef335-80ec-4f6f-982a-f4fe431e6ba1"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "0cf5a29a-5e10-4f61-aa20-ffe6e85edb5c",
+      "name": "AIGI RMA - Diary Engine",
+      "description": "Claims Management (RMA) RMA - Diary Engine",
+      "teamId": "30f338d7-ca2c-449e-b74b-806559bed278",
+      "tags": [
+        "AIGI-Product-CLMMGT",
+        "Claims Management (RMA)"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/0cf5a29a-5e10-4f61-aa20-ffe6e85edb5c/status",
+        "api": "https://api.opsgenie.com/v1/services/0cf5a29a-5e10-4f61-aa20-ffe6e85edb5c"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "57f2d095-ba0b-4145-a6bf-e23fbf9de362",
+      "name": "AIGI RMA - BottomLine",
+      "description": "Claims Management (RMA) RMA - BottomLine",
+      "teamId": "30f338d7-ca2c-449e-b74b-806559bed278",
+      "tags": [
+        "AIGI-Product-CLMMGT",
+        "Claims Management (RMA)"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/57f2d095-ba0b-4145-a6bf-e23fbf9de362/status",
+        "api": "https://api.opsgenie.com/v1/services/57f2d095-ba0b-4145-a6bf-e23fbf9de362"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "e1aa9c91-0485-4cc2-bf6d-32d775ae6fde",
+      "name": "AIGI RMA - Apex Check Printing",
+      "description": "Claims Management (RMA) RMA - Apex Check Printing",
+      "teamId": "30f338d7-ca2c-449e-b74b-806559bed278",
+      "tags": [
+        "AIGI-Product-CLMMGT",
+        "Claims Management (RMA)"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/e1aa9c91-0485-4cc2-bf6d-32d775ae6fde/status",
+        "api": "https://api.opsgenie.com/v1/services/e1aa9c91-0485-4cc2-bf6d-32d775ae6fde"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "912dc452-b228-4286-b737-f346021d0cf1",
+      "name": "AIGI RMA",
+      "description": "Claims Management (RMA) RMA",
+      "teamId": "30f338d7-ca2c-449e-b74b-806559bed278",
+      "tags": [
+        "AIGI-Product-CLMMGT",
+        "Claims Management (RMA)"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/912dc452-b228-4286-b737-f346021d0cf1/status",
+        "api": "https://api.opsgenie.com/v1/services/912dc452-b228-4286-b737-f346021d0cf1"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "29f8365b-a0b5-4a51-9866-84adf014a2da",
+      "name": "AIGI Redhat PAM",
+      "description": "PolicyWriter Digital Solutions Redhat PAM",
+      "teamId": "f9abbd0f-bcc7-4690-944f-9e5493e51d65",
+      "tags": [
+        "PolicyWriter Digital Solutions",
+        "AIGI-Product-PWPDS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/29f8365b-a0b5-4a51-9866-84adf014a2da/status",
+        "api": "https://api.opsgenie.com/v1/services/29f8365b-a0b5-4a51-9866-84adf014a2da"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "5c54cda8-c9af-4a6a-bb74-1b38b9de4825",
+      "name": "AIGI REBA",
+      "description": "Ceded Re\tREBA",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "Ceded Re",
+        "AIGI-Product-REINS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/5c54cda8-c9af-4a6a-bb74-1b38b9de4825/status",
+        "api": "https://api.opsgenie.com/v1/services/5c54cda8-c9af-4a6a-bb74-1b38b9de4825"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "a0922219-f8fc-4936-83e1-98ced789e86c",
+      "name": "AIGI REBA",
+      "description": "Ceded Re REBA",
+      "teamId": "abe54244-d372-4474-9156-2188d02b4de7",
+      "tags": [
+        "Ceded Re",
+        "AIGI-Product-REINS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/a0922219-f8fc-4936-83e1-98ced789e86c/status",
+        "api": "https://api.opsgenie.com/v1/services/a0922219-f8fc-4936-83e1-98ced789e86c"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "f40e3718-a229-4883-8ca8-d3095c1dacee",
+      "name": "AIGI Rating Model Comparison Tools",
+      "description": "Pricing\tRating Model Comparison Tools",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/f40e3718-a229-4883-8ca8-d3095c1dacee/status",
+        "api": "https://api.opsgenie.com/v1/services/f40e3718-a229-4883-8ca8-d3095c1dacee"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "db7bd8ad-5d13-43e0-9118-2bf917f196ae",
+      "name": "AIGI Rating Model Comparison Tools",
+      "description": "Pricing Rating Model Comparison Tools",
+      "teamId": "e2ac04cc-4cf2-46b6-8d13-eb3077192e3a",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/db7bd8ad-5d13-43e0-9118-2bf917f196ae/status",
+        "api": "https://api.opsgenie.com/v1/services/db7bd8ad-5d13-43e0-9118-2bf917f196ae"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "3f223a63-1149-43e7-aef3-86189508295f",
+      "name": "AIGI Rating Metadata Manager",
+      "description": "ArchLink/CRM Rating Metadata Manager",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/3f223a63-1149-43e7-aef3-86189508295f/status",
+        "api": "https://api.opsgenie.com/v1/services/3f223a63-1149-43e7-aef3-86189508295f"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "8c10a5cb-6c82-40e6-8074-45112a34e938",
+      "name": "AIGI Rating Browser 2.0",
+      "description": "Pricing\tRating Browser 2.0",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/8c10a5cb-6c82-40e6-8074-45112a34e938/status",
+        "api": "https://api.opsgenie.com/v1/services/8c10a5cb-6c82-40e6-8074-45112a34e938"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "6f934772-dc25-4f27-91c9-1d7707701f98",
+      "name": "AIGI Rating Browser 2.0",
+      "description": "Pricing Rating Browser 2.0",
+      "teamId": "e2ac04cc-4cf2-46b6-8d13-eb3077192e3a",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/6f934772-dc25-4f27-91c9-1d7707701f98/status",
+        "api": "https://api.opsgenie.com/v1/services/6f934772-dc25-4f27-91c9-1d7707701f98"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "f6301052-3b75-4ee0-917d-ca5067df0c5b",
+      "name": "AIGI Rating Browser 2",
+      "description": "ArchLink/CRM Rating Browser 2",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/f6301052-3b75-4ee0-917d-ca5067df0c5b/status",
+        "api": "https://api.opsgenie.com/v1/services/f6301052-3b75-4ee0-917d-ca5067df0c5b"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "91fe98b8-53a2-4eec-87cd-657742f11739",
+      "name": "AIGI Ratabase",
+      "description": "PolicyWriter - Property Ratabase",
+      "teamId": "477f6250-de88-4176-91b8-5f80d4a2006b",
+      "tags": [
+        "AIGI-Product-PWPRP"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/91fe98b8-53a2-4eec-87cd-657742f11739/status",
+        "api": "https://api.opsgenie.com/v1/services/91fe98b8-53a2-4eec-87cd-657742f11739"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "c33cacc8-526f-46e6-8a3e-3cbb09ef40e3",
+      "name": "AIGI Ratabase",
+      "description": "PolicyWriter -  Casualty Ratabase",
+      "teamId": "42f43403-996e-4635-9104-234d94d19b2e",
+      "tags": [
+        "AIGI-Product-PWCAS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/c33cacc8-526f-46e6-8a3e-3cbb09ef40e3/status",
+        "api": "https://api.opsgenie.com/v1/services/c33cacc8-526f-46e6-8a3e-3cbb09ef40e3"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "db82cb15-d0b0-47f5-9860-eeff44725413",
+      "name": "AIGI Ratabase",
+      "description": "PolicyWriter - Financial & Professional Lines Ratabase",
+      "teamId": "f833ec43-1348-4d85-8f4f-be1ec0a56f53",
+      "tags": [
+        "AIGI-Product-PWFPL",
+        "PolicyWriter - Financial & Professional Lines"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/db82cb15-d0b0-47f5-9860-eeff44725413/status",
+        "api": "https://api.opsgenie.com/v1/services/db82cb15-d0b0-47f5-9860-eeff44725413"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "80e64cdf-4d14-482f-abb9-6ade965a17fe",
+      "name": "AIGI Radar",
+      "description": "Pricing\tRadar",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/80e64cdf-4d14-482f-abb9-6ade965a17fe/status",
+        "api": "https://api.opsgenie.com/v1/services/80e64cdf-4d14-482f-abb9-6ade965a17fe"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "183fb65e-39dd-4406-a65c-aa5a465abbd8",
+      "name": "AIGI Radar",
+      "description": "Pricing Radar",
+      "teamId": "e2ac04cc-4cf2-46b6-8d13-eb3077192e3a",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/183fb65e-39dd-4406-a65c-aa5a465abbd8/status",
+        "api": "https://api.opsgenie.com/v1/services/183fb65e-39dd-4406-a65c-aa5a465abbd8"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "735ea62e-1a3a-45ce-9e42-beaf9361f828",
+      "name": "AIGI PW APIs",
+      "description": "PolicyWriter Digital Solutions PW APIs",
+      "teamId": "f9abbd0f-bcc7-4690-944f-9e5493e51d65",
+      "tags": [
+        "PolicyWriter Digital Solutions",
+        "AIGI-Product-PWPDS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/735ea62e-1a3a-45ce-9e42-beaf9361f828/status",
+        "api": "https://api.opsgenie.com/v1/services/735ea62e-1a3a-45ce-9e42-beaf9361f828"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "0de70d8c-5ca1-494a-847a-7b4abb53dbf9",
+      "name": "AIGI Pro Allocator",
+      "description": "Financial Systems Pro Allocator",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/0de70d8c-5ca1-494a-847a-7b4abb53dbf9/status",
+        "api": "https://api.opsgenie.com/v1/services/0de70d8c-5ca1-494a-847a-7b4abb53dbf9"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "4d04f2df-2fe9-46d7-a82f-a502f27358f9",
+      "name": "AIGI Pricing Analysis Support",
+      "description": "Pricing\tPricing Analysis Support",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/4d04f2df-2fe9-46d7-a82f-a502f27358f9/status",
+        "api": "https://api.opsgenie.com/v1/services/4d04f2df-2fe9-46d7-a82f-a502f27358f9"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "f0ccf0dc-29a2-4a0b-8012-70c09b012c54",
+      "name": "AIGI Pricing Analysis Support",
+      "description": "Pricing Pricing Analysis Support",
+      "teamId": "e2ac04cc-4cf2-46b6-8d13-eb3077192e3a",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/f0ccf0dc-29a2-4a0b-8012-70c09b012c54/status",
+        "api": "https://api.opsgenie.com/v1/services/f0ccf0dc-29a2-4a0b-8012-70c09b012c54"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "78aaa816-62ff-4cba-9098-63a9a9777a04",
+      "name": "AIGI Pricing Actuarial - PTR",
+      "description": "Enterprise Data Pricing Actuarial - PTR",
+      "teamId": "6352af1b-8c2f-4cfb-8f09-907d40069940",
+      "tags": [
+        "AIGI-Product-DATA",
+        "Enterprise Data"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/78aaa816-62ff-4cba-9098-63a9a9777a04/status",
+        "api": "https://api.opsgenie.com/v1/services/78aaa816-62ff-4cba-9098-63a9a9777a04"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "850dcfb3-895d-46dd-a4d5-9a48ad5223d0",
+      "name": "AIGI Premium Pro (tax)",
+      "description": "Financial Systems Premium Pro (tax)",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/850dcfb3-895d-46dd-a4d5-9a48ad5223d0/status",
+        "api": "https://api.opsgenie.com/v1/services/850dcfb3-895d-46dd-a4d5-9a48ad5223d0"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "ee064e1c-9e50-4e02-9b2a-0ea99fce2846",
+      "name": "AIGI Precisely (formerly Pitney Bowse Geo Coding)",
+      "description": "CAT Modeling Precisely (formerly Pitney Bowse Geo Coding)",
+      "teamId": "00ab34fb-740f-4f6a-853f-d2bd7c627da9",
+      "tags": [
+        "AIGI-Product-CAT",
+        "CAT Modeling"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/ee064e1c-9e50-4e02-9b2a-0ea99fce2846/status",
+        "api": "https://api.opsgenie.com/v1/services/ee064e1c-9e50-4e02-9b2a-0ea99fce2846"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "4c7a8f8c-764b-459a-8a8b-874b815f8c6b",
+      "name": "AIGI PowerApps, Flow",
+      "description": "Document Mgt. & Workflow PowerApps, Flow",
+      "teamId": "609aa8ae-5880-49ae-81bd-801fcdcdf45d",
+      "tags": [
+        "AIGI-Product-DMWF",
+        "Document Mgt. & Workflow"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/4c7a8f8c-764b-459a-8a8b-874b815f8c6b/status",
+        "api": "https://api.opsgenie.com/v1/services/4c7a8f8c-764b-459a-8a8b-874b815f8c6b"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "208d773f-679f-47ab-a692-74266ca880ad",
+      "name": "AIGI Power BI",
+      "description": "Enterprise Reporting Power BI",
+      "teamId": "4f9d5774-97cb-4485-a7e0-3cdaf95e0639",
+      "tags": [
+        "AIGI-Product-REPT",
+        "Enterprise Reporting"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/208d773f-679f-47ab-a692-74266ca880ad/status",
+        "api": "https://api.opsgenie.com/v1/services/208d773f-679f-47ab-a692-74266ca880ad"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "e95755cb-d28e-4b74-861c-5a95eeb9701a",
+      "name": "AIGI PosiTax (Kentucky Muni Tax calculator)",
+      "description": "Financial Systems PosiTax (Kentucky Muni Tax calculator)",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/e95755cb-d28e-4b74-861c-5a95eeb9701a/status",
+        "api": "https://api.opsgenie.com/v1/services/e95755cb-d28e-4b74-861c-5a95eeb9701a"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "7fe3a6f7-274d-4441-b552-c8392c3d2700",
+      "name": "AIGI PolicyWriter - Property",
+      "description": "PolicyWriter - Property \tPolicyWriter - Property",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-PWPNC",
+        "PolicyWriter - Property"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/7fe3a6f7-274d-4441-b552-c8392c3d2700/status",
+        "api": "https://api.opsgenie.com/v1/services/7fe3a6f7-274d-4441-b552-c8392c3d2700"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "4e063437-d4a5-4306-abe7-59312891cd56",
+      "name": "AIGI PolicyWriter - Financial & Professional Lines",
+      "description": "PolicyWriter - Financial & Professional Lines\tPolicyWriter - Financial & Professional Lines",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-PWFPL",
+        "PolicyWriter - Financial & Professional Lines"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/4e063437-d4a5-4306-abe7-59312891cd56/status",
+        "api": "https://api.opsgenie.com/v1/services/4e063437-d4a5-4306-abe7-59312891cd56"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "8c3dca4b-1a42-4d9a-9dc7-b3ead743cb92",
+      "name": "AIGI PolicyWriter - Digital Solutions",
+      "description": "PolicyWriter - Digital Solutions\tPolicyWriter - Digital Solutions",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "PolicyWriter - Digital Solutions",
+        "AIGI-Product-PWDS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/8c3dca4b-1a42-4d9a-9dc7-b3ead743cb92/status",
+        "api": "https://api.opsgenie.com/v1/services/8c3dca4b-1a42-4d9a-9dc7-b3ead743cb92"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "7fb509fc-6814-4e8e-a796-8a26e632fc53",
+      "name": "AIGI PolicyWriter - Casualty",
+      "description": "PolicyWriter - Casualty\tPolicyWriter - Casualty",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-PWPNC",
+        "PolicyWriter - Casualty"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/7fb509fc-6814-4e8e-a796-8a26e632fc53/status",
+        "api": "https://api.opsgenie.com/v1/services/7fb509fc-6814-4e8e-a796-8a26e632fc53"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "29ff866a-53ba-44e9-8a58-776dafd4e5ef",
+      "name": "AIGI PolicyWriter",
+      "description": "PolicyWriter -  Casualty PolicyWriter",
+      "teamId": "42f43403-996e-4635-9104-234d94d19b2e",
+      "tags": [
+        "AIGI-Product-PWCAS",
+        "PolicyWriter -  Casualty"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/29ff866a-53ba-44e9-8a58-776dafd4e5ef/status",
+        "api": "https://api.opsgenie.com/v1/services/29ff866a-53ba-44e9-8a58-776dafd4e5ef"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "aa244797-f0aa-49b7-8627-8b6bf4083a16",
+      "name": "AIGI PolicyWriter",
+      "description": "PolicyWriter Digital Solutions PolicyWriter",
+      "teamId": "f9abbd0f-bcc7-4690-944f-9e5493e51d65",
+      "tags": [
+        "PolicyWriter Digital Solutions",
+        "AIGI-Product-PWPDS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/aa244797-f0aa-49b7-8627-8b6bf4083a16/status",
+        "api": "https://api.opsgenie.com/v1/services/aa244797-f0aa-49b7-8627-8b6bf4083a16"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "21f3f613-76ec-493c-93e6-69870bcf2e87",
+      "name": "AIGI PolicyWriter",
+      "description": "PolicyWriter - Financial & Professional Lines PolicyWriter",
+      "teamId": "f833ec43-1348-4d85-8f4f-be1ec0a56f53",
+      "tags": [
+        "AIGI-Product-PWFPL",
+        "PolicyWriter - Financial & Professional Lines"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/21f3f613-76ec-493c-93e6-69870bcf2e87/status",
+        "api": "https://api.opsgenie.com/v1/services/21f3f613-76ec-493c-93e6-69870bcf2e87"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "7b15d9c8-761d-4652-b3f7-16cb70677c44",
+      "name": "AIGI PolicyWriter",
+      "description": "PolicyWriter - Property  PolicyWriter",
+      "teamId": "477f6250-de88-4176-91b8-5f80d4a2006b",
+      "tags": [
+        "PolicyWriter - Property",
+        "AIGI-Product-PWPRP"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/7b15d9c8-761d-4652-b3f7-16cb70677c44/status",
+        "api": "https://api.opsgenie.com/v1/services/7b15d9c8-761d-4652-b3f7-16cb70677c44"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "b32f2bf8-8ddf-481d-95e6-e3de4f23bce3",
+      "name": "AIGI PL Portal",
+      "description": "PL Portal",
+      "teamId": "fd11c765-2204-4c5b-9ad7-98ba7182840e",
+      "tags": [
+        "AIGI-Product-PL",
+        "PL"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/b32f2bf8-8ddf-481d-95e6-e3de4f23bce3/status",
+        "api": "https://api.opsgenie.com/v1/services/b32f2bf8-8ddf-481d-95e6-e3de4f23bce3"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "428df5ba-b16b-4eff-aa3b-a7a0c359e05e",
+      "name": "AIGI PDF995",
+      "description": "Lenders PDF995",
+      "teamId": "4717bc2a-1905-4df7-8ac1-d532236772fa",
+      "tags": [
+        "AIGI-Product-LEN",
+        "Lenders"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/428df5ba-b16b-4eff-aa3b-a7a0c359e05e/status",
+        "api": "https://api.opsgenie.com/v1/services/428df5ba-b16b-4eff-aa3b-a7a0c359e05e"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "a3930b2a-6a79-41c1-874a-d928f9618212",
+      "name": "AIGI PD",
+      "description": "Policy Decisions (PD) PD",
+      "teamId": "eec15989-0e8c-4e0a-bc6b-1959703b1f8c",
+      "tags": [
+        "AIGI-Product-PD",
+        "Policy Decisions (PD)"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/a3930b2a-6a79-41c1-874a-d928f9618212/status",
+        "api": "https://api.opsgenie.com/v1/services/a3930b2a-6a79-41c1-874a-d928f9618212"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "84da15fc-2b91-4f70-a89a-3f9697bfc67d",
+      "name": "AIGI PANDA - Enterprise Reporting",
+      "description": "Enterprise Reporting\tPANDA - Enterprise Reporting",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-DATA",
+        "Enterprise Reporting"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/84da15fc-2b91-4f70-a89a-3f9697bfc67d/status",
+        "api": "https://api.opsgenie.com/v1/services/84da15fc-2b91-4f70-a89a-3f9697bfc67d"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "e4d8460c-6f26-4ee5-b20e-6430d09091ee",
+      "name": "AIGI PANDA",
+      "description": "Enterprise Data\tPANDA",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-DATA",
+        "Enterprise Data"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/e4d8460c-6f26-4ee5-b20e-6430d09091ee/status",
+        "api": "https://api.opsgenie.com/v1/services/e4d8460c-6f26-4ee5-b20e-6430d09091ee"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "dade80f0-f830-4269-a5c5-49fcf9e088e3",
+      "name": "AIGI OneSys",
+      "description": "CBS OneSys",
+      "teamId": "aaf5f7b5-69b3-4b41-957f-3e1e4789ffde",
+      "tags": [
+        "AIGI-Product-CBS",
+        "CBS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/dade80f0-f830-4269-a5c5-49fcf9e088e3/status",
+        "api": "https://api.opsgenie.com/v1/services/dade80f0-f830-4269-a5c5-49fcf9e088e3"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "e124818d-6e67-4ba6-b6d4-6d7f2b3e46d1",
+      "name": "AIGI Oden",
+      "description": "Financial Systems Oden",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/e124818d-6e67-4ba6-b6d4-6d7f2b3e46d1/status",
+        "api": "https://api.opsgenie.com/v1/services/e124818d-6e67-4ba6-b6d4-6d7f2b3e46d1"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "4f8f8738-7224-4517-bc0a-0209367ff86d",
+      "name": "AIGI Oanda",
+      "description": "Financial Systems Oanda",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/4f8f8738-7224-4517-bc0a-0209367ff86d/status",
+        "api": "https://api.opsgenie.com/v1/services/4f8f8738-7224-4517-bc0a-0209367ff86d"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "33f9a544-41f6-4d42-a628-63166d088f13",
+      "name": "AIGI Nexus",
+      "description": "Financial Systems Nexus",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/33f9a544-41f6-4d42-a628-63166d088f13/status",
+        "api": "https://api.opsgenie.com/v1/services/33f9a544-41f6-4d42-a628-63166d088f13"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "ba9ab7a9-89c7-470b-a814-ac8997630b8e",
+      "name": "AIGI NCCI/DCI Extract",
+      "description": "Claims Automation\tNCCI/DCI Extract",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "Claims Automation"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/ba9ab7a9-89c7-470b-a814-ac8997630b8e/status",
+        "api": "https://api.opsgenie.com/v1/services/ba9ab7a9-89c7-470b-a814-ac8997630b8e"
+      },
+      "isExternal": false
+    }
+  ],
+  "paging": {
+    "next": "https://api.opsgenie.com/v1/services?limit=100&sort=name&offset=100&order=desc",
+    "first": "https://api.opsgenie.com/v1/services?limit=100&sort=name&offset=0&order=desc",
+    "last": "https://api.opsgenie.com/v1/services?limit=100&sort=name&offset=200&order=desc"
+  },
+  "took": 0.029,
+  "requestId": "c32d4af6-1005-497f-91f0-dc588221c974"
+}
+{
+  "totalCount": 250,
+  "data": [
+    {
+      "id": "6df88e94-d201-4aff-abfa-886d9c0d550f",
+      "name": "AIGI MPL Rating Model",
+      "description": "ArchLink/CRM MPL Rating Model",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/6df88e94-d201-4aff-abfa-886d9c0d550f/status",
+        "api": "https://api.opsgenie.com/v1/services/6df88e94-d201-4aff-abfa-886d9c0d550f"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "c880e237-0161-459d-8703-8ddb6aba807b",
+      "name": "AIGI Moody's Risk Analyst (connection w/ Satellite)",
+      "description": "Satellite\tMoody's Risk Analyst (connection w/ Satellite)",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-SAT",
+        "Satellite"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/c880e237-0161-459d-8703-8ddb6aba807b/status",
+        "api": "https://api.opsgenie.com/v1/services/c880e237-0161-459d-8703-8ddb6aba807b"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "d2be4de3-e72d-4cf3-8ac1-c49712e09ca1",
+      "name": "AIGI Moody's Credit Lens",
+      "description": "Pricing Moody's Credit Lens",
+      "teamId": "e2ac04cc-4cf2-46b6-8d13-eb3077192e3a",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/d2be4de3-e72d-4cf3-8ac1-c49712e09ca1/status",
+        "api": "https://api.opsgenie.com/v1/services/d2be4de3-e72d-4cf3-8ac1-c49712e09ca1"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "d5029e2c-5d9f-4d0b-ab6e-8f6a22cf9271",
+      "name": "AIGI MGU Systems",
+      "description": "Programs MGU Systems",
+      "teamId": "4e33ba5d-da1a-44e6-ae6c-7511af5a8296",
+      "tags": [
+        "Programs",
+        "AIGI-Product-PROG"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/d5029e2c-5d9f-4d0b-ab6e-8f6a22cf9271/status",
+        "api": "https://api.opsgenie.com/v1/services/d5029e2c-5d9f-4d0b-ab6e-8f6a22cf9271"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "06366ec6-9841-462f-96b4-623d5a086443",
+      "name": "AIGI MetaRisk",
+      "description": "CAT Modeling MetaRisk",
+      "teamId": "00ab34fb-740f-4f6a-853f-d2bd7c627da9",
+      "tags": [
+        "AIGI-Product-CAT",
+        "CAT Modeling"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/06366ec6-9841-462f-96b4-623d5a086443/status",
+        "api": "https://api.opsgenie.com/v1/services/06366ec6-9841-462f-96b4-623d5a086443"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "02d2f893-a822-4eaa-88e7-2ac80ca4b3d2",
+      "name": "AIGI Management Reports(MR)",
+      "description": "Financial Planning & Analysis Management Reports(MR)",
+      "teamId": "e786fc01-0207-4c94-8e93-7caa480fba1e",
+      "tags": [
+        "Financial Planning & Analysis",
+        "AIGI-Product-FPA"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/02d2f893-a822-4eaa-88e7-2ac80ca4b3d2/status",
+        "api": "https://api.opsgenie.com/v1/services/02d2f893-a822-4eaa-88e7-2ac80ca4b3d2"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "89fb6244-ecf0-42d8-a853-7ea10f1460c4",
+      "name": "AIGI Majesco Billing System",
+      "description": "Financial Systems Majesco Billing System",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/89fb6244-ecf0-42d8-a853-7ea10f1460c4/status",
+        "api": "https://api.opsgenie.com/v1/services/89fb6244-ecf0-42d8-a853-7ea10f1460c4"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "3040ba97-99a7-4b10-ae66-9a00481afdd4",
+      "name": "AIGI LSS/RMA nightly file update",
+      "description": "Claims Management (RMA)\tLSS/RMA nightly file update",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "Claims Management (RMA)"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/3040ba97-99a7-4b10-ae66-9a00481afdd4/status",
+        "api": "https://api.opsgenie.com/v1/services/3040ba97-99a7-4b10-ae66-9a00481afdd4"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "4558ab92-d01f-46aa-87cd-ae45e29ff929",
+      "name": "AIGI LSS - (TPA standalone)",
+      "description": "Claims Automation\tLSS - (TPA standalone)",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "Claims Automation"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/4558ab92-d01f-46aa-87cd-ae45e29ff929/status",
+        "api": "https://api.opsgenie.com/v1/services/4558ab92-d01f-46aa-87cd-ae45e29ff929"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "b7b8fd04-dbcc-4298-a2e5-026875c560c2",
+      "name": "AIGI LSRO",
+      "description": "Pricing\tLSRO",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/b7b8fd04-dbcc-4298-a2e5-026875c560c2/status",
+        "api": "https://api.opsgenie.com/v1/services/b7b8fd04-dbcc-4298-a2e5-026875c560c2"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "5446f714-07f9-40c4-9ba6-37e75bb17695",
+      "name": "AIGI Loss Sensitive Adjustment Template (move out of Excel)",
+      "description": "Satellite\tLoss Sensitive Adjustment Template (move out of Excel)",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-SAT",
+        "Satellite"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/5446f714-07f9-40c4-9ba6-37e75bb17695/status",
+        "api": "https://api.opsgenie.com/v1/services/5446f714-07f9-40c4-9ba6-37e75bb17695"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "eb3b51c3-5291-4264-a628-af4061b2edd8",
+      "name": "AIGI Loss Pick",
+      "description": "Pricing Loss Pick",
+      "teamId": "e2ac04cc-4cf2-46b6-8d13-eb3077192e3a",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/eb3b51c3-5291-4264-a628-af4061b2edd8/status",
+        "api": "https://api.opsgenie.com/v1/services/eb3b51c3-5291-4264-a628-af4061b2edd8"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "378e9398-2956-4217-9b22-116cea2c05f3",
+      "name": "AIGI Lenders System (Core)",
+      "description": "Lenders Lenders System (Core)",
+      "teamId": "4717bc2a-1905-4df7-8ac1-d532236772fa",
+      "tags": [
+        "AIGI-Product-LEN",
+        "Lenders"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/378e9398-2956-4217-9b22-116cea2c05f3/status",
+        "api": "https://api.opsgenie.com/v1/services/378e9398-2956-4217-9b22-116cea2c05f3"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "6861ab42-fd39-46a5-bc8d-00e5041f773b",
+      "name": "AIGI Lenders DM",
+      "description": "Lenders Lenders DM",
+      "teamId": "4717bc2a-1905-4df7-8ac1-d532236772fa",
+      "tags": [
+        "AIGI-Product-LEN",
+        "Lenders"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/6861ab42-fd39-46a5-bc8d-00e5041f773b/status",
+        "api": "https://api.opsgenie.com/v1/services/6861ab42-fd39-46a5-bc8d-00e5041f773b"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "c45a5c0e-7d40-495d-bb30-c755c8f6cbc4",
+      "name": "AIGI Lenders Analysis",
+      "description": "Lenders Lenders Analysis",
+      "teamId": "4717bc2a-1905-4df7-8ac1-d532236772fa",
+      "tags": [
+        "AIGI-Product-LEN",
+        "Lenders"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/c45a5c0e-7d40-495d-bb30-c755c8f6cbc4/status",
+        "api": "https://api.opsgenie.com/v1/services/c45a5c0e-7d40-495d-bb30-c755c8f6cbc4"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "5c59371e-6b19-4f47-b336-781b13523cd2",
+      "name": "AIGI Legacy TPA Data Load (2 versions UOC and Oracle)",
+      "description": "Claims Automation\tLegacy TPA Data Load (2 versions UOC and Oracle)",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "Claims Automation"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/5c59371e-6b19-4f47-b336-781b13523cd2/status",
+        "api": "https://api.opsgenie.com/v1/services/5c59371e-6b19-4f47-b336-781b13523cd2"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "78727542-b212-4da2-b502-aad45d815540",
+      "name": "AIGI Legacy LSRO",
+      "description": "Pricing Legacy LSRO",
+      "teamId": "e2ac04cc-4cf2-46b6-8d13-eb3077192e3a",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/78727542-b212-4da2-b502-aad45d815540/status",
+        "api": "https://api.opsgenie.com/v1/services/78727542-b212-4da2-b502-aad45d815540"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "d55339d1-3e44-40c4-af19-c5056dbe7cce",
+      "name": "AIGI Legacy LAE Expense Loading (Cognos Cube)",
+      "description": "Claims Automation\tLegacy LAE Expense Loading (Cognos Cube)",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "Claims Automation"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/d55339d1-3e44-40c4-af19-c5056dbe7cce/status",
+        "api": "https://api.opsgenie.com/v1/services/d55339d1-3e44-40c4-af19-c5056dbe7cce"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "edabfa87-c60f-42aa-9730-f2bf3900ef9a",
+      "name": "AIGI Large Accounts Rating Model - Through Satellite",
+      "description": "Pricing Large Accounts Rating Model - Through Satellite",
+      "teamId": "e2ac04cc-4cf2-46b6-8d13-eb3077192e3a",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/edabfa87-c60f-42aa-9730-f2bf3900ef9a/status",
+        "api": "https://api.opsgenie.com/v1/services/edabfa87-c60f-42aa-9730-f2bf3900ef9a"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "599639fa-cdc3-4910-a161-c2545097b93f",
+      "name": "AIGI Large Accounts Analytics DB (data from CNAX Rating Model, excluding batch process from ArchLink)",
+      "description": "Pricing\tLarge Accounts Analytics DB (data from CNAX Rating Model, excluding batch process from ArchLink)",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/599639fa-cdc3-4910-a161-c2545097b93f/status",
+        "api": "https://api.opsgenie.com/v1/services/599639fa-cdc3-4910-a161-c2545097b93f"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "b2ab2bbb-1e25-4e8b-b3ea-9e48c35763e4",
+      "name": "AIGI Large Accounts Analytics DB (data from CNAX Rating Model, excluding batch process from ArchLink)",
+      "description": "Pricing Large Accounts Analytics DB (data from CNAX Rating Model, excluding batch process from ArchLink)",
+      "teamId": "e2ac04cc-4cf2-46b6-8d13-eb3077192e3a",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/b2ab2bbb-1e25-4e8b-b3ea-9e48c35763e4/status",
+        "api": "https://api.opsgenie.com/v1/services/b2ab2bbb-1e25-4e8b-b3ea-9e48c35763e4"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "043dac03-12e8-42be-b766-6cb951d74e92",
+      "name": "AIGI LAARMS (A/R)",
+      "description": "Financial Systems LAARMS (A/R)",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/043dac03-12e8-42be-b766-6cb951d74e92/status",
+        "api": "https://api.opsgenie.com/v1/services/043dac03-12e8-42be-b766-6cb951d74e92"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "ae58dcf7-eee9-456a-afce-f48e155b5996",
+      "name": "AIGI Kong API Gateway",
+      "description": "Digital Services Kong API Gateway",
+      "teamId": "33ea4904-eaa6-4f50-b85c-70ba6a41176d",
+      "tags": [
+        "Digital Services",
+        "AIGI-Product-DS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/ae58dcf7-eee9-456a-afce-f48e155b5996/status",
+        "api": "https://api.opsgenie.com/v1/services/ae58dcf7-eee9-456a-afce-f48e155b5996"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "f3f24523-7da4-4811-b223-0698df19f367",
+      "name": "AIGI JPMC Access (Chase)",
+      "description": "Financial Systems JPMC Access (Chase)",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/f3f24523-7da4-4811-b223-0698df19f367/status",
+        "api": "https://api.opsgenie.com/v1/services/f3f24523-7da4-4811-b223-0698df19f367"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "200acc73-250a-44e5-aeea-6df7fefa44e8",
+      "name": "AIGI INFRA TEST",
+      "description": "Infrastructure Test Service",
+      "teamId": "dee68282-fb6d-44ec-b63d-0ab18c4b68b6",
+      "tags": [
+        "AIGI-Infrastructure Engineering"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/200acc73-250a-44e5-aeea-6df7fefa44e8/status",
+        "api": "https://api.opsgenie.com/v1/services/200acc73-250a-44e5-aeea-6df7fefa44e8"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "5b24d29c-635d-4a22-bbbd-1b4f29776684",
+      "name": "AIGI Informatica - Property",
+      "description": "PolicyWriter - Property \tInformatica - Property",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-PWPNC",
+        "PolicyWriter - Property"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/5b24d29c-635d-4a22-bbbd-1b4f29776684/status",
+        "api": "https://api.opsgenie.com/v1/services/5b24d29c-635d-4a22-bbbd-1b4f29776684"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "6688d626-add5-4731-9241-6b21997e1087",
+      "name": "AIGI Informatica - Financial & Professional Lines",
+      "description": "PolicyWriter - Financial & Professional Lines\tInformatica - Financial & Professional Lines",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-PWFPL",
+        "PolicyWriter - Financial & Professional Lines"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/6688d626-add5-4731-9241-6b21997e1087/status",
+        "api": "https://api.opsgenie.com/v1/services/6688d626-add5-4731-9241-6b21997e1087"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "e59b4a96-abb2-4fa6-826a-5b546e58a71e",
+      "name": "AIGI Informatica - Digital Solutions",
+      "description": "PolicyWriter - Digital Solutions\tInformatica - Digital Solutions",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "PolicyWriter - Digital Solutions",
+        "AIGI-Product-PWDS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/e59b4a96-abb2-4fa6-826a-5b546e58a71e/status",
+        "api": "https://api.opsgenie.com/v1/services/e59b4a96-abb2-4fa6-826a-5b546e58a71e"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "001d060a-5149-4251-aa6f-b9d497712fb8",
+      "name": "AIGI Informatica - Casualty",
+      "description": "PolicyWriter - Casualty\tInformatica - Casualty",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-PWPNC",
+        "PolicyWriter - Casualty"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/001d060a-5149-4251-aa6f-b9d497712fb8/status",
+        "api": "https://api.opsgenie.com/v1/services/001d060a-5149-4251-aa6f-b9d497712fb8"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "5ddea278-e79d-478a-ad59-03f7d11fb6fb",
+      "name": "AIGI Inception Coding Details Template (move out of Excel)",
+      "description": "Satellite\tInception Coding Details Template (move out of Excel)",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-SAT",
+        "Satellite"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/5ddea278-e79d-478a-ad59-03f7d11fb6fb/status",
+        "api": "https://api.opsgenie.com/v1/services/5ddea278-e79d-478a-ad59-03f7d11fb6fb"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "b9787b8e-56e6-4d85-91b7-ad8e0a484646",
+      "name": "AIGI ImageRight",
+      "description": "Document Mgt. & Workflow ImageRight",
+      "teamId": "5a57cc0e-82b5-4948-8851-6bd8b6d3d64f",
+      "tags": [
+        "AIGI-Product-ImageRight",
+        "Vertafore ImageRight"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/b9787b8e-56e6-4d85-91b7-ad8e0a484646/status",
+        "api": "https://api.opsgenie.com/v1/services/b9787b8e-56e6-4d85-91b7-ad8e0a484646"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "7e4390f2-648e-4ddc-b857-dfb830362ec0",
+      "name": "AIGI IBM Planning Analytics (TM1)",
+      "description": "Financial Planning & Analysis IBM Planning Analytics (TM1)",
+      "teamId": "e786fc01-0207-4c94-8e93-7caa480fba1e",
+      "tags": [
+        "Financial Planning & Analysis",
+        "AIGI-Product-FPA"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/7e4390f2-648e-4ddc-b857-dfb830362ec0/status",
+        "api": "https://api.opsgenie.com/v1/services/7e4390f2-648e-4ddc-b857-dfb830362ec0"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "8e868d26-7977-4c13-9a97-55b2e73f746b",
+      "name": "AIGI HEWC Manual Rating Template",
+      "description": "Pricing\tHEWC Manual Rating Template",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/8e868d26-7977-4c13-9a97-55b2e73f746b/status",
+        "api": "https://api.opsgenie.com/v1/services/8e868d26-7977-4c13-9a97-55b2e73f746b"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "cafbe0d1-bc76-4997-8904-308e18e30d77",
+      "name": "AIGI HEWC Manual Rating Template",
+      "description": "Pricing HEWC Manual Rating Template",
+      "teamId": "e2ac04cc-4cf2-46b6-8d13-eb3077192e3a",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/cafbe0d1-bc76-4997-8904-308e18e30d77/status",
+        "api": "https://api.opsgenie.com/v1/services/cafbe0d1-bc76-4997-8904-308e18e30d77"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "a2d682e9-eedd-4a28-8212-763a7e950812",
+      "name": "AIGI Healthcare Rating Models (Large Accounts and Facilities) templates - Through Archlink",
+      "description": "Pricing Healthcare Rating Models (Large Accounts and Facilities) templates - Through Archlink",
+      "teamId": "e2ac04cc-4cf2-46b6-8d13-eb3077192e3a",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/a2d682e9-eedd-4a28-8212-763a7e950812/status",
+        "api": "https://api.opsgenie.com/v1/services/a2d682e9-eedd-4a28-8212-763a7e950812"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "dd0ad218-597d-49c1-ae36-7f9d47c1f1df",
+      "name": "AIGI Healthcare Rating Models (Large Accounts and Facilities) templates",
+      "description": "Pricing\tHealthcare Rating Models (Large Accounts and Facilities) templates",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/dd0ad218-597d-49c1-ae36-7f9d47c1f1df/status",
+        "api": "https://api.opsgenie.com/v1/services/dd0ad218-597d-49c1-ae36-7f9d47c1f1df"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "b9be5bc0-a89e-442c-8202-6d754cdd5463",
+      "name": "AIGI Healthcare Analytics DB (not the feed from ArchLink)",
+      "description": "Pricing\tHealthcare Analytics DB (not the feed from ArchLink)",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/b9be5bc0-a89e-442c-8202-6d754cdd5463/status",
+        "api": "https://api.opsgenie.com/v1/services/b9be5bc0-a89e-442c-8202-6d754cdd5463"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "3f3a5418-f583-47f0-bb36-6cca1292efac",
+      "name": "AIGI Healthcare Analytics DB (not the feed from ArchLink)",
+      "description": "Pricing Healthcare Analytics DB (not the feed from ArchLink)",
+      "teamId": "e2ac04cc-4cf2-46b6-8d13-eb3077192e3a",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/3f3a5418-f583-47f0-bb36-6cca1292efac/status",
+        "api": "https://api.opsgenie.com/v1/services/3f3a5418-f583-47f0-bb36-6cca1292efac"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "1ac7fe3d-5267-4bcc-a72c-0516fc2fa4e3",
+      "name": "AIGI HARRY Export Views",
+      "description": "Travel & Accident HARRY Export Views",
+      "teamId": "8cc8ae20-d74b-4c07-8fcd-d32106b06337",
+      "tags": [
+        "Travel & Accident",
+        "AIGI-Product-TAH"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/1ac7fe3d-5267-4bcc-a72c-0516fc2fa4e3/status",
+        "api": "https://api.opsgenie.com/v1/services/1ac7fe3d-5267-4bcc-a72c-0516fc2fa4e3"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "dc0055b9-cebc-42c8-9728-8a603d408684",
+      "name": "AIGI Harry 1, 2, 3 & 4",
+      "description": "Enterprise Data Harry 1, 2, 3 & 4",
+      "teamId": "6352af1b-8c2f-4cfb-8f09-907d40069940",
+      "tags": [
+        "AIGI-Product-DATA",
+        "Enterprise Data"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/dc0055b9-cebc-42c8-9728-8a603d408684/status",
+        "api": "https://api.opsgenie.com/v1/services/dc0055b9-cebc-42c8-9728-8a603d408684"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "6edd91d1-dde6-458b-8f6d-74b935c23276",
+      "name": "AIGI GreatPlains",
+      "description": "Financial Systems\tGreatPlains",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "Financial Systems"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/6edd91d1-dde6-458b-8f6d-74b935c23276/status",
+        "api": "https://api.opsgenie.com/v1/services/6edd91d1-dde6-458b-8f6d-74b935c23276"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "40184ffb-2e85-4007-b93c-5796a8960a0e",
+      "name": "AIGI GreatPlains",
+      "description": "Financial Systems GreatPlains",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/40184ffb-2e85-4007-b93c-5796a8960a0e/status",
+        "api": "https://api.opsgenie.com/v1/services/40184ffb-2e85-4007-b93c-5796a8960a0e"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "242a5f4d-a661-4ebe-a85d-00bd869ee6f6",
+      "name": "AIGI Ghost Draft",
+      "description": "Forms Ghost Draft",
+      "teamId": "5174a869-ca4c-41c5-9ea1-8c066e76bd62",
+      "tags": [
+        "Forms",
+        "AIGI-Product-FORM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/242a5f4d-a661-4ebe-a85d-00bd869ee6f6/status",
+        "api": "https://api.opsgenie.com/v1/services/242a5f4d-a661-4ebe-a85d-00bd869ee6f6"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "ee883903-0424-4fbe-8096-dcacaeb3662a",
+      "name": "AIGI FNOL Automation",
+      "description": "TPA Claims FNOL Automation",
+      "teamId": "e5b8fdcf-d39a-4504-baad-5f7e1d057ec9",
+      "tags": [
+        "TPA Claims",
+        "AIGI-Product-CLMA"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/ee883903-0424-4fbe-8096-dcacaeb3662a/status",
+        "api": "https://api.opsgenie.com/v1/services/ee883903-0424-4fbe-8096-dcacaeb3662a"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "0bedd747-8f38-4afa-8e25-9a4586e569ff",
+      "name": "AIGI Financial Reporting",
+      "description": "Enterprise Data Financial Reporting",
+      "teamId": "6352af1b-8c2f-4cfb-8f09-907d40069940",
+      "tags": [
+        "AIGI-Product-DATA",
+        "Enterprise Data"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/0bedd747-8f38-4afa-8e25-9a4586e569ff/status",
+        "api": "https://api.opsgenie.com/v1/services/0bedd747-8f38-4afa-8e25-9a4586e569ff"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "a029b563-d517-4599-ad0d-d2572146d48a",
+      "name": "AIGI Financial Extracts",
+      "description": "Claims Management (RMA)\tFinancial Extracts",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-CLMMGT",
+        "Claims Management (RMA)"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/a029b563-d517-4599-ad0d-d2572146d48a/status",
+        "api": "https://api.opsgenie.com/v1/services/a029b563-d517-4599-ad0d-d2572146d48a"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "c455e95f-c4f1-43f0-b125-58ed9e9c597f",
+      "name": "AIGI Esker Fax Software",
+      "description": "Lenders Esker Fax Software",
+      "teamId": "4717bc2a-1905-4df7-8ac1-d532236772fa",
+      "tags": [
+        "AIGI-Product-LEN",
+        "Lenders"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/c455e95f-c4f1-43f0-b125-58ed9e9c597f/status",
+        "api": "https://api.opsgenie.com/v1/services/c455e95f-c4f1-43f0-b125-58ed9e9c597f"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "94351f2f-ca2c-48eb-b711-4802dda3e2fa",
+      "name": "AIGI Esend",
+      "description": "Lenders Esend",
+      "teamId": "4717bc2a-1905-4df7-8ac1-d532236772fa",
+      "tags": [
+        "AIGI-Product-LEN",
+        "Lenders"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/94351f2f-ca2c-48eb-b711-4802dda3e2fa/status",
+        "api": "https://api.opsgenie.com/v1/services/94351f2f-ca2c-48eb-b711-4802dda3e2fa"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "31ec8350-1073-4a35-807b-aecd72cfc43e",
+      "name": "AIGI Enterprise Data Stores (Strategic)",
+      "description": "Enterprise Data Enterprise Data Stores (Strategic)",
+      "teamId": "6352af1b-8c2f-4cfb-8f09-907d40069940",
+      "tags": [
+        "AIGI-Product-DATA",
+        "Enterprise Data"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/31ec8350-1073-4a35-807b-aecd72cfc43e/status",
+        "api": "https://api.opsgenie.com/v1/services/31ec8350-1073-4a35-807b-aecd72cfc43e"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "59e6482c-4d8a-4615-ac8e-5aa8d3285d90",
+      "name": "AIGI EDW(Legacy)",
+      "description": "Enterprise Data EDW(Legacy)",
+      "teamId": "6352af1b-8c2f-4cfb-8f09-907d40069940",
+      "tags": [
+        "AIGI-Product-DATA",
+        "Enterprise Data"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/59e6482c-4d8a-4615-ac8e-5aa8d3285d90/status",
+        "api": "https://api.opsgenie.com/v1/services/59e6482c-4d8a-4615-ac8e-5aa8d3285d90"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "f305ffe3-6b85-492c-a45e-d5c9cbc390de",
+      "name": "AIGI EDW",
+      "description": "Enterprise Data\tEDW",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-DATA",
+        "Enterprise Data"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/f305ffe3-6b85-492c-a45e-d5c9cbc390de/status",
+        "api": "https://api.opsgenie.com/v1/services/f305ffe3-6b85-492c-a45e-d5c9cbc390de"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "ae4fa40d-4d8a-4c73-9fb6-e1b2cc904991",
+      "name": "AIGI DocuSign",
+      "description": "Forms DocuSign",
+      "teamId": "5174a869-ca4c-41c5-9ea1-8c066e76bd62",
+      "tags": [
+        "Forms",
+        "AIGI-Product-FORM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/ae4fa40d-4d8a-4c73-9fb6-e1b2cc904991/status",
+        "api": "https://api.opsgenie.com/v1/services/ae4fa40d-4d8a-4c73-9fb6-e1b2cc904991"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "9d944b4f-9dd7-4929-89cf-c6fe1f178a76",
+      "name": "AIGI Data Integrator",
+      "description": "PolicyWriter - Property Data Integrator",
+      "teamId": "477f6250-de88-4176-91b8-5f80d4a2006b",
+      "tags": [
+        "AIGI-Product-PWPRP"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/9d944b4f-9dd7-4929-89cf-c6fe1f178a76/status",
+        "api": "https://api.opsgenie.com/v1/services/9d944b4f-9dd7-4929-89cf-c6fe1f178a76"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "7cc7422b-f973-432e-a9e1-9d5b48a4fc55",
+      "name": "AIGI Data Integrator",
+      "description": "PolicyWriter -  Casualty Data Integrator",
+      "teamId": "42f43403-996e-4635-9104-234d94d19b2e",
+      "tags": [
+        "AIGI-Product-PWCAS",
+        "PolicyWriter -  Casualty"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/7cc7422b-f973-432e-a9e1-9d5b48a4fc55/status",
+        "api": "https://api.opsgenie.com/v1/services/7cc7422b-f973-432e-a9e1-9d5b48a4fc55"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "89ba23a4-4bd6-4ced-9adb-290c82f60cc7",
+      "name": "AIGI Data Integrator",
+      "description": "PolicyWriter - Financial & Professional Lines Data Integrator",
+      "teamId": "f833ec43-1348-4d85-8f4f-be1ec0a56f53",
+      "tags": [
+        "AIGI-Product-PWFPL",
+        "PolicyWriter - Financial & Professional Lines"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/89ba23a4-4bd6-4ced-9adb-290c82f60cc7/status",
+        "api": "https://api.opsgenie.com/v1/services/89ba23a4-4bd6-4ced-9adb-290c82f60cc7"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "f418c7ea-37a6-478c-8262-6b64cee9a11c",
+      "name": "AIGI Data Integrator",
+      "description": "PolicyWriter Digital Solutions Data Integrator",
+      "teamId": "f9abbd0f-bcc7-4690-944f-9e5493e51d65",
+      "tags": [
+        "PolicyWriter Digital Solutions",
+        "AIGI-Product-PWPDS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/f418c7ea-37a6-478c-8262-6b64cee9a11c/status",
+        "api": "https://api.opsgenie.com/v1/services/f418c7ea-37a6-478c-8262-6b64cee9a11c"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "d67c8e12-b60b-4ed8-b0f8-bf75459828f2",
+      "name": "AIGI CPP",
+      "description": "PolicyWriter -  Casualty CPP",
+      "teamId": "42f43403-996e-4635-9104-234d94d19b2e",
+      "tags": [
+        "AIGI-Product-PWCAS",
+        "PolicyWriter -  Casualty"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/d67c8e12-b60b-4ed8-b0f8-bf75459828f2/status",
+        "api": "https://api.opsgenie.com/v1/services/d67c8e12-b60b-4ed8-b0f8-bf75459828f2"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "18147c42-47b7-4696-91f9-001dfd06368d",
+      "name": "AIGI Concur (T&E)",
+      "description": "Financial Systems Concur (T&E)",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/18147c42-47b7-4696-91f9-001dfd06368d/status",
+        "api": "https://api.opsgenie.com/v1/services/18147c42-47b7-4696-91f9-001dfd06368d"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "53af300e-1bfd-4ed3-bc63-b04597e2d372",
+      "name": "AIGI ConceptOne",
+      "description": "McNeil\tConceptOne",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "McNeil"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/53af300e-1bfd-4ed3-bc63-b04597e2d372/status",
+        "api": "https://api.opsgenie.com/v1/services/53af300e-1bfd-4ed3-bc63-b04597e2d372"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "2608333e-431f-489c-a81b-0cadaaebcf69",
+      "name": "AIGI ConceptOne",
+      "description": "McNeil ConceptOne",
+      "teamId": "f54a883b-cbf9-4576-b133-dae2ea8883ae",
+      "tags": [
+        "AIGI-Product-MCN",
+        "McNeil"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/2608333e-431f-489c-a81b-0cadaaebcf69/status",
+        "api": "https://api.opsgenie.com/v1/services/2608333e-431f-489c-a81b-0cadaaebcf69"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "3382ff05-d11a-4f5c-874f-a354aa11371f",
+      "name": "AIGI Collateral Calc Templates",
+      "description": "Pricing\tCollateral Calc Templates",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/3382ff05-d11a-4f5c-874f-a354aa11371f/status",
+        "api": "https://api.opsgenie.com/v1/services/3382ff05-d11a-4f5c-874f-a354aa11371f"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "5bf2df16-0ed3-47b8-8023-259955943792",
+      "name": "AIGI Collateral Calc Templates",
+      "description": "Pricing Collateral Calc Templates",
+      "teamId": "e2ac04cc-4cf2-46b6-8d13-eb3077192e3a",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/5bf2df16-0ed3-47b8-8023-259955943792/status",
+        "api": "https://api.opsgenie.com/v1/services/5bf2df16-0ed3-47b8-8023-259955943792"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "216c7ea0-38c5-445e-910b-2bb1e70bfc10",
+      "name": "AIGI Cognos - Enterprise Reporting",
+      "description": "Enterprise Reporting\tCognos - Enterprise Reporting",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-DATA",
+        "Enterprise Reporting"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/216c7ea0-38c5-445e-910b-2bb1e70bfc10/status",
+        "api": "https://api.opsgenie.com/v1/services/216c7ea0-38c5-445e-910b-2bb1e70bfc10"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "378ae3b7-9e69-40c1-a824-7e8666a5f0c3",
+      "name": "AIGI Cognos",
+      "description": "Enterprise Reporting Cognos",
+      "teamId": "4f9d5774-97cb-4485-a7e0-3cdaf95e0639",
+      "tags": [
+        "AIGI-Product-REPT",
+        "Enterprise Reporting"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/378ae3b7-9e69-40c1-a824-7e8666a5f0c3/status",
+        "api": "https://api.opsgenie.com/v1/services/378ae3b7-9e69-40c1-a824-7e8666a5f0c3"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "f4cf772a-20f6-473c-8b35-71e65ff6ddd9",
+      "name": "AIGI Coding Details - Legacy Implementation",
+      "description": "Pricing Coding Details - Legacy Implementation",
+      "teamId": "e2ac04cc-4cf2-46b6-8d13-eb3077192e3a",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/f4cf772a-20f6-473c-8b35-71e65ff6ddd9/status",
+        "api": "https://api.opsgenie.com/v1/services/f4cf772a-20f6-473c-8b35-71e65ff6ddd9"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "186499a1-913e-4b0e-b9fe-eb7687e3cec7",
+      "name": "AIGI CNAX Rating Model template - Legacy (Decommissioned)",
+      "description": "Pricing CNAX Rating Model template - Legacy (Decommissioned)",
+      "teamId": "e2ac04cc-4cf2-46b6-8d13-eb3077192e3a",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/186499a1-913e-4b0e-b9fe-eb7687e3cec7/status",
+        "api": "https://api.opsgenie.com/v1/services/186499a1-913e-4b0e-b9fe-eb7687e3cec7"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "02f6a8f8-1612-4657-8eab-63b67c11e8ac",
+      "name": "AIGI CNAX Rating Model template",
+      "description": "Pricing\tCNAX Rating Model template",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/02f6a8f8-1612-4657-8eab-63b67c11e8ac/status",
+        "api": "https://api.opsgenie.com/v1/services/02f6a8f8-1612-4657-8eab-63b67c11e8ac"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "be0b86a7-2fcc-4a33-9cbc-7e2fb40b8ae8",
+      "name": "AIGI CNAX Nightly Job Refresh",
+      "description": "Pricing CNAX Nightly Job Refresh",
+      "teamId": "e2ac04cc-4cf2-46b6-8d13-eb3077192e3a",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/be0b86a7-2fcc-4a33-9cbc-7e2fb40b8ae8/status",
+        "api": "https://api.opsgenie.com/v1/services/be0b86a7-2fcc-4a33-9cbc-7e2fb40b8ae8"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "15ae65ba-01c0-4c69-b7be-51b63dc42c0a",
+      "name": "AIGI CNAX Document Sections (prep xml templates for ArchLink implementation)",
+      "description": "Pricing\tCNAX Document Sections (prep xml templates for ArchLink implementation)",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/15ae65ba-01c0-4c69-b7be-51b63dc42c0a/status",
+        "api": "https://api.opsgenie.com/v1/services/15ae65ba-01c0-4c69-b7be-51b63dc42c0a"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "48acaf46-3c03-467c-9359-c1b84f0ae74a",
+      "name": "AIGI Clearance API from ArchLink to Satellite",
+      "description": "Pricing\tClearance API from ArchLink to Satellite",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/48acaf46-3c03-467c-9359-c1b84f0ae74a/status",
+        "api": "https://api.opsgenie.com/v1/services/48acaf46-3c03-467c-9359-c1b84f0ae74a"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "5d604cb2-db29-483f-a049-03af8957d4ea",
+      "name": "AIGI Clarity",
+      "description": "Financial Systems Clarity",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/5d604cb2-db29-483f-a049-03af8957d4ea/status",
+        "api": "https://api.opsgenie.com/v1/services/5d604cb2-db29-483f-a049-03af8957d4ea"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "c2d3853e-19b8-458a-a55c-7a7f7e9e402b",
+      "name": "AIGI Claims Repository",
+      "description": "Claims Automation\tClaims Repository",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "Claims Automation"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/c2d3853e-19b8-458a-a55c-7a7f7e9e402b/status",
+        "api": "https://api.opsgenie.com/v1/services/c2d3853e-19b8-458a-a55c-7a7f7e9e402b"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "ec3ad282-4d2b-4c2c-b15b-ff29fc205fe9",
+      "name": "AIGI Claims Portal/New Technology",
+      "description": "Claims Automation\tClaims Portal/New Technology",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "Claims Automation"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/ec3ad282-4d2b-4c2c-b15b-ff29fc205fe9/status",
+        "api": "https://api.opsgenie.com/v1/services/ec3ad282-4d2b-4c2c-b15b-ff29fc205fe9"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "cd27e98c-9d26-4fc2-af26-e3b82f7e57db",
+      "name": "AIGI Claims Portal",
+      "description": "Travel & Accident Claims Portal",
+      "teamId": "8cc8ae20-d74b-4c07-8fcd-d32106b06337",
+      "tags": [
+        "Travel & Accident",
+        "AIGI-Product-TAH"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/cd27e98c-9d26-4fc2-af26-e3b82f7e57db/status",
+        "api": "https://api.opsgenie.com/v1/services/cd27e98c-9d26-4fc2-af26-e3b82f7e57db"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "084d3ab8-dae6-4928-a3c3-02b4b7c348b3",
+      "name": "AIGI Claims Portal",
+      "description": "TPA Claims Claims Portal",
+      "teamId": "e5b8fdcf-d39a-4504-baad-5f7e1d057ec9",
+      "tags": [
+        "AIGI-Product-CLMA"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/084d3ab8-dae6-4928-a3c3-02b4b7c348b3/status",
+        "api": "https://api.opsgenie.com/v1/services/084d3ab8-dae6-4928-a3c3-02b4b7c348b3"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "bded3b6c-9fee-4855-a4d0-da5045b9b72e",
+      "name": "AIGI Claims Correction Facility (Legacy)",
+      "description": "Claims Management (RMA) Claims Correction Facility (Legacy)",
+      "teamId": "96f8943d-c40a-42b6-a1dc-eabeb9d36344",
+      "tags": [
+        "Claims Management (RMA)",
+        "AIGI-Product-TPA"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/bded3b6c-9fee-4855-a4d0-da5045b9b72e/status",
+        "api": "https://api.opsgenie.com/v1/services/bded3b6c-9fee-4855-a4d0-da5045b9b72e"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "414235b7-9f82-4ab3-9b95-b1fa992f04ce",
+      "name": "AIGI CDMSPoller",
+      "description": "Lenders CDMSPoller",
+      "teamId": "4717bc2a-1905-4df7-8ac1-d532236772fa",
+      "tags": [
+        "AIGI-Product-LEN",
+        "Lenders"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/414235b7-9f82-4ab3-9b95-b1fa992f04ce/status",
+        "api": "https://api.opsgenie.com/v1/services/414235b7-9f82-4ab3-9b95-b1fa992f04ce"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "db7112b8-2e2c-4ff7-93c5-76b831fc0fad",
+      "name": "AIGI CCR",
+      "description": "TPA Claims CCR",
+      "teamId": "e5b8fdcf-d39a-4504-baad-5f7e1d057ec9",
+      "tags": [
+        "TPA Claims",
+        "AIGI-Product-CLMA"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/db7112b8-2e2c-4ff7-93c5-76b831fc0fad/status",
+        "api": "https://api.opsgenie.com/v1/services/db7112b8-2e2c-4ff7-93c5-76b831fc0fad"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "c336149e-9aa5-498a-ad7b-8bd2f66a3f56",
+      "name": "AIGI CCG (Claims Correction grid)",
+      "description": "Claims Automation\tCCG (Claims Correction grid)",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "Claims Automation"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/c336149e-9aa5-498a-ad7b-8bd2f66a3f56/status",
+        "api": "https://api.opsgenie.com/v1/services/c336149e-9aa5-498a-ad7b-8bd2f66a3f56"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "81a6a695-daf8-4738-a87e-4496c3d06513",
+      "name": "AIGI CAT Tools (Portfolio Analysis and Risk)",
+      "description": "Arch UW Workbench\tCAT Tools (Portfolio Analysis and Risk)",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "Arch UW Workbench"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/81a6a695-daf8-4738-a87e-4496c3d06513/status",
+        "api": "https://api.opsgenie.com/v1/services/81a6a695-daf8-4738-a87e-4496c3d06513"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "33f7b9f6-385c-441c-966b-64a3e700f88b",
+      "name": "AIGI CAT Tools (Portfolio Analysis and Risk)",
+      "description": "Arch UW Workbench CAT Tools (Portfolio Analysis and Risk)",
+      "teamId": "a420b5f2-690c-40df-ab34-1735e6155836",
+      "tags": [
+        "Arch UW Workbench",
+        "AIGI-Product-VEN"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/33f7b9f6-385c-441c-966b-64a3e700f88b/status",
+        "api": "https://api.opsgenie.com/v1/services/33f7b9f6-385c-441c-966b-64a3e700f88b"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "1ee3449d-4dc1-4cf5-b551-07daa4b3ebde",
+      "name": "AIGI CashPro (BoA)",
+      "description": "Financial Systems CashPro (BoA)",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/1ee3449d-4dc1-4cf5-b551-07daa4b3ebde/status",
+        "api": "https://api.opsgenie.com/v1/services/1ee3449d-4dc1-4cf5-b551-07daa4b3ebde"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "e308d5ba-981d-4cbf-a922-cfbc64c93ca8",
+      "name": "AIGI BOSS One off - Sharepoint",
+      "description": "Claims Management (RMA) BOSS One off - Sharepoint",
+      "teamId": "30f338d7-ca2c-449e-b74b-806559bed278",
+      "tags": [
+        "AIGI-Product-CLMMGT",
+        "Claims Management (RMA)"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/e308d5ba-981d-4cbf-a922-cfbc64c93ca8/status",
+        "api": "https://api.opsgenie.com/v1/services/e308d5ba-981d-4cbf-a922-cfbc64c93ca8"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "487df856-e854-4761-affa-9c040b6fd14f",
+      "name": "AIGI BOSS",
+      "description": "ArchLink/CRM BOSS",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/487df856-e854-4761-affa-9c040b6fd14f/status",
+        "api": "https://api.opsgenie.com/v1/services/487df856-e854-4761-affa-9c040b6fd14f"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "195bbde4-6361-4709-b903-29b325b3d712",
+      "name": "AIGI Bordereaux Data Feeds",
+      "description": "Programs Bordereaux Data Feeds",
+      "teamId": "4e33ba5d-da1a-44e6-ae6c-7511af5a8296",
+      "tags": [
+        "Programs",
+        "AIGI-Product-PROG"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/195bbde4-6361-4709-b903-29b325b3d712/status",
+        "api": "https://api.opsgenie.com/v1/services/195bbde4-6361-4709-b903-29b325b3d712"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "7f3d5c5f-a805-4485-b2b4-b8febe3f2e3e",
+      "name": "AIGI Bisa",
+      "description": "PL Bisa",
+      "teamId": "fd11c765-2204-4c5b-9ad7-98ba7182840e",
+      "tags": [
+        "AIGI-Product-PL",
+        "PL"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/7f3d5c5f-a805-4485-b2b4-b8febe3f2e3e/status",
+        "api": "https://api.opsgenie.com/v1/services/7f3d5c5f-a805-4485-b2b4-b8febe3f2e3e"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "406a43ba-726a-416d-abb5-968c4e7046b5",
+      "name": "AIGI Bill Scrubbing Automation",
+      "description": "TPA Claims Bill Scrubbing Automation",
+      "teamId": "e5b8fdcf-d39a-4504-baad-5f7e1d057ec9",
+      "tags": [
+        "TPA Claims",
+        "AIGI-Product-CLMA"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/406a43ba-726a-416d-abb5-968c4e7046b5/status",
+        "api": "https://api.opsgenie.com/v1/services/406a43ba-726a-416d-abb5-968c4e7046b5"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "c8142fc1-e336-454c-bccf-66d44b5b2379",
+      "name": "AIGI BAMS",
+      "description": "Surety BAMS",
+      "teamId": "e0a124dd-b346-491c-9808-ee2c779f718e",
+      "tags": [
+        "Surety",
+        "AIGI-Product-SUR"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/c8142fc1-e336-454c-bccf-66d44b5b2379/status",
+        "api": "https://api.opsgenie.com/v1/services/c8142fc1-e336-454c-bccf-66d44b5b2379"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "8e04e2d7-fc02-4381-a5a1-dc2d43e6618f",
+      "name": "AIGI Auth0",
+      "description": "Digital Services Auth0",
+      "teamId": "33ea4904-eaa6-4f50-b85c-70ba6a41176d",
+      "tags": [
+        "Digital Services",
+        "AIGI-Product-DS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/8e04e2d7-fc02-4381-a5a1-dc2d43e6618f/status",
+        "api": "https://api.opsgenie.com/v1/services/8e04e2d7-fc02-4381-a5a1-dc2d43e6618f"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "255e100d-026a-4786-9287-0393d63bc268",
+      "name": "AIGI Audit Stmt & Coding Details Template (move out of Excel)",
+      "description": "Satellite\tAudit Stmt & Coding Details Template (move out of Excel)",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-SAT",
+        "Satellite"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/255e100d-026a-4786-9287-0393d63bc268/status",
+        "api": "https://api.opsgenie.com/v1/services/255e100d-026a-4786-9287-0393d63bc268"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "c4c33dc9-4baf-4248-b213-33ca593ee602",
+      "name": "AIGI Attach Document",
+      "description": "Lenders Attach Document",
+      "teamId": "4717bc2a-1905-4df7-8ac1-d532236772fa",
+      "tags": [
+        "AIGI-Product-LEN",
+        "Lenders"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/c4c33dc9-4baf-4248-b213-33ca593ee602/status",
+        "api": "https://api.opsgenie.com/v1/services/c4c33dc9-4baf-4248-b213-33ca593ee602"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "27dd83cb-e2f4-48b4-bbd3-f9168bfdffa8",
+      "name": "AIGI ATGISendFile",
+      "description": "Lenders ATGISendFile",
+      "teamId": "4717bc2a-1905-4df7-8ac1-d532236772fa",
+      "tags": [
+        "AIGI-Product-LEN",
+        "Lenders"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/27dd83cb-e2f4-48b4-bbd3-f9168bfdffa8/status",
+        "api": "https://api.opsgenie.com/v1/services/27dd83cb-e2f4-48b4-bbd3-f9168bfdffa8"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "c7935890-1ef0-460d-9dbf-09dff71d6c0c",
+      "name": "AIGI ARMS/ARMS Canada (A/R)",
+      "description": "Financial Systems ARMS/ARMS Canada (A/R)",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/c7935890-1ef0-460d-9dbf-09dff71d6c0c/status",
+        "api": "https://api.opsgenie.com/v1/services/c7935890-1ef0-460d-9dbf-09dff71d6c0c"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "1736f5ef-1833-4f91-9919-d124aef569d1",
+      "name": "AIGI ArchTValueService",
+      "description": "Lenders ArchTValueService",
+      "teamId": "4717bc2a-1905-4df7-8ac1-d532236772fa",
+      "tags": [
+        "AIGI-Product-LEN",
+        "Lenders"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/1736f5ef-1833-4f91-9919-d124aef569d1/status",
+        "api": "https://api.opsgenie.com/v1/services/1736f5ef-1833-4f91-9919-d124aef569d1"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "6fe771d4-5bd5-43a7-9507-9cbfa9669efc",
+      "name": "AIGI ArchTab (A/P)",
+      "description": "Financial Systems ArchTab (A/P)",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/6fe771d4-5bd5-43a7-9507-9cbfa9669efc/status",
+        "api": "https://api.opsgenie.com/v1/services/6fe771d4-5bd5-43a7-9507-9cbfa9669efc"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "58c3385e-40ae-43fd-9f43-c2b399ef8922",
+      "name": "AIGI ArchPortal (Arch Digital Connect)",
+      "description": "ArchPortal (Arch Digital Connect)",
+      "teamId": "270072e1-109a-4b46-9dbc-b4e25a100020",
+      "tags": [
+        "AIGI-Product-AIP",
+        "ArchPortal (Arch Digital Connect)"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/58c3385e-40ae-43fd-9f43-c2b399ef8922/status",
+        "api": "https://api.opsgenie.com/v1/services/58c3385e-40ae-43fd-9f43-c2b399ef8922"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "da52d717-3f4e-493f-9ef2-a2fc8d8d75b5",
+      "name": "AIGI ArchPlus",
+      "description": "PL ArchPlus",
+      "teamId": "fd11c765-2204-4c5b-9ad7-98ba7182840e",
+      "tags": [
+        "AIGI-Product-PL",
+        "PL"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/da52d717-3f4e-493f-9ef2-a2fc8d8d75b5/status",
+        "api": "https://api.opsgenie.com/v1/services/da52d717-3f4e-493f-9ef2-a2fc8d8d75b5"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "ffd032b2-9d99-4186-bd17-e0f5214a279b",
+      "name": "AIGI ArchPay (A/P)",
+      "description": "Financial Systems ArchPay (A/P)",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/ffd032b2-9d99-4186-bd17-e0f5214a279b/status",
+        "api": "https://api.opsgenie.com/v1/services/ffd032b2-9d99-4186-bd17-e0f5214a279b"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "4be3bb18-7e7b-4533-9946-cc5579b2fe82",
+      "name": "AIGI ArchMatch (A/P)",
+      "description": "Financial Systems ArchMatch (A/P)",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/4be3bb18-7e7b-4533-9946-cc5579b2fe82/status",
+        "api": "https://api.opsgenie.com/v1/services/4be3bb18-7e7b-4533-9946-cc5579b2fe82"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "3fd11a0f-8429-4718-8e2f-aaaefcdcf9ba",
+      "name": "AIGI ArchLink - XS Workers Comp",
+      "description": "ArchLink/CRM ArchLink - XS Workers Comp",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/3fd11a0f-8429-4718-8e2f-aaaefcdcf9ba/status",
+        "api": "https://api.opsgenie.com/v1/services/3fd11a0f-8429-4718-8e2f-aaaefcdcf9ba"
+      },
+      "isExternal": false
+    }
+  ],
+  "paging": {
+    "next": "https://api.opsgenie.com/v1/services?limit=100&sort=name&offset=201&order=desc",
+    "first": "https://api.opsgenie.com/v1/services?limit=100&sort=name&offset=0&order=desc",
+    "last": "https://api.opsgenie.com/v1/services?limit=100&sort=name&offset=200&order=desc"
+  },
+  "took": 0.026,
+  "requestId": "d1eb10ee-440b-4036-8623-25e48566dbc5"
+}
+{
+  "totalCount": 250,
+  "data": [
+    {
+      "id": "7b212ce2-25d2-4785-8b32-775370d21aec",
+      "name": "AIGI ArchLink - User",
+      "description": "ArchLink/CRM ArchLink - User",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/7b212ce2-25d2-4785-8b32-775370d21aec/status",
+        "api": "https://api.opsgenie.com/v1/services/7b212ce2-25d2-4785-8b32-775370d21aec"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "5657b9fa-5031-4e45-92cc-b4af7e8f5509",
+      "name": "AIGI ArchLink - Submission",
+      "description": "ArchLink/CRM ArchLink - Submission",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/5657b9fa-5031-4e45-92cc-b4af7e8f5509/status",
+        "api": "https://api.opsgenie.com/v1/services/5657b9fa-5031-4e45-92cc-b4af7e8f5509"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "48d1d313-3249-4c90-9be2-5a856d253215",
+      "name": "AIGI ArchLink - Shell",
+      "description": "ArchLink/CRM ArchLink - Shell",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/48d1d313-3249-4c90-9be2-5a856d253215/status",
+        "api": "https://api.opsgenie.com/v1/services/48d1d313-3249-4c90-9be2-5a856d253215"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "13351efb-2b61-44bc-8394-2efaa898b041",
+      "name": "AIGI ArchLink - Property",
+      "description": "ArchLink/CRM ArchLink - Property",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/13351efb-2b61-44bc-8394-2efaa898b041/status",
+        "api": "https://api.opsgenie.com/v1/services/13351efb-2b61-44bc-8394-2efaa898b041"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "ea48534c-78ad-4de5-aeba-dd981b28fee2",
+      "name": "AIGI ArchLink - Professional Liability",
+      "description": "ArchLink/CRM ArchLink - Professional Liability",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/ea48534c-78ad-4de5-aeba-dd981b28fee2/status",
+        "api": "https://api.opsgenie.com/v1/services/ea48534c-78ad-4de5-aeba-dd981b28fee2"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "00d86fbc-78ef-4f0a-8f3c-9ad5836f1fa9",
+      "name": "AIGI ArchLink - Producer",
+      "description": "ArchLink/CRM ArchLink - Producer",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/00d86fbc-78ef-4f0a-8f3c-9ad5836f1fa9/status",
+        "api": "https://api.opsgenie.com/v1/services/00d86fbc-78ef-4f0a-8f3c-9ad5836f1fa9"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "186d14f2-7d6b-4504-a14c-e777aa401d72",
+      "name": "AIGI ArchLink - OFAC",
+      "description": "ArchLink/CRM ArchLink - OFAC",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/186d14f2-7d6b-4504-a14c-e777aa401d72/status",
+        "api": "https://api.opsgenie.com/v1/services/186d14f2-7d6b-4504-a14c-e777aa401d72"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "ec809482-5e02-445f-a384-a2e24676afb6",
+      "name": "AIGI ArchLink - National Accounts Casualty",
+      "description": "ArchLink/CRM ArchLink - National Accounts Casualty",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/ec809482-5e02-445f-a384-a2e24676afb6/status",
+        "api": "https://api.opsgenie.com/v1/services/ec809482-5e02-445f-a384-a2e24676afb6"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "82d4c056-4b44-4712-8786-52b705666965",
+      "name": "AIGI ArchLink - LOA",
+      "description": "ArchLink/CRM ArchLink - LOA",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/82d4c056-4b44-4712-8786-52b705666965/status",
+        "api": "https://api.opsgenie.com/v1/services/82d4c056-4b44-4712-8786-52b705666965"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "0b506a1a-55dc-49fa-b434-77b939eb240e",
+      "name": "AIGI ArchLink - Large Accounts",
+      "description": "ArchLink/CRM ArchLink - Large Accounts",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/0b506a1a-55dc-49fa-b434-77b939eb240e/status",
+        "api": "https://api.opsgenie.com/v1/services/0b506a1a-55dc-49fa-b434-77b939eb240e"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "24116e9d-4763-47ad-badc-2ae4090030b4",
+      "name": "AIGI ArchLink - Healthcare",
+      "description": "ArchLink/CRM ArchLink - Healthcare",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/24116e9d-4763-47ad-badc-2ae4090030b4/status",
+        "api": "https://api.opsgenie.com/v1/services/24116e9d-4763-47ad-badc-2ae4090030b4"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "1b8beecb-8a44-410d-ab7e-28325bdc4561",
+      "name": "AIGI ArchLink - Forms Library",
+      "description": "ArchLink - Forms Library",
+      "teamId": "5174a869-ca4c-41c5-9ea1-8c066e76bd62",
+      "tags": [
+        "Forms",
+        "AIGI-Product-FORM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/1b8beecb-8a44-410d-ab7e-28325bdc4561/status",
+        "api": "https://api.opsgenie.com/v1/services/1b8beecb-8a44-410d-ab7e-28325bdc4561"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "aca04864-e390-46f2-a156-c33710c1cbe2",
+      "name": "AIGI ArchLink - Executive Assurance (Canada)",
+      "description": "ArchLink/CRM ArchLink - Executive Assurance (Canada)",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/aca04864-e390-46f2-a156-c33710c1cbe2/status",
+        "api": "https://api.opsgenie.com/v1/services/aca04864-e390-46f2-a156-c33710c1cbe2"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "a72a18eb-fef8-456d-95bf-9d28f8b41f5b",
+      "name": "AIGI ArchLink - Executive Assurance (Bermuda)",
+      "description": "ArchLink/CRM ArchLink - Executive Assurance (Bermuda)",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/a72a18eb-fef8-456d-95bf-9d28f8b41f5b/status",
+        "api": "https://api.opsgenie.com/v1/services/a72a18eb-fef8-456d-95bf-9d28f8b41f5b"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "eccfcf3e-54ca-4d04-adda-939292b303ba",
+      "name": "AIGI ArchLink - Executive Assurance",
+      "description": "ArchLink/CRM ArchLink - Executive Assurance",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/eccfcf3e-54ca-4d04-adda-939292b303ba/status",
+        "api": "https://api.opsgenie.com/v1/services/eccfcf3e-54ca-4d04-adda-939292b303ba"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "15570291-f05b-4413-bb98-fada1ab4c906",
+      "name": "AIGI ArchLink - Document",
+      "description": "ArchLink/CRM ArchLink - Document",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/15570291-f05b-4413-bb98-fada1ab4c906/status",
+        "api": "https://api.opsgenie.com/v1/services/15570291-f05b-4413-bb98-fada1ab4c906"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "408af781-0685-4cb7-8b69-82e494e95ea2",
+      "name": "AIGI ArchLink - Corporate Audit Tool",
+      "description": "ArchLink/CRM ArchLink - Corporate Audit Tool",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/408af781-0685-4cb7-8b69-82e494e95ea2/status",
+        "api": "https://api.opsgenie.com/v1/services/408af781-0685-4cb7-8b69-82e494e95ea2"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "f69c80f8-c94e-4a5f-ba8b-c2620e47570d",
+      "name": "AIGI ArchLink - Construction",
+      "description": "ArchLink/CRM ArchLink - Construction",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/f69c80f8-c94e-4a5f-ba8b-c2620e47570d/status",
+        "api": "https://api.opsgenie.com/v1/services/f69c80f8-c94e-4a5f-ba8b-c2620e47570d"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "10414877-082f-4c09-84ef-8e548dce753f",
+      "name": "AIGI ArchLink - Common",
+      "description": "ArchLink/CRM ArchLink - Common",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/10414877-082f-4c09-84ef-8e548dce753f/status",
+        "api": "https://api.opsgenie.com/v1/services/10414877-082f-4c09-84ef-8e548dce753f"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "6604a4c3-c3f5-4157-9614-0e93c43205e0",
+      "name": "AIGI ArchLink - Collateral",
+      "description": "ArchLink/CRM ArchLink - Collateral",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/6604a4c3-c3f5-4157-9614-0e93c43205e0/status",
+        "api": "https://api.opsgenie.com/v1/services/6604a4c3-c3f5-4157-9614-0e93c43205e0"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "feb39521-bc2d-4ceb-8e6f-525fe4279b72",
+      "name": "AIGI ArchLink - CNAX",
+      "description": "ArchLink/CRM ArchLink - CNAX",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/feb39521-bc2d-4ceb-8e6f-525fe4279b72/status",
+        "api": "https://api.opsgenie.com/v1/services/feb39521-bc2d-4ceb-8e6f-525fe4279b72"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "5f84bf2e-9ed6-49f9-9ea1-5d9bd42acf29",
+      "name": "AIGI ArchLink - Claims Audit Tool",
+      "description": "ArchLink/CRM ArchLink - Claims Audit Tool",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/5f84bf2e-9ed6-49f9-9ea1-5d9bd42acf29/status",
+        "api": "https://api.opsgenie.com/v1/services/5f84bf2e-9ed6-49f9-9ea1-5d9bd42acf29"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "cf914823-bff1-441a-946a-6568cbf16b18",
+      "name": "AIGI ArchLink - Casualty USA",
+      "description": "ArchLink/CRM ArchLink - Casualty USA",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/cf914823-bff1-441a-946a-6568cbf16b18/status",
+        "api": "https://api.opsgenie.com/v1/services/cf914823-bff1-441a-946a-6568cbf16b18"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "d2597387-bd47-44f9-854e-e8a0bda68b27",
+      "name": "AIGI ArchLink - Casualty Canada",
+      "description": "ArchLink/CRM ArchLink - Casualty Canada",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/d2597387-bd47-44f9-854e-e8a0bda68b27/status",
+        "api": "https://api.opsgenie.com/v1/services/d2597387-bd47-44f9-854e-e8a0bda68b27"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "0651c8f0-a1c9-4684-a093-a422bf492428",
+      "name": "AIGI ArchLink - Bank",
+      "description": "ArchLink API",
+      "teamId": null,
+      "tags": [
+        "AIGI"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/0651c8f0-a1c9-4684-a093-a422bf492428/status",
+        "api": "https://api.opsgenie.com/v1/services/0651c8f0-a1c9-4684-a093-a422bf492428"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "055715a3-4022-41d6-8d52-be09ded3e302",
+      "name": "AIGI ArchLink - Bank",
+      "description": "ArchLink/CRM ArchLink - Bank",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/055715a3-4022-41d6-8d52-be09ded3e302/status",
+        "api": "https://api.opsgenie.com/v1/services/055715a3-4022-41d6-8d52-be09ded3e302"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "56311bb5-1515-4583-9718-710e8002a752",
+      "name": "AIGI ArchLink - AIMS Dashboard",
+      "description": "ArchLink/CRM ArchLink - AIMS Dashboard",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/56311bb5-1515-4583-9718-710e8002a752/status",
+        "api": "https://api.opsgenie.com/v1/services/56311bb5-1515-4583-9718-710e8002a752"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "9ab5cef6-01f3-4e38-9ef4-21c81e77a6e6",
+      "name": "AIGI ArchLink - Account",
+      "description": "ArchLink/CRM ArchLink - Account",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/9ab5cef6-01f3-4e38-9ef4-21c81e77a6e6/status",
+        "api": "https://api.opsgenie.com/v1/services/9ab5cef6-01f3-4e38-9ef4-21c81e77a6e6"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "a2389fe7-a73d-49e7-a052-70a502418172",
+      "name": "AIGI ArchLink - Accident and Health",
+      "description": "ArchLink/CRM ArchLink - Accident and Health",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/a2389fe7-a73d-49e7-a052-70a502418172/status",
+        "api": "https://api.opsgenie.com/v1/services/a2389fe7-a73d-49e7-a052-70a502418172"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "8a2bbcde-e744-408f-8165-8c3899db4bba",
+      "name": "AIGI ArchIntegrate",
+      "description": "Digital Services ArchIntegrate",
+      "teamId": "33ea4904-eaa6-4f50-b85c-70ba6a41176d",
+      "tags": [
+        "Digital Services",
+        "AIGI-Product-DS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/8a2bbcde-e744-408f-8165-8c3899db4bba/status",
+        "api": "https://api.opsgenie.com/v1/services/8a2bbcde-e744-408f-8165-8c3899db4bba"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "84f7f910-7a06-4543-89c2-1cd643a2a2f1",
+      "name": "AIGI ArchConnect",
+      "description": "Digital Services ArchConnect",
+      "teamId": "33ea4904-eaa6-4f50-b85c-70ba6a41176d",
+      "tags": [
+        "Digital Services",
+        "AIGI-Product-DS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/84f7f910-7a06-4543-89c2-1cd643a2a2f1/status",
+        "api": "https://api.opsgenie.com/v1/services/84f7f910-7a06-4543-89c2-1cd643a2a2f1"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "fa40e65c-ea4d-4a8d-81e0-060019d156f3",
+      "name": "AIGI Arch Link - NIPR (Producer Database)",
+      "description": "ArchLink/CRM Arch Link - NIPR (Producer Database)",
+      "teamId": "7de31fda-f670-48b7-a14c-68fd96c56bc2",
+      "tags": [
+        "AIGI-Product-ALCRM",
+        "ArchLink/CRM"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/fa40e65c-ea4d-4a8d-81e0-060019d156f3/status",
+        "api": "https://api.opsgenie.com/v1/services/fa40e65c-ea4d-4a8d-81e0-060019d156f3"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "8ed758be-e2cb-48cc-bcec-d30dd5ee013a",
+      "name": "AIGI Application Xtender",
+      "description": "Financial Systems Application Xtender",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/8ed758be-e2cb-48cc-bcec-d30dd5ee013a/status",
+        "api": "https://api.opsgenie.com/v1/services/8ed758be-e2cb-48cc-bcec-d30dd5ee013a"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "1572631d-80de-4ae9-8010-21952ccc9788",
+      "name": "AIGI API Adapter",
+      "description": "Policy Decisions (PD) API Adapter",
+      "teamId": "d2cc4261-1f8c-4327-9bc0-1522529a1757",
+      "tags": [
+        "Policy Decisions (PD)",
+        "AIGI-Product-DigitalWINS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/1572631d-80de-4ae9-8010-21952ccc9788/status",
+        "api": "https://api.opsgenie.com/v1/services/1572631d-80de-4ae9-8010-21952ccc9788"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "84c24949-1e78-437d-b554-5ac2f2bc0557",
+      "name": "AIGI APEX",
+      "description": "Financial Systems APEX",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/84c24949-1e78-437d-b554-5ac2f2bc0557/status",
+        "api": "https://api.opsgenie.com/v1/services/84c24949-1e78-437d-b554-5ac2f2bc0557"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "114780fc-1e86-4bea-8492-f6e58b33a40b",
+      "name": "AIGI AMTRAM",
+      "description": "Pricing AMTRAM",
+      "teamId": "e2ac04cc-4cf2-46b6-8d13-eb3077192e3a",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/114780fc-1e86-4bea-8492-f6e58b33a40b/status",
+        "api": "https://api.opsgenie.com/v1/services/114780fc-1e86-4bea-8492-f6e58b33a40b"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "266b5a9d-1c0f-44fb-b7f1-780c75bac715",
+      "name": "AIGI AIR",
+      "description": "CAT Modeling AIR",
+      "teamId": "00ab34fb-740f-4f6a-853f-d2bd7c627da9",
+      "tags": [
+        "AIGI-Product-CAT",
+        "CAT Modeling"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/266b5a9d-1c0f-44fb-b7f1-780c75bac715/status",
+        "api": "https://api.opsgenie.com/v1/services/266b5a9d-1c0f-44fb-b7f1-780c75bac715"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "e7ca85c6-1479-4136-a7ad-ba17da3de1b9",
+      "name": "AIGI AIMS - Property",
+      "description": "PolicyWriter - Property \tAIMS - Property",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-PWPNC",
+        "PolicyWriter - Property"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/e7ca85c6-1479-4136-a7ad-ba17da3de1b9/status",
+        "api": "https://api.opsgenie.com/v1/services/e7ca85c6-1479-4136-a7ad-ba17da3de1b9"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "b694029a-195f-44a1-8d36-498be2e260c2",
+      "name": "AIGI AIMS - Financial & Professional Lines",
+      "description": "PolicyWriter - Financial & Professional Lines\tAIMS - Financial & Professional Lines",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-PWFPL",
+        "PolicyWriter - Financial & Professional Lines"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/b694029a-195f-44a1-8d36-498be2e260c2/status",
+        "api": "https://api.opsgenie.com/v1/services/b694029a-195f-44a1-8d36-498be2e260c2"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "7c820683-d400-415e-9d4d-402f5f67228d",
+      "name": "AIGI AIMS - Digital Solutions",
+      "description": "PolicyWriter - Digital Solutions\tAIMS - Digital Solutions",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "PolicyWriter - Digital Solutions",
+        "AIGI-Product-PWDS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/7c820683-d400-415e-9d4d-402f5f67228d/status",
+        "api": "https://api.opsgenie.com/v1/services/7c820683-d400-415e-9d4d-402f5f67228d"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "7376bcb3-ed16-4e67-b035-e49e1528db31",
+      "name": "AIGI AIMS - Casualty",
+      "description": "PolicyWriter - Casualty\tAIMS - Casualty",
+      "teamId": "17b5b951-13df-494c-92f4-b37773a09f85",
+      "tags": [
+        "AIGI-Product-PWPNC",
+        "PolicyWriter - Casualty"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/7376bcb3-ed16-4e67-b035-e49e1528db31/status",
+        "api": "https://api.opsgenie.com/v1/services/7376bcb3-ed16-4e67-b035-e49e1528db31"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "5fafbc8c-e9f4-4321-bdc4-8e8d297b32df",
+      "name": "AIGI AIMS",
+      "description": "PolicyWriter - Property AIMS",
+      "teamId": "477f6250-de88-4176-91b8-5f80d4a2006b",
+      "tags": [
+        "AIGI-Product-PWPRP"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/5fafbc8c-e9f4-4321-bdc4-8e8d297b32df/status",
+        "api": "https://api.opsgenie.com/v1/services/5fafbc8c-e9f4-4321-bdc4-8e8d297b32df"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "dc26bd81-4be3-499a-b535-8b3a7c51b4af",
+      "name": "AIGI AIMS",
+      "description": "PolicyWriter -  Casualty AIMS",
+      "teamId": "42f43403-996e-4635-9104-234d94d19b2e",
+      "tags": [
+        "AIGI-Product-PWCAS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/dc26bd81-4be3-499a-b535-8b3a7c51b4af/status",
+        "api": "https://api.opsgenie.com/v1/services/dc26bd81-4be3-499a-b535-8b3a7c51b4af"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "c82b2a88-a12b-46e6-9c33-7d19402f9000",
+      "name": "AIGI AIMS",
+      "description": "PolicyWriter - Financial & Professional Lines AIMS",
+      "teamId": "f833ec43-1348-4d85-8f4f-be1ec0a56f53",
+      "tags": [
+        "AIGI-Product-PWFPL",
+        "PolicyWriter - Financial & Professional Lines"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/c82b2a88-a12b-46e6-9c33-7d19402f9000/status",
+        "api": "https://api.opsgenie.com/v1/services/c82b2a88-a12b-46e6-9c33-7d19402f9000"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "ad9a7e0a-33f8-432c-b6a9-42e55d50d324",
+      "name": "AIGI AIMS",
+      "description": "PolicyWriter Digital Solutions AIMS",
+      "teamId": "f9abbd0f-bcc7-4690-944f-9e5493e51d65",
+      "tags": [
+        "PolicyWriter Digital Solutions",
+        "AIGI-Product-PWPDS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/ad9a7e0a-33f8-432c-b6a9-42e55d50d324/status",
+        "api": "https://api.opsgenie.com/v1/services/ad9a7e0a-33f8-432c-b6a9-42e55d50d324"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "de0a8377-dba6-450d-9c1e-fb72e1af9053",
+      "name": "AIGI ADW",
+      "description": "Enterprise Data ADW",
+      "teamId": "6352af1b-8c2f-4cfb-8f09-907d40069940",
+      "tags": [
+        "AIGI-Product-DATA",
+        "Enterprise Data"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/de0a8377-dba6-450d-9c1e-fb72e1af9053/status",
+        "api": "https://api.opsgenie.com/v1/services/de0a8377-dba6-450d-9c1e-fb72e1af9053"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "8868dd0e-7bad-4eed-98c3-c6e12063dbea",
+      "name": "AIGI Actuarial Pricing Databases",
+      "description": "PolicyWriter -  Casualty Actuarial Pricing Databases",
+      "teamId": "42f43403-996e-4635-9104-234d94d19b2e",
+      "tags": [
+        "AIGI-Product-PWCAS",
+        "PolicyWriter -  Casualty"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/8868dd0e-7bad-4eed-98c3-c6e12063dbea/status",
+        "api": "https://api.opsgenie.com/v1/services/8868dd0e-7bad-4eed-98c3-c6e12063dbea"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "ca8dfba2-2087-4eb8-9e0e-51ee534c1319",
+      "name": "AIGI 1099Pro",
+      "description": "Financial Systems 1099Pro",
+      "teamId": "9df91294-6f0e-4b3e-b81a-f347b44663e1",
+      "tags": [
+        "Financial Systems",
+        "AIGI-Product-FINSYS"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/ca8dfba2-2087-4eb8-9e0e-51ee534c1319/status",
+        "api": "https://api.opsgenie.com/v1/services/ca8dfba2-2087-4eb8-9e0e-51ee534c1319"
+      },
+      "isExternal": false
+    },
+    {
+      "id": "a06a243c-8475-40be-82b5-2bb5fe6425fc",
+      "name": "AIG Middle Markets Rating Model - Through Satellite",
+      "description": "Pricing Middle Markets Rating Model - Through Satellite",
+      "teamId": "e2ac04cc-4cf2-46b6-8d13-eb3077192e3a",
+      "tags": [
+        "AIGI-Product-PRIC",
+        "Pricing"
+      ],
+      "links": {
+        "web": "https://arch-amis.app.opsgenie.com/service/a06a243c-8475-40be-82b5-2bb5fe6425fc/status",
+        "api": "https://api.opsgenie.com/v1/services/a06a243c-8475-40be-82b5-2bb5fe6425fc"
+      },
+      "isExternal": false
+    }
+  ],
+  "paging": {
+    "first": "https://api.opsgenie.com/v1/services?limit=100&sort=name&offset=0&order=desc",
+    "last": "https://api.opsgenie.com/v1/services?limit=100&sort=name&offset=200&order=desc"
+  },
+  "took": 0.021,
+  "requestId": "3d9acdbc-848f-40de-a05b-ebe25a6588e7"
+}
+{
+  "totalCount": 250,
+  "data": [],
+  "paging": {
+    "first": "https://api.opsgenie.com/v1/services?limit=100&sort=name&offset=0&order=desc",
+    "last": "https://api.opsgenie.com/v1/services?limit=100&sort=name&offset=200&order=desc"
+  },
+  "took": 0.017,
+  "requestId": "e373bf5b-c164-4cbd-a5ad-5ac5684d04ff"
+}
