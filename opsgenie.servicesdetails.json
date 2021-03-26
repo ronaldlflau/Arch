@@ -1486,8 +1486,8 @@
     "first": "https://api.opsgenie.com/v1/services?limit=100&sort=name&offset=0&order=desc",
     "last": "https://api.opsgenie.com/v1/services?limit=100&sort=name&offset=200&order=desc"
   },
-  "took": 0.054,
-  "requestId": "5dc97aa3-0dc2-4161-bda1-85fdf082defd"
+  "took": 0.094,
+  "requestId": "f30ae20b-953e-4ead-943d-44680225b67b"
 }
 {
   "totalCount": 250,
@@ -2984,8 +2984,8 @@
     "first": "https://api.opsgenie.com/v1/services?limit=100&sort=name&offset=0&order=desc",
     "last": "https://api.opsgenie.com/v1/services?limit=100&sort=name&offset=200&order=desc"
   },
-  "took": 0.068,
-  "requestId": "6102356d-41dd-4f69-a9b6-35f9786f1ad3"
+  "took": 0.026,
+  "requestId": "03884049-9dce-44a5-b883-2ff9ff47e95c"
 }
 {
   "totalCount": 250,
@@ -3727,8 +3727,8 @@
     "first": "https://api.opsgenie.com/v1/services?limit=100&sort=name&offset=0&order=desc",
     "last": "https://api.opsgenie.com/v1/services?limit=100&sort=name&offset=200&order=desc"
   },
-  "took": 0.019,
-  "requestId": "6c2923e6-fc89-4f1b-b255-d2f85f34b57d"
+  "took": 0.018,
+  "requestId": "5ebfd63b-d8d5-46e2-a09a-919e791b68ca"
 }
 {
   "totalCount": 250,
@@ -3737,6 +3737,6 @@
     "first": "https://api.opsgenie.com/v1/services?limit=100&sort=name&offset=0&order=desc",
     "last": "https://api.opsgenie.com/v1/services?limit=100&sort=name&offset=200&order=desc"
   },
-  "took": 0.015,
-  "requestId": "9a731977-514d-46ec-bf61-c411801a60e0"
+  "took": 0.013,
+  "requestId": "c695a048-fc21-481d-8e5d-cebe5c7e7840"
 }
