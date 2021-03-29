@@ -53756,3 +53756,5585 @@
   "took": 0.007,
   "requestId": "43858a81-4cb6-4cf8-aa81-5112e6ff6e38"
 }
+{
+  "data": {
+    "_parent": {
+      "id": "013330ea-52f3-44bc-9cb4-fc8a3156d720",
+      "name": "AMI-NGS-GitHub",
+      "enabled": false,
+      "type": "GitHub",
+      "teamId": "179911fc-25c2-4743-9858-30557f187e79"
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "Create Alert For Push Event",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "event",
+              "not": false,
+              "operation": "equals",
+              "expectedValue": "push"
+            }
+          ]
+        },
+        "user": "GitHub",
+        "note": "",
+        "alias": "{{deliveryId}}",
+        "source": "GitHub",
+        "message": "[GitHub] {{pusherName}} pushed new commits to {{full_name}}.",
+        "description": "Commits List:\n\n{{commits}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "179911fc-25c2-4743-9858-30557f187e79",
+            "name": "AMI-Product-NGS"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "179911fc-25c2-4743-9858-30557f187e79",
+            "name": "AMI-Product-NGS"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Compare Link": "{{compare}}",
+          "Repo Description": "{{description}}",
+          "Repo Owner": "{{repoOwnerName}}",
+          "Repo URL": "{{repoHtmlUrl}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "Create Alert For GitHub Issue",
+        "order": 2,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "event",
+              "not": false,
+              "operation": "equals",
+              "expectedValue": "issues"
+            },
+            {
+              "field": "action",
+              "not": false,
+              "operation": "equals",
+              "expectedValue": "opened"
+            }
+          ]
+        },
+        "user": "GitHub",
+        "note": "",
+        "alias": "{{issueId}}",
+        "source": "GitHub",
+        "message": "[GitHub] {{issueUserLogin}} created a new issue for {{full_name}}: {{issueTitle}}.",
+        "description": "Issue URL: {{issueHtmlUrl}}\nIssue Body: {{issueBody}}\nIssue Comments URL: {{comments_url}}\nIssue Created At: {{issueCreatedAt}}\nIssue Assignees: {{issueAssignees}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "179911fc-25c2-4743-9858-30557f187e79",
+            "name": "AMI-Product-NGS"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "179911fc-25c2-4743-9858-30557f187e79",
+            "name": "AMI-Product-NGS"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Compare Link": "{{compare}}",
+          "Repo Description": "{{description}}",
+          "Repo Owner": "{{repoOwnerName}}",
+          "Repo URL": "{{repoHtmlUrl}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "Create Alert For GitHub Pull Request",
+        "order": 3,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "event",
+              "not": false,
+              "operation": "equals",
+              "expectedValue": "pull_request"
+            },
+            {
+              "field": "action",
+              "not": false,
+              "operation": "equals",
+              "expectedValue": "opened"
+            }
+          ]
+        },
+        "user": "GitHub",
+        "note": "",
+        "alias": "{{pullRequestId}}",
+        "source": "GitHub",
+        "message": "[GitHub] {{pullRequestUserLogin}} created a new pull request for {{full_name}}: {{headLabel}} to {{baseLabel}}.",
+        "description": "Pull Request URL: {{pullRequestHtmlUrl}}\nPull Request Body: {{pullRequestBody}}\nPull Request Created At: {{pullRequestCreatedAt}}\nPull Request Assignees: {{pullRequestAssignees}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "179911fc-25c2-4743-9858-30557f187e79",
+            "name": "AMI-Product-NGS"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "179911fc-25c2-4743-9858-30557f187e79",
+            "name": "AMI-Product-NGS"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Compare Link": "{{compare}}",
+          "Repo Description": "{{description}}",
+          "Repo Owner": "{{repoOwnerName}}",
+          "Repo URL": "{{repoHtmlUrl}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      }
+    ],
+    "close": [
+      {
+        "type": "close",
+        "name": "Close Alert For GitHub Issue",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "event",
+              "not": false,
+              "operation": "equals",
+              "expectedValue": "issues"
+            },
+            {
+              "field": "action",
+              "not": false,
+              "operation": "equals",
+              "expectedValue": "closed"
+            }
+          ]
+        },
+        "user": "GitHub",
+        "note": "",
+        "alias": "{{issueId}}"
+      },
+      {
+        "type": "close",
+        "name": "Close Alert For GitHub Pull Request",
+        "order": 2,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "event",
+              "not": false,
+              "operation": "equals",
+              "expectedValue": "pull_request"
+            },
+            {
+              "field": "action",
+              "not": false,
+              "operation": "equals",
+              "expectedValue": "closed"
+            }
+          ]
+        },
+        "user": "GitHub",
+        "note": "",
+        "alias": "{{pullRequestId}}"
+      }
+    ],
+    "acknowledge": [],
+    "addNote": []
+  },
+  "took": 0.017,
+  "requestId": "dc7b38a5-2532-4b2a-8e09-d7d94db8ae9f"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "01e4d7cc-a172-447d-b893-6c37d4611ce8",
+      "name": "eNOC_API",
+      "enabled": true,
+      "type": "API",
+      "teamId": "0d1ee0ad-562e-4824-b021-db9d398b549d"
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "Create Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}",
+        "source": "{{source}}",
+        "message": "{{message}}",
+        "description": "{{description}}",
+        "entity": "{{entity}}",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": false,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "0d1ee0ad-562e-4824-b021-db9d398b549d",
+            "name": "AMIS-eNOC"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "0d1ee0ad-562e-4824-b021-db9d398b549d",
+            "name": "AMIS-eNOC"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [],
+        "ignoreTagsFromPayload": false,
+        "extraProperties": {},
+        "ignoreExtraPropertiesFromPayload": false,
+        "ignoreRespondersFromPayload": true
+      }
+    ],
+    "close": [
+      {
+        "type": "close",
+        "name": "Close Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}"
+      }
+    ],
+    "acknowledge": [
+      {
+        "type": "acknowledge",
+        "name": "Acknowledge Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}"
+      }
+    ],
+    "addNote": [
+      {
+        "type": "addNote",
+        "name": "Add Note",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}"
+      }
+    ]
+  },
+  "took": 0.019,
+  "requestId": "adced93c-555f-478f-9d7c-abe0fa94163a"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "144c6eea-88cc-4936-ac65-8d5d8fdfc97a",
+      "name": "AIGI-IncidentManagement-SNOWProd",
+      "enabled": true,
+      "type": "ServiceNowV3",
+      "teamId": ""
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "AIGI Create Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "companyName",
+              "not": false,
+              "operation": "equals",
+              "expectedValue": "AIGI"
+            },
+            {
+              "field": "priority",
+              "not": false,
+              "operation": "matches",
+              "expectedValue": ".*(Critical|High).*"
+            },
+            {
+              "field": "state",
+              "not": false,
+              "operation": "matches",
+              "expectedValue": ".*(New|In Progress).*"
+            }
+          ]
+        },
+        "user": "ServiceNow",
+        "note": "",
+        "alias": "{{alias}}",
+        "source": "ServiceNow",
+        "message": "P{{priority}} - {{incidentNumber}} - {{configurationItem}} - {{shortDescription}}",
+        "description": "Details: {{workNotes}}\n\nServices Impacted:  {{configurationItem}}\n \nStatus: {{state}}",
+        "entity": "{{configurationItem}}",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "17b5b951-13df-494c-92f4-b37773a09f85",
+            "name": "AIGI-Incident Management"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "17b5b951-13df-494c-92f4-b37773a09f85",
+            "name": "AIGI-Incident Management"
+          }
+        ],
+        "ignoreRecipientsFromPayload": false,
+        "ignoreTeamsFromPayload": false,
+        "tags": [
+          "AIGI",
+          "{{category}}"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "og-internal-sys-id": "{{sysId}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": false
+      }
+    ],
+    "close": [
+      {
+        "type": "close",
+        "name": "Close Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "svc.opsgenie",
+        "note": "Close Code: {{closeCode}}\nClose Notes: {{closeNotes}}",
+        "alias": "{{alias}}"
+      }
+    ],
+    "acknowledge": [
+      {
+        "type": "acknowledge",
+        "name": "Acknowledge Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "svc.opsgenie",
+        "note": "{{workNotes}}",
+        "alias": "{{alias}}"
+      }
+    ],
+    "addNote": [
+      {
+        "type": "addNote",
+        "name": "Add Work Note",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "svc.opsgenie",
+        "note": "{{workNotes}}",
+        "alias": "{{alias}}"
+      }
+    ]
+  },
+  "took": 0.011,
+  "requestId": "10c860cc-b823-459c-8d08-f2a50fb604be"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "1813a5fd-f758-4639-9c7c-94b3fe9ecebe",
+      "name": "Default API",
+      "enabled": true,
+      "type": "API",
+      "teamId": ""
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "Create Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}",
+        "source": "{{source}}",
+        "message": "{{message}}",
+        "description": "{{description}}",
+        "entity": "{{entity}}",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": false,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": false,
+        "ignoreTeamsFromPayload": false,
+        "tags": [],
+        "ignoreTagsFromPayload": false,
+        "extraProperties": {},
+        "ignoreExtraPropertiesFromPayload": false,
+        "ignoreRespondersFromPayload": false
+      }
+    ],
+    "close": [
+      {
+        "type": "close",
+        "name": "Close Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}"
+      }
+    ],
+    "acknowledge": [
+      {
+        "type": "acknowledge",
+        "name": "Acknowledge Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}"
+      }
+    ],
+    "addNote": [
+      {
+        "type": "addNote",
+        "name": "Add Note",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}"
+      }
+    ]
+  },
+  "took": 0.007,
+  "requestId": "287d7c19-f0cb-4ef9-b0d3-86d1f7e8a409"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "1bb85a6a-9913-4af8-afbc-9a580d801a84",
+      "name": "AMI-Splunk-Production",
+      "enabled": true,
+      "type": "Splunk",
+      "teamId": ""
+    },
+    "ignore": [
+      {
+        "type": "ignore",
+        "name": "Ignore Unused NFS Mounts",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "raw",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "recycler-for-pv026"
+            },
+            {
+              "field": "raw",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "recycler-for-pv031"
+            }
+          ]
+        }
+      }
+    ],
+    "create": [
+      {
+        "type": "create",
+        "name": "AMI FUSE Team",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "FUSE"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "Host: {{server_host}}\nResults Link: {{results_link}}\nLog: {{raw}}",
+        "alias": "{{search_name}}-{{result.host}}-{{source}}-{{source_type}}",
+        "source": "Splunk",
+        "message": "Prod Splunk Alert - {{search_name}}",
+        "description": "Index: {{index}}\nHost: {{result.host}}\nSource: {{source}}\nSource Type: {{source_type}}\nTime of Occurrence: {{time}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "8ee8c294-60db-43ff-93a3-8dc7ab8890ce",
+            "name": "AMI-Product-FUSE"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "8ee8c294-60db-43ff-93a3-8dc7ab8890ce",
+            "name": "AMI-Product-FUSE"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "FUSE",
+          "SPLUNK"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {},
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AMI OPNG Team",
+        "order": 2,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "OPNG"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "Host: {{server_host}}\nResults Link: {{results_link}}\nLog: {{raw}}",
+        "alias": "{{search_name}}-{{result.host}}-{{source}}-{{source_type}}",
+        "source": "Splunk",
+        "message": "Prod Splunk Alert - {{search_name}}",
+        "description": "Index: {{index}}\nHost: {{result.host}}\nSource: {{source}}\nSource Type: {{source_type}}\nTime of Occurrence: {{time}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "5f688a80-02b4-4375-9c06-14d9b09365df",
+            "name": "AMI-Product-OPNG"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "5f688a80-02b4-4375-9c06-14d9b09365df",
+            "name": "AMI-Product-OPNG"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "OPNG",
+          "SPLUNK"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {},
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AMI Loss Management Team",
+        "order": 3,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "starts-with",
+              "expectedValue": "Loss-Management"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "Host: {{server_host}}\nResults Link: {{results_link}}\nLog: {{raw}}",
+        "alias": "{{search_name}}-{{result.host}}-{{source}}-{{source_type}}",
+        "source": "Splunk",
+        "message": "Prod Splunk Alert - {{search_name}}",
+        "description": "Index: {{index}}\nHost: {{result.host}}\nSource: {{source}}\nSource Type: {{source_type}}\nTime of Occurrence: {{time}}",
+        "entity": "",
+        "priority": "P2",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "5e75ca77-9b6b-4a73-b26d-d17977737200",
+            "name": "AMI-Product-LossManagement"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "5e75ca77-9b6b-4a73-b26d-d17977737200",
+            "name": "AMI-Product-LossManagement"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "LossManagement",
+          "SPLUNK"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {},
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AMI MIPS Team",
+        "order": 4,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "starts-with",
+              "expectedValue": "MIPS"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "Host: {{server_host}}\nResults Link: {{results_link}}\nLog: {{raw}}",
+        "alias": "{{search_name}}-{{result.host}}-{{source}}-{{source_type}}",
+        "source": "Splunk",
+        "message": "Prod Splunk Alert - {{search_name}}",
+        "description": "Index: {{index}}\nHost: {{result.host}}\nSource: {{source}}\nSource Type: {{source_type}}\nTime of Occurrence: {{time}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "8d093168-4d2a-4ffd-9f6b-85023b9c5004",
+            "name": "AMI-Product-MIPS"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "8d093168-4d2a-4ffd-9f6b-85023b9c5004",
+            "name": "AMI-Product-MIPS"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "MIPS",
+          "SPLUNK"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {},
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AMI NGS Team - OCP",
+        "order": 5,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "NGS"
+            },
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "OCP"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "Openshift Pod Name: {{result.openshift_pod_name}}\nHost: {{result.host}}\nResults Link: {{results_link}}\nLog: {{raw}}",
+        "alias": "{{result.openshift_namespace}}_{{result.openshift_container_name}}",
+        "source": "Splunk",
+        "message": "Prod Splunk Alert - NGS_{{result.openshift_container_name}}",
+        "description": "",
+        "entity": "{{result.openshift_container_name}}",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "179911fc-25c2-4743-9858-30557f187e79",
+            "name": "AMI-Product-NGS"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "179911fc-25c2-4743-9858-30557f187e79",
+            "name": "AMI-Product-NGS"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "NGS",
+          "SPLUNK"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Container Image Name": "{{result.openshift_container_imageid}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AMI PXO - Filenet ICN Problem",
+        "order": 6,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "ICN Annotations Failing"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "Identify the ICN node having problems. Notify Incident Admin and EDMS Team of the problem. Remove this instance from F5 load balancing. Take javacore and restart JVM.",
+        "alias": "{{search_name}}-{{result.host}}-{{source}}-{{source_type}}",
+        "source": "Splunk",
+        "message": "Prod Splunk Alert [{{search_name}}] was triggered",
+        "description": "Index: {{index}}\nHost: {{result.host}}\nSource: {{source}}\nSource Type: {{source_type}}\nTime of Occurrence: {{time}}\n\nAction: Please see the Note section for Next Steps",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "FILENET",
+          "SPLUNK"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Results Link": "{{results_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "OCP Pod High CPU",
+        "order": 7,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "AnyApp Danger: POD CPU Running High"
+            },
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "AnyApp Warning: POD CPU Running High"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "Host: {{result.host}}\nNamespace: {{result.openshift_namespace}}\nContainer: {{result.openshift_container_name}}\nPod: {{result.openshift_pod_name}}\nCPU Limit: {{result.openshift_container_resources_limits_cpu}}\nCPU Percent of Limit: {{result.avg_cpu_pct_of_limit}}%",
+        "alias": "{{search_name}}-{{result.host}}-{{result.openshift_namespace}}",
+        "source": "Splunk",
+        "message": "Prod Splunk Alert [{{search_name}}] was triggered",
+        "description": "Host: {{result.host}}\nNamespace: {{result.openshift_namespace}}\nContainer: {{result.openshift_container_name}}\nPod: {{result.openshift_pod_name}}\nCPU Limit: {{result.openshift_container_resources_limits_cpu}}\nCPU Percent of Limit: {{result.avg_cpu_pct_of_limit}}%\n\nAction to take: investigate why cpu is running at an elevated level. See the Opsgenie Notes section for a full list of Pods that triggered this alert.",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "OCP",
+          "PXO",
+          "SPLUNK"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Results Link": "{{results_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "OCP Pod Memory CPU",
+        "order": 8,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "AnyApp Danger: POD Memory Running High"
+            },
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "AnyApp Warning: POD Memory Running High"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "Host: {{result.host}}\nNamespace: {{result.openshift_namespace}}\nContainer: {{result.openshift_container_name}}\nPod: {{result.openshift_pod_name}}\nMemory Limit (mb): {{result.openshift_stats_memory_limit_mb}}\nAvg Memory Percent of Limit: {{result.avg_memory_pct_of_limit}}%",
+        "alias": "{{search_name}}-{{result.host}}-{{result.openshift_namespace}}",
+        "source": "Splunk",
+        "message": "Prod Splunk Alert [{{search_name}}] was triggered",
+        "description": "Host: {{result.host}}\nNamespace: {{result.openshift_namespace}}\nContainer: {{result.openshift_container_name}}\nPod: {{result.openshift_pod_name}}\nMemory Limit (mb): {{result.openshift_stats_memory_limit_mb}}\nAvg Memory Percent of Limit: {{result.avg_memory_pct_of_limit}}%\n\nAction to take: investigate why memory is running at an elevated level. See the Opsgenie Notes section for a full list of Pods that triggered this alert.",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "OCP",
+          "PXO",
+          "SPLUNK"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Results Link": "{{results_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "OCP Pod High CPU-Memory",
+        "order": 9,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Warning: POD CPU Running High"
+            },
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Warning: POD Memory Running High"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "Host: {{result.host}}\nNamespace: {{result.namespace}}\nSource Type: {{result.sourcetype}}\nCPU Percent of Limit: {{result.openshift_stats_cpu_percent_of_limit}}\nMemory Percent of Limit: {{result.openshift_stats_memory_percent_of_limit}}",
+        "alias": "{{search_name}}-{{result.host}}-{{result.namespace}}-{{result.sourcetype}}",
+        "source": "Splunk",
+        "message": "Prod Splunk Alert [{{search_name}}] was triggered",
+        "description": "Host: {{result.host}}\nNamespace: {{result.namespace}}\nSource Type: {{result.sourcetype}}\nCPU Percent of Limit: {{result.openshift_stats_cpu_percent_of_limit}}\nMemory Percent of Limit: {{result.openshift_stats_memory_percent_of_limit}}\n\nAction to take: investigate why cpu or memory is running at an elevated level.",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "OCP",
+          "PXO",
+          "SPLUNK"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Results Link": "{{results_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "OCP Pods Out of Balance",
+        "order": 10,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Pods Out of Balance"
+            },
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Pods Out of Balance"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "Node1 Pod Count: {{result.node1_podcount}}\nNode2 Pod Count: {{result.node2_podcount}}\nNode3 Pod Count: {{result.node3_podcount}}",
+        "alias": "{{search_name}}-{{result.host}}-{{result.namespace}}-{{result.sourcetype}}",
+        "source": "Splunk",
+        "message": "Prod Splunk Alert [{{search_name}}] was triggered",
+        "description": "Note: only 2 pods are compared in an alert\nNode1 Pod Count: {{result.node1_podcount}}\nNode2 Pod Count: {{result.node2_podcount}}\nNode3 Pod Count: {{result.node3_podcount}}\n\nAction to take: Plan to run the Pod Rebalance script during off-business hours",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "OCP",
+          "PXO",
+          "SPLUNK"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Results Link": "{{results_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "Default Alert",
+        "order": 11,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "Splunk",
+        "note": "Host: {{result.host}}\nSource: {{source}}\nSource Type: {{source_type}}\nRaw: {{raw}}",
+        "alias": "{{search_name}}-{{result.host}}-{{source}}-{{source_type}}",
+        "source": "Splunk",
+        "message": "Prod Splunk Alert [{{search_name}}] was triggered",
+        "description": "Index: {{index}}\nHost: {{result.host}}\nSource: {{source}}\nSource Type: {{source_type}}\nTime of Occurrence: {{time}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "PXO",
+          "SPLUNK"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Results Link": "{{results_link}}",
+          "Raw": "{{raw}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      }
+    ],
+    "close": [],
+    "acknowledge": [],
+    "addNote": []
+  },
+  "took": 0.091,
+  "requestId": "de734a3b-0bff-4533-9112-117232bf8635"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "1f40ab52-4035-4a0b-bd72-3d7c45a23aa0",
+      "name": "Slack (Arch Insurance Group#aigi-infrastructure-engineering-1614634661977)",
+      "enabled": true,
+      "type": "SlackApp",
+      "teamId": "dee68282-fb6d-44ec-b63d-0ab18c4b68b6"
+    },
+    "ignore": [],
+    "create": [],
+    "close": [],
+    "acknowledge": [],
+    "addNote": []
+  },
+  "took": 0.006,
+  "requestId": "dcfb1e32-b3cd-4ef6-8116-e7144417e72e"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "2048a2f5-b939-43be-8e37-3806c498effe",
+      "name": "API (DevOps action testing)",
+      "enabled": true,
+      "type": "API",
+      "teamId": "dee68282-fb6d-44ec-b63d-0ab18c4b68b6"
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "Create Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}",
+        "source": "{{source}}",
+        "message": "{{message}}",
+        "description": "{{description}}",
+        "entity": "{{entity}}",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [
+          "devopstest",
+          "linux-service",
+          "towertest"
+        ],
+        "ignoreAlertActionsFromPayload": false,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "dee68282-fb6d-44ec-b63d-0ab18c4b68b6",
+            "name": "AIGI-Infrastructure Engineering"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "dee68282-fb6d-44ec-b63d-0ab18c4b68b6",
+            "name": "AIGI-Infrastructure Engineering"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [],
+        "ignoreTagsFromPayload": false,
+        "extraProperties": {},
+        "ignoreExtraPropertiesFromPayload": false,
+        "ignoreRespondersFromPayload": true
+      }
+    ],
+    "close": [
+      {
+        "type": "close",
+        "name": "Close Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}"
+      }
+    ],
+    "acknowledge": [
+      {
+        "type": "acknowledge",
+        "name": "Acknowledge Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}"
+      }
+    ],
+    "addNote": [
+      {
+        "type": "addNote",
+        "name": "Add Note",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}"
+      }
+    ]
+  },
+  "took": 0.051,
+  "requestId": "e348a45e-03fe-4de0-907e-6b6a48a86081"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "27151d55-625a-40e9-b8bb-d273f2900909",
+      "name": "Slack (Arch Insurance Group#da-opsgenie-1606337136391)",
+      "enabled": true,
+      "type": "SlackApp",
+      "teamId": "fd11c765-2204-4c5b-9ad7-98ba7182840e"
+    },
+    "ignore": [],
+    "create": [],
+    "close": [],
+    "acknowledge": [],
+    "addNote": []
+  },
+  "took": 0.009,
+  "requestId": "1328713f-1190-44c7-b355-800b272c7de6"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "31e378f5-fd5d-4654-9700-698346d3443e",
+      "name": "AIGI-Statuspage",
+      "enabled": false,
+      "type": "StatusPageIO",
+      "teamId": ""
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "Create Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "incident_status",
+              "not": true,
+              "operation": "equals",
+              "expectedValue": "resolved"
+            }
+          ]
+        },
+        "user": "Atlassian StatusPage",
+        "note": "{{incident_latest_update}}",
+        "alias": "{{alias}}",
+        "source": "Atlassian StatusPage",
+        "message": "[Statuspage]{{incident_status}} - {{incident_name}}",
+        "description": "{{incident_message}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "incident_id:{{incident_id}}"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Incident Short Link": "{{incident_short_link}}",
+          "Unsubscribe Link": "{{unsubscribe_link}}",
+          "Documentation Link": "{{documentation_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      }
+    ],
+    "close": [
+      {
+        "type": "close",
+        "name": "Close Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "incident_status",
+              "not": false,
+              "operation": "equals",
+              "expectedValue": "resolved"
+            }
+          ]
+        },
+        "user": "Atlassian StatusPage",
+        "note": "{{incident_latest_update}}",
+        "alias": "{{alias}}"
+      }
+    ],
+    "acknowledge": [],
+    "addNote": []
+  },
+  "took": 0.006,
+  "requestId": "bd498f92-3a31-4f22-903d-a22e36394038"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "32308996-de0e-4285-bf8b-5913ee33911e",
+      "name": "AIGI-Ansible-DevOps-API",
+      "enabled": true,
+      "type": "API",
+      "teamId": "e781977e-c1a0-4bb8-8bd6-19c363cf23fc"
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "Create Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "tags",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "AIGI"
+            }
+          ]
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}",
+        "source": "{{source}}",
+        "message": "{{message}}",
+        "description": "{{description}}",
+        "entity": "{{entity}}",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": false,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "e781977e-c1a0-4bb8-8bd6-19c363cf23fc",
+            "name": "AIGI-Infrastructure-DevOps"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "e781977e-c1a0-4bb8-8bd6-19c363cf23fc",
+            "name": "AIGI-Infrastructure-DevOps"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [],
+        "ignoreTagsFromPayload": false,
+        "extraProperties": {},
+        "ignoreExtraPropertiesFromPayload": false,
+        "ignoreRespondersFromPayload": true
+      }
+    ],
+    "close": [
+      {
+        "type": "close",
+        "name": "Close Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}"
+      }
+    ],
+    "acknowledge": [
+      {
+        "type": "acknowledge",
+        "name": "Acknowledge Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}"
+      }
+    ],
+    "addNote": [
+      {
+        "type": "addNote",
+        "name": "Add Note",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}"
+      }
+    ]
+  },
+  "took": 0.054,
+  "requestId": "0fbb312d-54b7-4395-b282-12839e0bc122"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "3770facb-1c44-4a34-8ed2-1422d7f2ff7d",
+      "name": "AMI-DBE_TechXO_Team Email",
+      "enabled": true,
+      "type": "Email",
+      "teamId": "1139cd8e-f3cf-42cb-8426-2df97e1209ec",
+      "emailAddress": "ami_dbe_techxo_team@arch-amis.opsgenie.net"
+    },
+    "ignore": [
+      {
+        "type": "ignore",
+        "name": "Only email from Archmi",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "from_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "@archmi.com"
+            }
+          ]
+        }
+      },
+      {
+        "type": "ignore",
+        "name": "Ignore Replies",
+        "order": 2,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "subject",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "RE:"
+            }
+          ]
+        }
+      }
+    ],
+    "create": [
+      {
+        "type": "create",
+        "name": "DB2 Refresh Failure",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "subject",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Reporting"
+            },
+            {
+              "field": "subject",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "refresh failed"
+            }
+          ]
+        },
+        "user": "",
+        "note": "",
+        "alias": "",
+        "source": "Email",
+        "message": "{{subject}}",
+        "description": "{{message}}",
+        "entity": "",
+        "priority": "P2",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "1139cd8e-f3cf-42cb-8426-2df97e1209ec",
+            "name": "AMI-Infrastructure-DBE"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "1139cd8e-f3cf-42cb-8426-2df97e1209ec",
+            "name": "AMI-Infrastructure-DBE"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "DBE"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "From": "{{from_address}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "DB2 Refresh Source_Backup_not_completed",
+        "order": 2,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "subject",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Source_Backup_not_completed"
+            }
+          ]
+        },
+        "user": "",
+        "note": "",
+        "alias": "",
+        "source": "Email",
+        "message": "{{subject}}",
+        "description": "{{message}}",
+        "entity": "",
+        "priority": "P3",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "1139cd8e-f3cf-42cb-8426-2df97e1209ec",
+            "name": "AMI-Infrastructure-DBE"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "1139cd8e-f3cf-42cb-8426-2df97e1209ec",
+            "name": "AMI-Infrastructure-DBE"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "DBE"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "From": "{{from_address}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      }
+    ],
+    "close": [],
+    "acknowledge": [],
+    "addNote": []
+  },
+  "took": 0.055,
+  "requestId": "c3e31f80-76f4-482b-a74e-f0facef165b6"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "54b0f0a9-09ea-4c41-936f-956904d6361c",
+      "name": "AMI-NGS Team Support Email",
+      "enabled": true,
+      "type": "Email",
+      "teamId": "179911fc-25c2-4743-9858-30557f187e79",
+      "emailAddress": "ami-ngs-support@arch-amis.opsgenie.net"
+    },
+    "ignore": [
+      {
+        "type": "ignore",
+        "name": "Ignore Replies",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "subject",
+              "not": false,
+              "operation": "starts-with",
+              "expectedValue": "RE:"
+            }
+          ]
+        }
+      }
+    ],
+    "create": [
+      {
+        "type": "create",
+        "name": "NGS Support",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "",
+        "note": "From: {{from_name}}\nAddress: {{from_address}}\nSubject: {{subject}}\nMessage:\n{{message}}",
+        "alias": "",
+        "source": "Email",
+        "message": "NGS Support Request from {{from_address}}",
+        "description": "From: {{from_name}}\nAddress: {{from_address}}\nSubject: {{subject}}\nMessage:\n{{message}}",
+        "entity": "",
+        "priority": "P2",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "179911fc-25c2-4743-9858-30557f187e79",
+            "name": "AMI-Product-NGS"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "179911fc-25c2-4743-9858-30557f187e79",
+            "name": "AMI-Product-NGS"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "NGS"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "From": "{{from_address}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      }
+    ],
+    "close": [],
+    "acknowledge": [],
+    "addNote": []
+  },
+  "took": 0.021,
+  "requestId": "7f25d271-142c-4c4c-bed8-86fa2d4ed61b"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "60930cb6-78e4-4a31-aa24-ca539cea27b6",
+      "name": "AMI-Solarwinds Integration",
+      "enabled": true,
+      "type": "Solarwinds",
+      "teamId": ""
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "AMI FUSE - SAM",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "tags",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "FUSE"
+            },
+            {
+              "field": "tags",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "SAM"
+            }
+          ]
+        },
+        "user": "Solarwinds",
+        "note": "{{AlertDescription}}",
+        "alias": "{{alias}}",
+        "source": "Solarwinds",
+        "message": "Orion: {{AlertMessage}}",
+        "description": "Node Name: {{NodeName}}\nApplication Name: {{ApplicationName}}\nComponent Name: {{ComponentName}}",
+        "entity": "",
+        "priority": "P1",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": false,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "8ee8c294-60db-43ff-93a3-8dc7ab8890ce",
+            "name": "AMI-Product-FUSE"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "8ee8c294-60db-43ff-93a3-8dc7ab8890ce",
+            "name": "AMI-Product-FUSE"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "FUSE",
+          "SAM",
+          "SOLARWINDS"
+        ],
+        "ignoreTagsFromPayload": false,
+        "extraProperties": {
+          "Alert Details URL": "{{AlertDetailsUrl}}",
+          "Acknowledge URL": "{{AcknowledgeUrl}}",
+          "Acknowledged": "{{Acknowledged}}",
+          "Alert Trigger Time": "{{AlertTriggerTime}}",
+          "AlertDefinitionID": "{{AlertDefID}}",
+          "ObjectID": "{{ObjectID}}",
+          "ObjectType": "{{ObjectType}}",
+          "Alert Description": "{{AlertDescription}}"
+        },
+        "ignoreExtraPropertiesFromPayload": false,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AMI PXO - SAM",
+        "order": 2,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "tags",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "PXO"
+            },
+            {
+              "field": "tags",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "SAM"
+            }
+          ]
+        },
+        "user": "Solarwinds",
+        "note": "{{AlertDescription}}\n{{tags}}",
+        "alias": "{{alias}}",
+        "source": "Solarwinds",
+        "message": "Orion: {{AlertMessage}}",
+        "description": "Node Name: {{NodeName}}\nApplication Name: {{ApplicationName}}\nComponent Name: {{ComponentName}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": false,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "PXO",
+          "SAM",
+          "SOLARWINDS"
+        ],
+        "ignoreTagsFromPayload": false,
+        "extraProperties": {
+          "Alert Details URL": "{{AlertDetailsUrl}}",
+          "Acknowledge URL": "{{AcknowledgeUrl}}",
+          "Acknowledged": "{{Acknowledged}}",
+          "Alert Trigger Time": "{{AlertTriggerTime}}",
+          "AlertDefinitionID": "{{AlertDefID}}",
+          "ObjectID": "{{ObjectID}}",
+          "ObjectType": "{{ObjectType}}",
+          "Alert Description": "{{AlertDescription}}"
+        },
+        "ignoreExtraPropertiesFromPayload": false,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AMI WO - SAM",
+        "order": 3,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "AlertName",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "WO SAM"
+            }
+          ]
+        },
+        "user": "Solarwinds",
+        "note": "{{AlertDescription}}",
+        "alias": "{{alias}}",
+        "source": "Solarwinds",
+        "message": "Orion: {{AlertMessage}}",
+        "description": "Node Name: {{NodeName}}\nApplication Name: {{ApplicationName}}\nComponent Name: {{ComponentName}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": false,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "SAM",
+          "SOLARWINDS",
+          "WO"
+        ],
+        "ignoreTagsFromPayload": false,
+        "extraProperties": {
+          "Alert Details URL": "{{AlertDetailsUrl}}",
+          "Acknowledge URL": "{{AcknowledgeUrl}}",
+          "Acknowledged": "{{Acknowledged}}",
+          "Alert Trigger Time": "{{AlertTriggerTime}}",
+          "AlertDefinitionID": "{{AlertDefID}}",
+          "ObjectID": "{{ObjectID}}",
+          "ObjectType": "{{ObjectType}}",
+          "Alert Description": "{{AlertDescription}}"
+        },
+        "ignoreExtraPropertiesFromPayload": false,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AMI OPNG - WPM",
+        "order": 4,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "tags",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "OPNG"
+            },
+            {
+              "field": "tags",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "WPM"
+            }
+          ]
+        },
+        "user": "Solarwinds",
+        "note": "{{AlertDescription}}",
+        "alias": "{{alias}}",
+        "source": "Solarwinds",
+        "message": "Orion: {{AlertMessage}}",
+        "description": "Transaction Name: {{TransactionName}}\nError Message: {{ErrorMessage}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": false,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "5f688a80-02b4-4375-9c06-14d9b09365df",
+            "name": "AMI-Product-OPNG"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "5f688a80-02b4-4375-9c06-14d9b09365df",
+            "name": "AMI-Product-OPNG"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "SOLARWINDS"
+        ],
+        "ignoreTagsFromPayload": false,
+        "extraProperties": {
+          "Alert Details URL": "{{AlertDetailsUrl}}",
+          "Acknowledge URL": "{{AcknowledgeUrl}}",
+          "Acknowledged": "{{Acknowledged}}",
+          "Alert Trigger Time": "{{AlertTriggerTime}}",
+          "AlertDefinitionID": "{{AlertDefID}}",
+          "ObjectID": "{{ObjectID}}",
+          "ObjectType": "{{ObjectType}}",
+          "Alert Description": "{{AlertDescription}}"
+        },
+        "ignoreExtraPropertiesFromPayload": false,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AMI PXO - WPM",
+        "order": 5,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "AlertName",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "PXO WPM"
+            }
+          ]
+        },
+        "user": "Solarwinds",
+        "note": "{{AlertDescription}}",
+        "alias": "{{alias}}",
+        "source": "Solarwinds",
+        "message": "Orion: {{AlertMessage}}",
+        "description": "Transaction Name: {{TransactionName}}\nError Message: {{ErrorMessage}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": false,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "PXO",
+          "SOLARWINDS",
+          "WPM"
+        ],
+        "ignoreTagsFromPayload": false,
+        "extraProperties": {
+          "Alert Details URL": "{{AlertDetailsUrl}}",
+          "Acknowledge URL": "{{AcknowledgeUrl}}",
+          "Acknowledged": "{{Acknowledged}}",
+          "Alert Trigger Time": "{{AlertTriggerTime}}",
+          "AlertDefinitionID": "{{AlertDefID}}",
+          "ObjectID": "{{ObjectID}}",
+          "ObjectType": "{{ObjectType}}",
+          "Alert Description": "{{AlertDescription}}"
+        },
+        "ignoreExtraPropertiesFromPayload": false,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "eNOC - Test",
+        "order": 6,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "tags",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "eNOC"
+            }
+          ]
+        },
+        "user": "Solarwinds",
+        "note": "{{AlertDescription}}",
+        "alias": "{{alias}}",
+        "source": "Solarwinds",
+        "message": "Orion: {{AlertMessage}}",
+        "description": "Node name: {{NodeName}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": false,
+        "recipients": [
+          {
+            "type": "user",
+            "id": "8f63c091-226a-4f44-927d-71cf179b939a",
+            "username": "lhudgins@archgroup.com"
+          }
+        ],
+        "responders": [
+          {
+            "type": "user",
+            "id": "8f63c091-226a-4f44-927d-71cf179b939a",
+            "username": "lhudgins@archgroup.com"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "eNOC"
+        ],
+        "ignoreTagsFromPayload": false,
+        "extraProperties": {
+          "Alert Details URL": "{{AlertDetailsUrl}}",
+          "Acknowledge URL": "{{AcknowledgeUrl}}",
+          "Acknowledged": "{{Acknowledged}}",
+          "Alert Trigger Time": "{{AlertTriggerTime}}",
+          "AlertDefinitionID": "{{AlertDefID}}",
+          "ObjectID": "{{ObjectID}}",
+          "ObjectType": "{{ObjectType}}"
+        },
+        "ignoreExtraPropertiesFromPayload": false,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "Default",
+        "order": 7,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "Solarwinds",
+        "note": "{{AlertDescription}}",
+        "alias": "{{alias}}",
+        "source": "Solarwinds",
+        "message": "Orion: {{AlertMessage}}",
+        "description": "Transaction Name: {{TransactionName}}\nError Message: {{ErrorMessage}}\nNode Name: {{NodeName}}\nApplication Name: {{ApplicationName}}\nComponent Name: {{ComponentName}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": false,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "PXO",
+          "SOLARWINDS"
+        ],
+        "ignoreTagsFromPayload": false,
+        "extraProperties": {
+          "Alert Details URL": "{{AlertDetailsUrl}}",
+          "Acknowledge URL": "{{AcknowledgeUrl}}",
+          "Acknowledged": "{{Acknowledged}}",
+          "Alert Trigger Time": "{{AlertTriggerTime}}",
+          "AlertDefinitionID": "{{AlertDefID}}",
+          "ObjectID": "{{ObjectID}}",
+          "ObjectType": "{{ObjectType}}",
+          "Alert Description": "{{AlertDescription}}"
+        },
+        "ignoreExtraPropertiesFromPayload": false,
+        "ignoreRespondersFromPayload": true
+      }
+    ],
+    "close": [
+      {
+        "type": "close",
+        "name": "Close Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "ActionType",
+              "not": false,
+              "operation": "equals",
+              "expectedValue": "Close"
+            }
+          ]
+        },
+        "user": "Solarwinds",
+        "note": "",
+        "alias": "{{alias}}"
+      }
+    ],
+    "acknowledge": [],
+    "addNote": []
+  },
+  "took": 0.043,
+  "requestId": "c22e1f81-cbdf-415d-869a-e90c9c4cd22c"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "7fcb4108-a7ad-4ce2-b9e7-d1b2ffc99234",
+      "name": "eNOC_PingdomV2",
+      "enabled": true,
+      "type": "PingdomV2",
+      "teamId": "0d1ee0ad-562e-4824-b021-db9d398b549d"
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "Create Uptime Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "current_state",
+              "not": false,
+              "operation": "equals",
+              "expectedValue": "DOWN"
+            }
+          ]
+        },
+        "user": "Pingdom",
+        "note": "",
+        "alias": "{{check_id}}",
+        "source": "Pingdom",
+        "message": "[Pingdom] {{hostname}} {{check_name}} has an alert",
+        "description": "{{long_description}}\n\nCheck Name : {{check_name}}\n\nCheck Type : {{check_type}}\n\nCheck Params : {{check_params}}\n\nTime (UTC) : {{state_changed_utc_time}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "0d1ee0ad-562e-4824-b021-db9d398b549d",
+            "name": "AMIS-eNOC"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "0d1ee0ad-562e-4824-b021-db9d398b549d",
+            "name": "AMIS-eNOC"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMIS"
+        ],
+        "ignoreTagsFromPayload": false,
+        "extraProperties": {},
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "Create Transaction Alert",
+        "order": 2,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "current_state",
+              "not": false,
+              "operation": "equals",
+              "expectedValue": "FAILING"
+            }
+          ]
+        },
+        "user": "Pingdom",
+        "note": "",
+        "alias": "{{check_id}}",
+        "source": "Pingdom",
+        "message": "[Pingdom] {{url}} {{check_name}} has an alert",
+        "description": "{{long_description}}\n\nCheck Name : {{check_name}}\n\nCheck Type : {{check_type}}\n\nCheck Params : {{check_params}}\n\nTime (UTC) : {{state_changed_utc_time}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "0d1ee0ad-562e-4824-b021-db9d398b549d",
+            "name": "AMIS-eNOC"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "0d1ee0ad-562e-4824-b021-db9d398b549d",
+            "name": "AMIS-eNOC"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMIS"
+        ],
+        "ignoreTagsFromPayload": false,
+        "extraProperties": {},
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      }
+    ],
+    "close": [
+      {
+        "type": "close",
+        "name": "Close Uptime Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "current_state",
+              "not": false,
+              "operation": "equals",
+              "expectedValue": "UP"
+            }
+          ]
+        },
+        "user": "Pingdom",
+        "note": "",
+        "alias": "{{check_id}}"
+      },
+      {
+        "type": "close",
+        "name": "Close Transaction Alert",
+        "order": 2,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "current_state",
+              "not": false,
+              "operation": "equals",
+              "expectedValue": "SUCCESS"
+            }
+          ]
+        },
+        "user": "Pingdom",
+        "note": "",
+        "alias": "{{check_id}}"
+      }
+    ],
+    "acknowledge": [],
+    "addNote": []
+  },
+  "took": 0.008,
+  "requestId": "ec709a5c-60c1-4e90-8253-d8480d038caf"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "82a78a2e-50e4-4f73-a859-4fb2a4184901",
+      "name": "AMI-Product-SharedServices_Email",
+      "enabled": true,
+      "type": "Email",
+      "teamId": "e6221d5c-4b5e-4967-ab48-4e53d6bc4964",
+      "emailAddress": "ami_support_shared_services@arch-amis.opsgenie.net"
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "Create Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "",
+        "note": "",
+        "alias": "",
+        "source": "Email",
+        "message": "{{subject}}",
+        "description": "{{message}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "e6221d5c-4b5e-4967-ab48-4e53d6bc4964",
+            "name": "AMI-Product-SharedServices"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "e6221d5c-4b5e-4967-ab48-4e53d6bc4964",
+            "name": "AMI-Product-SharedServices"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "From": "{{from_address}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      }
+    ],
+    "close": [],
+    "acknowledge": [],
+    "addNote": []
+  },
+  "took": 0.011,
+  "requestId": "b9c8a920-1e05-48dd-935b-f0282067621b"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "8406e463-b127-4025-9eeb-6e1eba02614d",
+      "name": "Slack (Arch Insurance Group#da-opsgenie-1606337341792)",
+      "enabled": true,
+      "type": "SlackApp",
+      "teamId": "270072e1-109a-4b46-9dbc-b4e25a100020"
+    },
+    "ignore": [],
+    "create": [],
+    "close": [],
+    "acknowledge": [],
+    "addNote": []
+  },
+  "took": 0.01,
+  "requestId": "1c75fe26-0d7d-4c13-a23c-9b6e0a7c2cd6"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "8e5825b6-d48a-4e82-b072-36fdfa0ac573",
+      "name": "AMI-PXO Generic Alert Email",
+      "enabled": true,
+      "type": "Email",
+      "teamId": "491be867-7826-46a3-b762-23eda43da006",
+      "emailAddress": "ami-pxo-opsgenie-alert@arch-amis.opsgenie.net"
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "EAP JVM Down",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "subject",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Application is Down"
+            }
+          ]
+        },
+        "user": "",
+        "note": "",
+        "alias": "{{subject}}-{{from_address}}",
+        "source": "Email",
+        "message": "{{subject}}",
+        "description": "Subject: {{subject}}\nMessage: {{message}}\nFrom: {{from_address}}",
+        "entity": "",
+        "priority": "P1",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "EAP",
+          "PXO"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "From": "{{from_address}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AppD",
+        "order": 2,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "from_address",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "appd_production_noreply"
+            }
+          ]
+        },
+        "user": "",
+        "note": "",
+        "alias": "{{search_name}}-{{result.host}}-{{source}}-{{source_type}}",
+        "source": "Email",
+        "message": "{{subject}}",
+        "description": "{{message}}",
+        "entity": "",
+        "priority": "P5",
+        "customPriority": "",
+        "appendAttachments": false,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "APPD",
+          "PXO"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "From": "{{from_address}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "App DOWN",
+        "order": 3,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "subject",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "DOWN"
+            }
+          ]
+        },
+        "user": "",
+        "note": "",
+        "alias": "",
+        "source": "Email",
+        "message": "{{subject}}",
+        "description": "{{message}}",
+        "entity": "",
+        "priority": "P1",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "PXO"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "From": "{{from_address}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "SvcPXOIntegrations Forward",
+        "order": 4,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "subject",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Send this to Opsgenie"
+            }
+          ]
+        },
+        "user": "",
+        "note": "",
+        "alias": "",
+        "source": "Email",
+        "message": "{{subject}}",
+        "description": "{{message}}",
+        "entity": "",
+        "priority": "P5",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "PXO"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "From": "{{from_address}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "DRDL File Alert",
+        "order": 5,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "subject",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "DRDL File in production"
+            }
+          ]
+        },
+        "user": "",
+        "note": "",
+        "alias": "{{subject}}",
+        "source": "Email",
+        "message": "{{subject}}",
+        "description": "{{message}}\n\nlogin to ami-prvmgdb003   and execute script /usr/bin/mongosqlschema\nAlso notify the DBE admin oncall to have them aware of this problem",
+        "entity": "ami-prvmgdb003",
+        "priority": "P2",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "DRDL",
+          "PXO"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "From": "{{from_address}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "Default",
+        "order": 6,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "",
+        "note": "",
+        "alias": "",
+        "source": "Email",
+        "message": "{{subject}}",
+        "description": "Subject: {{subject}}\nMessage: {{message}}\nFrom: {{from_address}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "PXO"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "From": "{{from_address}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      }
+    ],
+    "close": [],
+    "acknowledge": [],
+    "addNote": []
+  },
+  "took": 0.027,
+  "requestId": "67110ddd-f54a-4ce4-aa27-8829544e27c9"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "9098b4fe-e9cf-41c7-bd0f-4027059a1f57",
+      "name": "AIGI - API",
+      "enabled": true,
+      "type": "API",
+      "teamId": ""
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "Create Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "tags",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "AIGI"
+            }
+          ]
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}",
+        "source": "{{source}}",
+        "message": "{{message}}",
+        "description": "{{description}}",
+        "entity": "{{entity}}",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": false,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": false,
+        "ignoreTeamsFromPayload": false,
+        "tags": [],
+        "ignoreTagsFromPayload": false,
+        "extraProperties": {},
+        "ignoreExtraPropertiesFromPayload": false,
+        "ignoreRespondersFromPayload": false
+      }
+    ],
+    "close": [
+      {
+        "type": "close",
+        "name": "Close Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}"
+      }
+    ],
+    "acknowledge": [
+      {
+        "type": "acknowledge",
+        "name": "Acknowledge Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}"
+      }
+    ],
+    "addNote": [
+      {
+        "type": "addNote",
+        "name": "Add Note",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}"
+      }
+    ]
+  },
+  "took": 0.016,
+  "requestId": "09badb3b-0ecd-4a67-9d9a-88ea41c2271f"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "9143d39b-3591-4de2-9363-9106a662d081",
+      "name": "AIGI-Solarwinds NPM Integration",
+      "enabled": true,
+      "type": "Solarwinds",
+      "teamId": ""
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "AMIS-eNOC-Test",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "Solarwinds",
+        "note": "",
+        "alias": "{{alias}}",
+        "source": "Solarwinds",
+        "message": "{{NodeName}}{{AlertDescription}}{{AcknowledgedTime}}",
+        "description": "{{AlertDescription}}",
+        "entity": "AIGI Orion",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": false,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": false,
+        "ignoreTeamsFromPayload": false,
+        "tags": [],
+        "ignoreTagsFromPayload": false,
+        "extraProperties": {
+          "Alert Details URL": "{{AlertDetailsUrl}}",
+          "Acknowledge URL": "{{AcknowledgeUrl}}",
+          "Acknowledged": "{{Acknowledged}}",
+          "Alert Trigger Time": "{{AlertTriggerTime}}",
+          "AlertDefinitionID": "{{AlertDefID}}",
+          "ObjectID": "{{ObjectID}}",
+          "ObjectType": "{{ObjectType}}"
+        },
+        "ignoreExtraPropertiesFromPayload": false,
+        "ignoreRespondersFromPayload": false
+      }
+    ],
+    "close": [
+      {
+        "type": "close",
+        "name": "Close Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "ActionType",
+              "not": false,
+              "operation": "equals",
+              "expectedValue": "Close"
+            }
+          ]
+        },
+        "user": "Solarwinds",
+        "note": "",
+        "alias": "{{alias}}"
+      }
+    ],
+    "acknowledge": [],
+    "addNote": []
+  },
+  "took": 0.015,
+  "requestId": "7dcf6641-6117-40d5-9bd8-d6046be6946e"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "91d112a1-6713-4912-817d-44b7268c6e16",
+      "name": "AMI-Product-MIPS_Email",
+      "enabled": true,
+      "type": "Email",
+      "teamId": "8d093168-4d2a-4ffd-9f6b-85023b9c5004",
+      "emailAddress": "ami-mips@arch-amis.opsgenie.net"
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "Create Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "",
+        "note": "",
+        "alias": "",
+        "source": "Email",
+        "message": "{{subject}}",
+        "description": "{{message}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "8d093168-4d2a-4ffd-9f6b-85023b9c5004",
+            "name": "AMI-Product-MIPS"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "8d093168-4d2a-4ffd-9f6b-85023b9c5004",
+            "name": "AMI-Product-MIPS"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "From": "{{from_address}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      }
+    ],
+    "close": [],
+    "acknowledge": [],
+    "addNote": []
+  },
+  "took": 0.011,
+  "requestId": "5b37dd30-d38a-4d72-bc9b-123c6169265a"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "9c6de0a2-d1cc-46c4-94a1-42e5ac1f5fb3",
+      "name": "AIGI-Incident_Management_Email",
+      "enabled": true,
+      "type": "Email",
+      "teamId": "",
+      "emailAddress": "aigiincidentmgmt@arch-amis.opsgenie.net"
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "Create Alert - PolicyWriter Casualty",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "message",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Casualty"
+            }
+          ]
+        },
+        "user": "",
+        "note": "Alert created and escalated to support teams",
+        "alias": "",
+        "source": "Email",
+        "message": "{{ message.substringBetween(\"Incident Summary:\",\"Service\") }}",
+        "description": "{{message.substringBetween(\"Business Impact:\",\"Priority:\")}}",
+        "entity": "{{message.substringBetween(\"Service(s) Impacted:\",\"Business Impact:\")}}",
+        "priority": null,
+        "customPriority": "{{message.substringBetween(\"Priority:\\r\\n\",\"\\r\\nStart Date\")}}",
+        "appendAttachments": false,
+        "alertActions": [
+          "Join the bridge"
+        ],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "17b5b951-13df-494c-92f4-b37773a09f85",
+            "name": "AIGI-Incident Management"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "17b5b951-13df-494c-92f4-b37773a09f85",
+            "name": "AIGI-Incident Management"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "AIGI Incident Management"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "From": "{{from_address}}",
+          "SNOW-AssignmentGroup": "AIGI-Product-PWCAS",
+          "SNOW-Service": "AIGI - Applications",
+          "SNOW-Config-Item": "PolicyWriter Casualty"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "Create Alert - Surety",
+        "order": 2,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "message",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Surety"
+            }
+          ]
+        },
+        "user": "",
+        "note": "",
+        "alias": "",
+        "source": "Email",
+        "message": "{{ message.substringBetween(\"Incident Summary:\",\"Service\") }}",
+        "description": "{{message.substringBetween(\"Business Impact:\",\"Priority:\")}}",
+        "entity": "{{message.substringBetween(\"Service(s) Impacted:\",\"Business Impact:\")}}",
+        "priority": null,
+        "customPriority": "{{message.substringBetween(\"Priority:\\r\\n\",\"\\r\\nStart Date\")}}",
+        "appendAttachments": false,
+        "alertActions": [
+          "Join the bridge"
+        ],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "17b5b951-13df-494c-92f4-b37773a09f85",
+            "name": "AIGI-Incident Management"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "17b5b951-13df-494c-92f4-b37773a09f85",
+            "name": "AIGI-Incident Management"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "AIGI Incident Management"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "From": "{{from_address}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      }
+    ],
+    "close": [],
+    "acknowledge": [],
+    "addNote": []
+  },
+  "took": 0.017,
+  "requestId": "09c169d4-0633-4d72-acc1-0e1897bbe1c7"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "9dc621af-d779-4dcc-9e96-a168f3df515b",
+      "name": "AMI-PXO Team - Help Request",
+      "enabled": true,
+      "type": "Email",
+      "teamId": "491be867-7826-46a3-b762-23eda43da006",
+      "emailAddress": "ami-pxo-help@arch-amis.opsgenie.net"
+    },
+    "ignore": [
+      {
+        "type": "ignore",
+        "name": "Ignore Replies",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "subject",
+              "not": false,
+              "operation": "starts-with",
+              "expectedValue": "RE:"
+            }
+          ]
+        }
+      },
+      {
+        "type": "ignore",
+        "name": "Ignore non-Arch emails",
+        "order": 2,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "from_address",
+              "not": true,
+              "operation": "contains",
+              "expectedValue": "@arch"
+            },
+            {
+              "field": "from_address",
+              "not": true,
+              "operation": "contains",
+              "expectedValue": "@ugcorp.com"
+            }
+          ]
+        }
+      },
+      {
+        "type": "ignore",
+        "name": "Ignore iseries startups",
+        "order": 3,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "subject",
+              "not": false,
+              "operation": "starts-with",
+              "expectedValue": "Iseries System AS400SFA online"
+            },
+            {
+              "field": "subject",
+              "not": false,
+              "operation": "starts-with",
+              "expectedValue": "Iseries System RCIDEA01 online"
+            }
+          ]
+        }
+      }
+    ],
+    "create": [
+      {
+        "type": "create",
+        "name": "PXO Help Needed",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "",
+        "note": "From: {{from_name}}\nAddress: {{from_address}}\nSubject: {{subject}}\nMessage:\n{{message}}",
+        "alias": "{{subject}}-{{from_address}}",
+        "source": "Email",
+        "message": "PXO Help Needed from {{from_address}}",
+        "description": "From: {{from_name}}\nAddress: {{from_address}}\nSubject: {{subject}}\nMessage:\n{{message}}",
+        "entity": "",
+        "priority": "P2",
+        "customPriority": "",
+        "appendAttachments": false,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "HELP",
+          "PXO"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "From": "{{from_address}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      }
+    ],
+    "close": [],
+    "acknowledge": [],
+    "addNote": []
+  },
+  "took": 0.017,
+  "requestId": "b8cb80e0-e2ae-42b9-86cb-f5d3102fd5a4"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "a6508dc6-29b4-47fc-a233-f1358574a70d",
+      "name": "AMI-Product-OPNG_Email",
+      "enabled": true,
+      "type": "Email",
+      "teamId": "5f688a80-02b4-4375-9c06-14d9b09365df",
+      "emailAddress": "opng-prod-alerts@arch-amis.opsgenie.net"
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "Create Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "",
+        "note": "",
+        "alias": "",
+        "source": "Email",
+        "message": "{{subject}}",
+        "description": "{{message}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "5f688a80-02b4-4375-9c06-14d9b09365df",
+            "name": "AMI-Product-OPNG"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "5f688a80-02b4-4375-9c06-14d9b09365df",
+            "name": "AMI-Product-OPNG"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "From": "{{from_address}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      }
+    ],
+    "close": [],
+    "acknowledge": [],
+    "addNote": []
+  },
+  "took": 0.013,
+  "requestId": "28b8289b-b089-4e46-adb3-965bc9817caa"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "ad13b4ac-fe55-4e5e-997e-bcac2e2d2916",
+      "name": "AMI-Harness API",
+      "enabled": true,
+      "type": "API",
+      "teamId": ""
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "Create Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}",
+        "source": "{{source}}",
+        "message": "{{message}}",
+        "description": "{{description}}",
+        "entity": "{{entity}}",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": false,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": false,
+        "ignoreTeamsFromPayload": false,
+        "tags": [
+          "Harness",
+          "PXO"
+        ],
+        "ignoreTagsFromPayload": false,
+        "extraProperties": {},
+        "ignoreExtraPropertiesFromPayload": false,
+        "ignoreRespondersFromPayload": false
+      }
+    ],
+    "close": [
+      {
+        "type": "close",
+        "name": "Close Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}"
+      }
+    ],
+    "acknowledge": [
+      {
+        "type": "acknowledge",
+        "name": "Acknowledge Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}"
+      }
+    ],
+    "addNote": [
+      {
+        "type": "addNote",
+        "name": "Add Note",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}"
+      }
+    ]
+  },
+  "took": 0.011,
+  "requestId": "7f842d3f-529e-48b7-92e4-fb4c8a446a00"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "af0130e3-4eaf-4b93-a8b5-ed8cb4492f47",
+      "name": "AMI-PXO-Automate Schedule Email",
+      "enabled": true,
+      "type": "Email",
+      "teamId": "491be867-7826-46a3-b762-23eda43da006",
+      "emailAddress": "ami-pxo-automate@arch-amis.opsgenie.net"
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "Create Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "",
+        "note": "",
+        "alias": "{{subject}}",
+        "source": "Email",
+        "message": "{{subject}}",
+        "description": "{{message}}\n\nFurther details can be found on https://scheduler.cmgmi.local inside the History of the job specified.",
+        "entity": "",
+        "priority": "P2",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "AUTOMATE",
+          "PXO"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "From": "{{from_address}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      }
+    ],
+    "close": [],
+    "acknowledge": [],
+    "addNote": []
+  },
+  "took": 0.016,
+  "requestId": "2f5d5f76-e9bd-43a4-a892-dcb2fc4025a7"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "b8069244-707e-4a94-90a5-c6da812e79ce",
+      "name": "AIGI-Splunk",
+      "enabled": true,
+      "type": "Splunk",
+      "teamId": ""
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "MajescoLogs",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "P4 - Low - Failed in Majesco"
+            },
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "P4 - Low - Majescolog \"Code Error\""
+            },
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "P4 - Low ETL ERROR"
+            },
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "P4 - Low Stuck Policy"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "",
+        "alias": "{{search_name}}",
+        "source": "Splunk",
+        "message": "{{search_name}}\nPolicy Number: {{result.PolicyNumber}}",
+        "description": "Policy Number: {{result.PolicyNumber}}\nResult: {{result}}",
+        "entity": "",
+        "priority": "P4",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "aims",
+          "splunk"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {},
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "Auth0 Brute force protection, Blocked IP",
+        "order": 2,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "P3 - Medium - Auth0  Blocked IP"
+            },
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "P3 - Medium - Auth0 Brute force protection, Blocked IP Clone"
+            },
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "P3 - Medium - Auth0 Brute force protection, Blocked IP"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "",
+        "alias": "",
+        "source": "Splunk",
+        "message": "Auth0 Brute force protection, Blocked IP ({{result.username}})",
+        "description": "Auth0 Brute force protection, Blocked IP\n\nUsername:  {{result.username}}\nMessage: {{result.description}}\nSource IP: {{result.ip}}",
+        "entity": "",
+        "priority": "P3",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "auth0",
+          "splunk"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Results Link": "{{results_link}}",
+          "Result": "{{result}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "Auth0 Incorrect Auth. Method",
+        "order": 3,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "P3 - Medium - Auth0 Incorrect Auth. method by Arch Users (Could be misconfigure on Arch side)"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "",
+        "alias": "",
+        "source": "Splunk",
+        "message": "Auth0 Incorrect Authentication method.\nUsername is  {{result.username}}",
+        "description": "Auth0 Incorrect Authentication method.\n\nIf we see a high counts of them in a short time, this could be a DDOS attack OR it can be a misconfiguration as well.  Try to figure out is there any Auth0 Configuration change recently.\n\nUsername is  {{result.username}}\n\n{{result}}",
+        "entity": "",
+        "priority": "P3",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [
+          "Please contact AIGI Infrastructure Engineering <AIGIInfrastructureEngineering@archcapservices.com>"
+        ],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "auth0",
+          "splunk"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Raw": "{{raw}}",
+          "Results Link": "{{results_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "Auth0 Excessive New Accounts",
+        "order": 4,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Auth0 Excessive New Accounts in the last 60 minutes"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "",
+        "alias": "",
+        "source": "Splunk",
+        "message": "Auth0 Excessive New Accounts in the last 60 minutes",
+        "description": "There were {{result.NewAuth0Accounts}} new accounts created  in the last 60 minutes.  It can be a form of DDOS attack.  Please confirm.",
+        "entity": "",
+        "priority": "P3",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "auth0",
+          "splunk"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Raw": "{{raw}}",
+          "Results Link": "{{results_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "Auth0 Invalid Username or Password",
+        "order": 5,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Auth0 Invalid Username or Password Happened 30 times in the last 60 minutes"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "",
+        "alias": "",
+        "source": "Splunk",
+        "message": "Auth0 Excessive New Accounts in the last 60 minutes",
+        "description": "There were {{result.FailedUsernameOrFailePassword}} failed login attempt in the last 60 minutes.  It can be a form of DDOS attack.  Please confirm.",
+        "entity": "",
+        "priority": "P3",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "auth0",
+          "splunk"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Raw": "{{raw}}",
+          "Results Link": "{{results_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AIGI-TM1-Alert",
+        "order": 6,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "AIGI-TM1-Alert"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "",
+        "alias": "",
+        "source": "Splunk",
+        "message": "{{result}}",
+        "description": "{{result}}",
+        "entity": "",
+        "priority": "P5",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "splunk",
+          "tm1"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Raw": "{{raw}}",
+          "Results Link": "{{results_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "ImageRight (DEBUG AND SecurityToken AND \"Please restart ImageRight Desktop.\"",
+        "order": 7,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "ImageRight (DEBUG AND SecurityToken AND \"Please restart ImageRight Desktop.\""
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "",
+        "alias": "",
+        "source": "Splunk",
+        "message": "ImageRight (DEBUG AND SecurityToken AND \"Please restart ImageRight Desktop.\"",
+        "description": "{{result}}",
+        "entity": "",
+        "priority": "P5",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "imageright",
+          "splunk"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Raw": "{{raw}}",
+          "Results Link": "{{results_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AIGI Kubernetes CPU",
+        "order": 8,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Monitoring Kubernetes: Cluster Warning: container cpu is throttled"
+            },
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Monitoring Kubernetes: Cluster Warning: container cpu is throttled"
+            },
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Monitoring Kubernetes: Warning: Node reservation of cpu is above 90 percent"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "",
+        "alias": "{{search_name}}-{{result.host}}-{{result.openshift_namespace}}",
+        "source": "Splunk",
+        "message": "Splunk Alert [{{search_name}}] was triggered",
+        "description": "Host: {{result.host}}\nNamespace: {{result.openshift_namespace}}\nContainer: {{result.openshift_container_name}}\nPod: {{result.openshift_pod_name}}\nCPU Limit: {{result.openshift_container_resources_limits_cpu}}\nCPU Percent of Limit: {{result.avg_cpu_pct_of_limit}}%\n\nAction to take: investigate why cpu is running at an elevated level. See the Opsgenie Notes section for a full list of Pods that triggered this alert.",
+        "entity": "",
+        "priority": "P4",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "kubernetes",
+          "splunk"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Results Link": "{{results_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AIGI Kubernetes WARNING",
+        "order": 9,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Monitoring Kubernetes: Cluster Warning"
+            },
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Monitoring Kubernetes: Events: Constant Warning"
+            },
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Monitoring Kubernetes: Warning"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "",
+        "alias": "{{search_name}}",
+        "source": "Splunk",
+        "message": "Splunk Alert [{{search_name}}] was triggered",
+        "description": "Host: {{result.host}}\nNamespace: {{result.openshift_namespace}}\nContainer: {{result.openshift_container_name}}\nPod: {{result.openshift_pod_name}}\n\nAction to take: investigate. See the Opsgenie Notes section for a full list of Pods that triggered this alert.",
+        "entity": "",
+        "priority": "P4",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "kubernetes",
+          "splunk"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Results Link": "{{results_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AIGI Kubernetes Critical",
+        "order": 10,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Monitoring Kubernetes: Cluster Critical"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "",
+        "alias": "",
+        "source": "Splunk",
+        "message": "Splunk Alert [{{search_name}}] was triggered",
+        "description": "Host: {{result.host}}\nNamespace: {{result.openshift_namespace}}\nContainer: {{result.openshift_container_name}}\nPod: {{result.openshift_pod_name}}\n\nAction to take: investigate. See the Opsgenie Notes section for a full list of Pods that triggered this alert.\n\nContact AIGIInfrastructureEngineering@archcapservices.com",
+        "entity": "",
+        "priority": "P3",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "kubernetes",
+          "splunk"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Results Link": "{{results_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AIGI Kubernetes Collector",
+        "order": 11,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Monitoring Kubernetes: Collector"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "",
+        "alias": "{{search_name}}",
+        "source": "Splunk",
+        "message": "Splunk Alert [{{search_name}}] was triggered",
+        "description": "Host: {{result.host}}\nNamespace: {{result.openshift_namespace}}\nContainer: {{result.openshift_container_name}}\nPod: {{result.openshift_pod_name}}\n\nAction to take: Inform  AIGI Infrastructure Engineering <AIGIInfrastructureEngineering@archcapservices.com>\nSee the Opsgenie Notes section for a full list of Pods that triggered this alert.",
+        "entity": "",
+        "priority": "P3",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "kubernetes",
+          "splunk"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Results Link": "{{results_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AIGI Kubernetes Monitoring Kubernetes: Events: Constant Warning",
+        "order": 12,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Monitoring Kubernetes: Events: Constant Warning"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "",
+        "alias": "{{search_name}}",
+        "source": "Splunk",
+        "message": "Splunk Alert [{{search_name}}] was triggered",
+        "description": "Host: {{result.host}}\n\n{{result}}\n\nAction to take: Inform  AIGI Infrastructure Engineering <AIGIInfrastructureEngineering@archcapservices.com>\nSee the Opsgenie Notes section for a full list of Pods that triggered this alert.",
+        "entity": "",
+        "priority": "P3",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "kubernetes",
+          "splunk"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Results Link": "{{results_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AIGI Kubernetes Claims API",
+        "order": 13,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Kubernetes_Claims_API_Daily_ERROR_OpsGenie"
+            },
+            {
+              "field": "splunk_server",
+              "not": false,
+              "operation": "matches",
+              "expectedValue": "splunk-stg"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "",
+        "alias": "",
+        "source": "Splunk",
+        "message": "{{search_name}}",
+        "description": "Sid:{{sid}}\nSource Type:{{source_type}}\nSplunk Server:{{splunk_server}}\nServer Host:{{server_host}}\nIndex:{{index}}\nSource : {{Source}}\nTag: {{result.aigi}},{{result.claims}}\nTeam: {{result.AIGI-Product-CLMA}}",
+        "entity": "",
+        "priority": "P5",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "claims",
+          "splunk"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {},
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AIGI OpenShift CPU",
+        "order": 14,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Monitoring Openshift"
+            },
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "cpu"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "",
+        "alias": "{{search_name}}-{{result.host}}-{{result.openshift_namespace}}",
+        "source": "Splunk",
+        "message": "Splunk Alert [{{search_name}}] was triggered",
+        "description": "Host: {{result.host}}\nNamespace: {{result.openshift_namespace}}\nContainer: {{result.openshift_container_name}}\nPod: {{result.openshift_pod_name}}\nCPU Limit: {{result.openshift_container_resources_limits_cpu}}\nCPU Percent of Limit: {{result.avg_cpu_pct_of_limit}}%\n\nAction to take: investigate why cpu is running at an elevated level. See the Opsgenie Notes section for a full list of Pods that triggered this alert.",
+        "entity": "",
+        "priority": "P4",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "openshift",
+          "splunk"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Results Link": "{{results_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AIGI OpenShift WARNING",
+        "order": 15,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Monitoring OpenShift: Warning: collectord has WARN or ERROR logs"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "",
+        "alias": "{{search_name}}",
+        "source": "Splunk",
+        "message": "Splunk Alert [{{search_name}}] was triggered",
+        "description": "Contact AIGI Infrastructure Engineering <AIGIInfrastructureEngineering@archcapservices.com>\n\nThis is the Outcold Plugin for Openshift.\n\n{{result}}",
+        "entity": "",
+        "priority": "P4",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "openshift",
+          "outcold",
+          "splunk"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Results Link": "{{results_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AIGI OpenShift Critical",
+        "order": 16,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Monitoring OpenShift: Cluster Critical"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "",
+        "alias": "",
+        "source": "Splunk",
+        "message": "Splunk Alert [{{search_name}}] was triggered",
+        "description": "Host: {{result.host}}\n\nAction to take: investigate. See the Opsgenie Notes section for a full list of Pods that triggered this alert.\n\nContact AIGIInfrastructureEngineering@archcapservices.com",
+        "entity": "",
+        "priority": "P3",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "openshift",
+          "splunk"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Results Link": "{{results_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AIGI Openshift Info",
+        "order": 17,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Monitoring OpenShift: Cluster Info"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "",
+        "alias": "",
+        "source": "Splunk",
+        "message": "Splunk Alert [{{search_name}}] was triggered",
+        "description": "Host: {{result.host}}\n\nAction to take: Inform  AIGI Infrastructure Engineering <AIGIInfrastructureEngineering@archcapservices.com>\nSee the Opsgenie Notes section for a full list of Pods that triggered this alert.",
+        "entity": "",
+        "priority": "P5",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "openshift",
+          "splunk"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Results Link": "{{results_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AIGI Openshift Satellite",
+        "order": 18,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Satellite Service: pthread_create failed"
+            },
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Satellite is Sick"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "",
+        "alias": "",
+        "source": "Splunk",
+        "message": "Splunk Alert [{{search_name}}] was triggered",
+        "description": "Host: {{result.host}}\n\nAction to take: email egozdieski@corp.archcapservices.com",
+        "entity": "",
+        "priority": "P4",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "openshift",
+          "satellite",
+          "splunk"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Results Link": "{{results_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AIGI Windows Event Log",
+        "order": 19,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Monitoring OpenShift: Collector"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "",
+        "alias": "",
+        "source": "Splunk",
+        "message": "Splunk Alert [{{search_name}}] was triggered",
+        "description": "Host: {{result.host}}\n\nAction to take: Inform  AIGI Infrastructure Engineering <AIGIInfrastructureEngineering@archcapservices.com>\nSee the Opsgenie Notes section for a full list of Pods that triggered this alert.",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "openshift",
+          "splunk"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Results Link": "{{results_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AIGI Splunk Index Size",
+        "order": 20,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "AIGI Index Size Check"
+            }
+          ]
+        },
+        "user": "Splunk {{result.rlau}}",
+        "note": "",
+        "alias": "AIGI",
+        "source": "Splunk {{result.splunkhost}}",
+        "message": "[Splunk] {{search_name}}",
+        "description": "Host: {{result.splunkhost}}\nIndex: {{result.title}}\nUsage in %: {{result.perc}}\n\nPlease login to Splunk Linux console at {{result.splunkhost}}\n\nGo to /opt/splunk/var/lib/splunk/{{result.title}}/\nRun a df -h \nand see what you can remove based on date.",
+        "entity": "",
+        "priority": "P3",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "8aff7fe5-f2d7-4b53-aed8-e9b48494d397",
+            "name": "AIGI-Infrastructure-Middleware"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "8aff7fe5-f2d7-4b53-aed8-e9b48494d397",
+            "name": "AIGI-Infrastructure-Middleware"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "Splunk",
+          "{{result.splunkhost}}"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Raw": "{{raw}}",
+          "Results Link": "{{results_link}}",
+          "Responder": "{{result.responseteam}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "AIGI AIR",
+        "order": 21,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "AIGI-AIR-Completed_With_Exception"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "",
+        "alias": "{{search_name}}",
+        "source": "Splunk",
+        "message": "AIGI AIR has a \"Status: Completed with Exception\" Error",
+        "description": "AIGI AIR has a \"Status: Completed with Exception\" Error",
+        "entity": "",
+        "priority": "P3",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [],
+        "responders": [],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AIGI",
+          "AIR",
+          "Splunk"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Raw": "{{raw}}",
+          "Results Link": "{{results_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      }
+    ],
+    "close": [],
+    "acknowledge": [],
+    "addNote": [
+      {
+        "type": "addNote",
+        "name": "Add Note",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "Splunk",
+        "note": "{{result}}",
+        "alias": "{{result}}"
+      }
+    ]
+  },
+  "took": 0.009,
+  "requestId": "34d2f600-2ce1-4273-bd23-15ff1e1856e5"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "bafb7be5-59b7-4405-b5b6-4982a7c772b0",
+      "name": "AMI-Splunk-NonProd",
+      "enabled": true,
+      "type": "Splunk",
+      "teamId": ""
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "NGS-Stage",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "search_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "NGS"
+            }
+          ]
+        },
+        "user": "Splunk",
+        "note": "Log: {{raw}}\nResults Link: {{results_link}}",
+        "alias": "{{result.openshift_namespace}}_{{result.openshift_pod_name}}",
+        "source": "Splunk",
+        "message": "Nonprod Splunk Alert - NGS_{{result.openshift_container_name}}",
+        "description": "Openshift Pod Name: {{result.openshift_pod_name}}",
+        "entity": "{{result.openshift_container_name}}",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "user",
+            "id": "e0fbd64d-a956-4ca0-b7a9-b2350465751d",
+            "username": "cyuan@archmi.com"
+          }
+        ],
+        "responders": [
+          {
+            "type": "user",
+            "id": "e0fbd64d-a956-4ca0-b7a9-b2350465751d",
+            "username": "cyuan@archmi.com"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "NGS",
+          "SPLUNK-NONPROD"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Host": "{{result.host}}",
+          "Container Image Name": "{{result.openshift_container_imageid}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      }
+    ],
+    "close": [],
+    "acknowledge": [],
+    "addNote": [
+      {
+        "type": "addNote",
+        "name": "Add Note",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "Splunk",
+        "note": "Log: {{raw}}",
+        "alias": "{{result.openshift_namespace}}_{{result.openshift_pod_name}}"
+      }
+    ]
+  },
+  "took": 0.032,
+  "requestId": "1660f0e3-d78c-453d-be81-44bd42b8ce58"
+}
+{
+  "code": 40302,
+  "message": "Create and update operations for type [IncomingCall is forbidden",
+  "took": 0.009,
+  "requestId": "04b84511-fc97-4943-83e1-083fba7bd8a4"
+}
+{
+  "message": "ServiceNow is deprecated.",
+  "took": 0.009,
+  "requestId": "45169ca0-0e94-446b-be87-4ef83f80f15d"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "de5e0ed7-f3fe-40d9-9a59-d68efadd5da8",
+      "name": "eNOC_Email",
+      "enabled": true,
+      "type": "Email",
+      "teamId": "0d1ee0ad-562e-4824-b021-db9d398b549d",
+      "emailAddress": "enoc@arch-amis.opsgenie.net"
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "Create Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "",
+        "note": "",
+        "alias": "",
+        "source": "Email",
+        "message": "{{subject}}",
+        "description": "{{message}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "0d1ee0ad-562e-4824-b021-db9d398b549d",
+            "name": "AMIS-eNOC"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "0d1ee0ad-562e-4824-b021-db9d398b549d",
+            "name": "AMIS-eNOC"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "From": "{{from_address}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      }
+    ],
+    "close": [],
+    "acknowledge": [],
+    "addNote": []
+  },
+  "took": 0.013,
+  "requestId": "b24ae60c-fc08-4610-90ff-612c3b30ed6e"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "dfe121d9-1bb3-4714-9fb3-4a34353c58c0",
+      "name": "AMI-AppD-Production",
+      "enabled": true,
+      "type": "AppDynamics",
+      "teamId": ""
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "NGS",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "app_name",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "OCP-NGS"
+            }
+          ]
+        },
+        "user": "AppDynamics",
+        "note": "Event Message: {{event_message}}\nHealth Rule Violated: {{health_rule_name}}\nApplication: {{app_name}}\nNode: {{node_name}}\nTier: {{tier_name}}\nEvent Time : {{event_time}}\nSeverity: {{severity}}\nPolicy: {{policy}}",
+        "alias": "{{severity}}-{{policy}}-{{health_rule_name}}-{{tier_name}}",
+        "source": "AppDynamics",
+        "message": "Prod AppD Alert [{{policy}} {{severity}}: {{health_rule_name}}] was triggered",
+        "description": "Event Message: {{event_message}}\nHealth Rule Violated: {{health_rule_name}}\nApplication: {{app_name}}\nNode: {{node_name}}\nTier: {{tier_name}}\nEvent Time : {{event_time}}\nSeverity: {{severity}}\nPolicy: {{policy}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "179911fc-25c2-4743-9858-30557f187e79",
+            "name": "AMI-Product-NGS"
+          },
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "179911fc-25c2-4743-9858-30557f187e79",
+            "name": "AMI-Product-NGS"
+          },
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "APPD",
+          "NGS"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Controller URL": "{{controller_url}}",
+          "Event Deep Link": "{{event_deep_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "Alert-P1",
+        "order": 2,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "severity",
+              "not": false,
+              "operation": "equals",
+              "expectedValue": "ERROR"
+            },
+            {
+              "field": "event_type",
+              "not": true,
+              "operation": "contains",
+              "expectedValue": "CANCELLED"
+            },
+            {
+              "field": "event_type",
+              "not": true,
+              "operation": "contains",
+              "expectedValue": "CLOSED"
+            }
+          ]
+        },
+        "user": "AppDynamics",
+        "note": "Event Message: {{event_message}}\nHealth Rule Violated: {{health_rule_name}}\nApplication: {{app_name}}\nNode: {{node_name}}\nTier: {{tier_name}}\nEvent Time : {{event_time}}\nSeverity: {{severity}}\nPolicy: {{policy}}",
+        "alias": "{{severity}}-{{policy}}-{{health_rule_name}}-{{tier_name}}",
+        "source": "AppDynamics",
+        "message": "Prod AppD Alert [{{policy}} {{severity}}: {{health_rule_name}}] was triggered",
+        "description": "Event Message: {{event_message}}\nHealth Rule Violated: {{health_rule_name}}\nApplication: {{app_name}}\nNode: {{node_name}}\nTier: {{tier_name}}\nEvent Time : {{event_time}}\nSeverity: {{severity}}\nPolicy: {{policy}}",
+        "entity": "",
+        "priority": "P1",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "APPD",
+          "PXO"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Controller URL": "{{controller_url}}",
+          "Event Deep Link": "{{event_deep_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "Alert-P3",
+        "order": 3,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "severity",
+              "not": false,
+              "operation": "equals",
+              "expectedValue": "WARN"
+            },
+            {
+              "field": "event_type",
+              "not": true,
+              "operation": "contains",
+              "expectedValue": "CANCELLED"
+            },
+            {
+              "field": "event_type",
+              "not": true,
+              "operation": "contains",
+              "expectedValue": "CLOSED"
+            }
+          ]
+        },
+        "user": "AppDynamics",
+        "note": "Event Message: {{event_message}}\nHealth Rule Violated: {{health_rule_name}}\nApplication: {{app_name}}\nNode: {{node_name}}\nTier: {{tier_name}}\nEvent Time : {{event_time}}\nSeverity: {{severity}}\nPolicy: {{policy}}",
+        "alias": "{{severity}}-{{policy}}-{{health_rule_name}}-{{tier_name}}",
+        "source": "AppDynamics",
+        "message": "Prod AppD Alert [{{policy}} {{severity}}: {{health_rule_name}}] was triggered",
+        "description": "Event Message: {{event_message}}\nHealth Rule Violated: {{health_rule_name}}\nApplication: {{app_name}}\nNode: {{node_name}}\nTier: {{tier_name}}\nEvent Time : {{event_time}}\nSeverity: {{severity}}\nPolicy: {{policy}}",
+        "entity": "",
+        "priority": "P3",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "APPD",
+          "PXO"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Controller URL": "{{controller_url}}",
+          "Event Deep Link": "{{event_deep_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "Alert-P4",
+        "order": 4,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "event_type",
+              "not": true,
+              "operation": "contains",
+              "expectedValue": "CANCELLED"
+            },
+            {
+              "field": "event_type",
+              "not": true,
+              "operation": "contains",
+              "expectedValue": "CLOSED"
+            }
+          ]
+        },
+        "user": "AppDynamics",
+        "note": "Event Message: {{event_message}}\nHealth Rule Violated: {{health_rule_name}}\nApplication: {{app_name}}\nNode: {{node_name}}\nTier: {{tier_name}}\nEvent Time : {{event_time}}\nSeverity: {{severity}}\nPolicy: {{policy}}",
+        "alias": "{{severity}}-{{policy}}-{{health_rule_name}}-{{tier_name}}",
+        "source": "AppDynamics",
+        "message": "Prod AppD Alert [{{policy}} {{severity}}: {{health_rule_name}}] was triggered",
+        "description": "Event Message: {{event_message}}\nHealth Rule Violated: {{health_rule_name}}\nApplication: {{app_name}}\nNode: {{node_name}}\nTier: {{tier_name}}\nEvent Time : {{event_time}}\nSeverity: {{severity}}\nPolicy: {{policy}}",
+        "entity": "",
+        "priority": "P4",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "APPD",
+          "PXO"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Controller URL": "{{controller_url}}",
+          "Event Deep Link": "{{event_deep_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      },
+      {
+        "type": "create",
+        "name": "Default",
+        "order": 5,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "AppDynamics",
+        "note": "Event Message: {{event_message}}\nHealth Rule Violated: {{health_rule_name}}\nApplication: {{app_name}}\nNode: {{node_name}}\nTier: {{tier_name}}\nEvent Time : {{event_time}}\nSeverity: {{severity}}\nPolicy: {{policy}}",
+        "alias": "{{severity}}-{{policy}}-{{health_rule_name}}-{{tier_name}}",
+        "source": "AppDynamics",
+        "message": "Prod AppD Alert [{{policy}} {{severity}}: {{health_rule_name}}] was triggered",
+        "description": "Event Message: {{event_message}}\nHealth Rule Violated: {{health_rule_name}}\nApplication: {{app_name}}\nNode: {{node_name}}\nTier: {{tier_name}}\nEvent Time : {{event_time}}\nSeverity: {{severity}}\nPolicy: {{policy}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "491be867-7826-46a3-b762-23eda43da006",
+            "name": "AMI-Infrastructure-PXO"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [
+          "AMI",
+          "APPD",
+          "PXO"
+        ],
+        "ignoreTagsFromPayload": true,
+        "extraProperties": {
+          "Controller URL": "{{controller_url}}",
+          "Event Deep Link": "{{event_deep_link}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": true
+      }
+    ],
+    "close": [
+      {
+        "type": "close",
+        "name": "Close Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-any-condition",
+          "conditions": [
+            {
+              "field": "event_type",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "CANCELED"
+            },
+            {
+              "field": "event_type",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "CLOSE"
+            }
+          ]
+        },
+        "user": "AppDynamics",
+        "note": "",
+        "alias": "{{incident_id}}"
+      }
+    ],
+    "acknowledge": [],
+    "addNote": []
+  },
+  "took": 0.024,
+  "requestId": "7a0c1d6a-9d7f-485b-8946-7b8aa43bd0ec"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "e2e9604e-a5cc-4d5d-a56a-00eee4ac743c",
+      "name": "AMI-Product-OPNG_API_AWS-Connect",
+      "enabled": true,
+      "type": "API",
+      "teamId": "5f688a80-02b4-4375-9c06-14d9b09365df"
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "Create Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}",
+        "source": "{{source}}",
+        "message": "{{message}}",
+        "description": "{{description}}",
+        "entity": "{{entity}}",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": false,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "5f688a80-02b4-4375-9c06-14d9b09365df",
+            "name": "AMI-Product-OPNG"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "5f688a80-02b4-4375-9c06-14d9b09365df",
+            "name": "AMI-Product-OPNG"
+          }
+        ],
+        "ignoreRecipientsFromPayload": true,
+        "ignoreTeamsFromPayload": true,
+        "tags": [],
+        "ignoreTagsFromPayload": false,
+        "extraProperties": {},
+        "ignoreExtraPropertiesFromPayload": false,
+        "ignoreRespondersFromPayload": true
+      }
+    ],
+    "close": [
+      {
+        "type": "close",
+        "name": "Close Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}"
+      }
+    ],
+    "acknowledge": [
+      {
+        "type": "acknowledge",
+        "name": "Acknowledge Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}"
+      }
+    ],
+    "addNote": [
+      {
+        "type": "addNote",
+        "name": "Add Note",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all",
+          "conditions": []
+        },
+        "user": "{{user}}",
+        "note": "{{note}}",
+        "alias": "{{alias}}"
+      }
+    ]
+  },
+  "took": 0.011,
+  "requestId": "4a22a0df-dca1-4a98-84a7-15917042aedf"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "ecef8f49-51aa-48fb-9f43-e431beced469",
+      "name": "AIGI New Relic",
+      "enabled": true,
+      "type": "NewRelicV2",
+      "teamId": ""
+    },
+    "ignore": [],
+    "create": [
+      {
+        "type": "create",
+        "name": "Windows Service Monitor",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "details",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Windows Service Monitor"
+            },
+            {
+              "field": "tags",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "AIGI"
+            }
+          ]
+        },
+        "user": "New Relic",
+        "note": "",
+        "alias": "{{incident_id}}",
+        "source": "New Relic",
+        "message": "[New Relic]  -  Service {{target_labels.substringBetween(\"windowsService.name=\",\"}\")}} is not running on host {{target_labels.substringBetween(\"windowsService.hostname=\",\",\")}}",
+        "description": "Service {{target_labels.substringBetween(\"windowsService.name=\",\"}\")}} is not running on host {{target_labels.substringBetween(\"windowsService.hostname=\",\",\")}}\n\nTarget Labels : {{target_labels}}\n\nResponders: {{responders}}\nDetails: {{details}}\n\nAction: Please restart the service{{responders}}{{responders}}{{responders}}{{responders}}",
+        "entity": "{{target_product}}",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [
+          "service-action"
+        ],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "e781977e-c1a0-4bb8-8bd6-19c363cf23fc",
+            "name": "AIGI-Infrastructure-DevOps"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "e781977e-c1a0-4bb8-8bd6-19c363cf23fc",
+            "name": "AIGI-Infrastructure-DevOps"
+          }
+        ],
+        "ignoreRecipientsFromPayload": false,
+        "ignoreTeamsFromPayload": false,
+        "tags": [],
+        "ignoreTagsFromPayload": false,
+        "extraProperties": {
+          "Incident Ack Url": "{{incident_acknowledge_url}}",
+          "Severity": "{{severity}}",
+          "Host Name": "{{target_labels.substringBetween(\"windowsService.hostname=\",\",\")}}",
+          "Service Name": "{{target_labels.substringBetween(\"windowsService.name=\",\"}\")}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": false
+      },
+      {
+        "type": "create",
+        "name": "Infra Test Alert Policy",
+        "order": 2,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "condition_name",
+              "not": false,
+              "operation": "matches",
+              "expectedValue": ".*(?i)(P1|P2|P3).*"
+            },
+            {
+              "field": "tags",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "AIGI"
+            },
+            {
+              "field": "target_labels_map",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "INFRA TEST"
+            }
+          ]
+        },
+        "user": "New Relic",
+        "note": "",
+        "alias": "{{incident_id}}",
+        "source": "New Relic",
+        "message": "[New Relic] {{details}}",
+        "description": "Policy Name : {{policy_name}}\nTarget Name : {{target_name}}\nTarget Type : {{target_type}}\nTarget Product : {{target_product}}\nTarget Labels : {{target_labels}}\nTarget Link : {{target_link}}\n\nTimestamp : {{timestamp.toDate()}}",
+        "entity": "",
+        "priority": "P3",
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "8aff7fe5-f2d7-4b53-aed8-e9b48494d397",
+            "name": "AIGI-Infrastructure-Middleware"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "8aff7fe5-f2d7-4b53-aed8-e9b48494d397",
+            "name": "AIGI-Infrastructure-Middleware"
+          }
+        ],
+        "ignoreRecipientsFromPayload": false,
+        "ignoreTeamsFromPayload": false,
+        "tags": [],
+        "ignoreTagsFromPayload": false,
+        "extraProperties": {
+          "Incident Ack Url": "{{incident_acknowledge_url}}",
+          "Severity": "{{severity}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": false
+      },
+      {
+        "type": "create",
+        "name": "Linux Process Monitor",
+        "order": 3,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "details",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "Linux Process Monitor"
+            },
+            {
+              "field": "tags",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "AIGI"
+            }
+          ]
+        },
+        "user": "New Relic",
+        "note": "",
+        "alias": "{{incident_id}}",
+        "source": "New Relic",
+        "message": "[New Relic]  -  Process {{target_labels.substringBetween(\"processDisplayName=\",\"}\")}} is not running on host {{target_labels.substringBetween(\"hostname=\",\",\")}}",
+        "description": "Process {{target_labels.substringBetween(\"processDisplayName=\",\"}\")}} is not running on host {{target_labels.substringBetween(\"hostname=\",\",\")}}\n\nTarget Labels : {{target_labels}}\n\nResponders: {{responders}}\nDetails: {{details}}\n\nAction: Please restart the service{{responders}}{{responders}}{{responders}}{{responders}}",
+        "entity": "{{target_product}}",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [
+          "service-action"
+        ],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "team",
+            "id": "e781977e-c1a0-4bb8-8bd6-19c363cf23fc",
+            "name": "AIGI-Infrastructure-DevOps"
+          }
+        ],
+        "responders": [
+          {
+            "type": "team",
+            "id": "e781977e-c1a0-4bb8-8bd6-19c363cf23fc",
+            "name": "AIGI-Infrastructure-DevOps"
+          }
+        ],
+        "ignoreRecipientsFromPayload": false,
+        "ignoreTeamsFromPayload": false,
+        "tags": [],
+        "ignoreTagsFromPayload": false,
+        "extraProperties": {
+          "Incident Ack Url": "{{incident_acknowledge_url}}",
+          "Severity": "{{severity}}",
+          "Host Name": "{{target_labels.substringBetween(\"hostname=\",\",\")}}",
+          "Service Name": "{{target_labels.substringBetween(\"processDisplayName=\",\"}\")}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": false
+      },
+      {
+        "type": "create",
+        "name": "Test - Windows Process Monitor",
+        "order": 4,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "tags",
+              "not": false,
+              "operation": "contains",
+              "expectedValue": "AIGI"
+            },
+            {
+              "field": "target_labels",
+              "not": false,
+              "operation": "matches",
+              "expectedValue": ".*(DB).*"
+            }
+          ]
+        },
+        "user": "New Relic",
+        "note": "",
+        "alias": "{{incident_id}}",
+        "source": "New Relic",
+        "message": "[New Relic] {{details}}",
+        "description": "Policy Name : {{policy_name}}\nTarget Name : {{target_name}}\nTarget Type : {{target_type}}\nTarget Product : {{target_product}}\nTarget Labels : {{target_labels}}\nTarget Link : {{target_link}}\n\nTimestamp : {{timestamp.toDate()}}",
+        "entity": "",
+        "priority": null,
+        "customPriority": "",
+        "appendAttachments": true,
+        "alertActions": [],
+        "ignoreAlertActionsFromPayload": true,
+        "recipients": [
+          {
+            "type": "user",
+            "id": "4927896b-e016-48bb-9ddd-99f4494d60f8",
+            "username": "besterlin@archinsurance.com"
+          }
+        ],
+        "responders": [
+          {
+            "type": "user",
+            "id": "4927896b-e016-48bb-9ddd-99f4494d60f8",
+            "username": "besterlin@archinsurance.com"
+          }
+        ],
+        "ignoreRecipientsFromPayload": false,
+        "ignoreTeamsFromPayload": false,
+        "tags": [],
+        "ignoreTagsFromPayload": false,
+        "extraProperties": {
+          "Incident Ack Url": "{{incident_acknowledge_url}}",
+          "Severity": "{{severity}}"
+        },
+        "ignoreExtraPropertiesFromPayload": true,
+        "ignoreRespondersFromPayload": false
+      }
+    ],
+    "close": [
+      {
+        "type": "close",
+        "name": "Close Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "state",
+              "not": false,
+              "operation": "equals",
+              "expectedValue": "closed"
+            }
+          ]
+        },
+        "user": "New Relic",
+        "note": "",
+        "alias": "{{incident_id}}"
+      }
+    ],
+    "acknowledge": [
+      {
+        "type": "acknowledge",
+        "name": "Acknowledge Alert",
+        "order": 1,
+        "filter": {
+          "conditionMatchType": "match-all-conditions",
+          "conditions": [
+            {
+              "field": "state",
+              "not": false,
+              "operation": "equals",
+              "expectedValue": "acknowledged"
+            }
+          ]
+        },
+        "user": "{{owner}}",
+        "note": "",
+        "alias": "{{incident_id}}"
+      }
+    ],
+    "addNote": []
+  },
+  "took": 0.041,
+  "requestId": "0399f8be-4d46-4e2a-a071-1fcf5f5009a0"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "fad322aa-f725-4192-a816-2b88c122b289",
+      "name": "Slack (Arch Insurance Group#da-opsgenie-1606336951775)",
+      "enabled": true,
+      "type": "SlackApp",
+      "teamId": "aaf5f7b5-69b3-4b41-957f-3e1e4789ffde"
+    },
+    "ignore": [],
+    "create": [],
+    "close": [],
+    "acknowledge": [],
+    "addNote": []
+  },
+  "took": 0.006,
+  "requestId": "d1de927f-0e1f-43e4-81cb-b50e7ed6b88e"
+}
+{
+  "data": {
+    "_parent": {
+      "id": "fe81075f-0d77-4653-b4a5-87f9163829bf",
+      "name": "Slack (Arch Insurance Group#da-opsgenie-1606337457831)",
+      "enabled": true,
+      "type": "SlackApp",
+      "teamId": "4e33ba5d-da1a-44e6-ae6c-7511af5a8296"
+    },
+    "ignore": [],
+    "create": [],
+    "close": [],
+    "acknowledge": [],
+    "addNote": []
+  },
+  "took": 0.005,
+  "requestId": "0cdeb1ab-5f7b-4748-8371-6a10817ac881"
+}
